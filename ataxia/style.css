@@ -1,4 +1,524 @@
-.test {
-  font-size: 13px; }
+body {
+  font-family: 'Arial', sans-serif; }
+
+header#pageHeader {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative; }
+
+.content.headerContent {
+  background-color: #fff; }
+  .content.headerContent .mainLogo {
+    background-image: url("http://ataxia16to30.ritdns.co.uk/Handlers/GetImage.ashx?IDMF=4122559e-1a83-4f83-86ac-0f10360b4197&w=300&h=183");
+    background-size: cover;
+    width: 200px;
+    height: 122px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px; }
+  .content.headerContent .mainCallToAction {
+    margin: 73px 15px 0 0; }
+    .content.headerContent .mainCallToAction ul.socialIcons li {
+      list-style: none;
+      margin-left: 30px; }
+      .content.headerContent .mainCallToAction ul.socialIcons li.helpline a i {
+        background-color: #50287d; }
+      .content.headerContent .mainCallToAction ul.socialIcons li.donate a i {
+        background-color: #e6007e; }
+      .content.headerContent .mainCallToAction ul.socialIcons li.phone a i {
+        background-color: #f7df35; }
+      .content.headerContent .mainCallToAction ul.socialIcons li.fbook a i {
+        background-color: #01afd4; }
+      .content.headerContent .mainCallToAction ul.socialIcons li a {
+        border-radius: 0;
+        font-family: "league-gothic", sans-serif;
+        text-transform: uppercase;
+        color: #444;
+        border: 0;
+        margin: 0;
+        font-size: 18px;
+        height: auto;
+        letter-spacing: 1px;
+        line-height: 30px;
+        vertical-align: middle; }
+        .content.headerContent .mainCallToAction ul.socialIcons li a:hover {
+          background-color: transparent;
+          color: #000; }
+        .content.headerContent .mainCallToAction ul.socialIcons li a i {
+          border-radius: 50px;
+          color: #fff;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          line-height: 30px; }
+  .content.headerContent form {
+    display: none; }
+
+nav#menuMain.menuMain {
+  background-color: #e4e4e4;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  border-radius: 0;
+  max-width: none;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px; }
+  nav#menuMain.menuMain ul li {
+    font-family: "league-gothic", sans-serif, serif;
+    text-transform: uppercase; }
+    nav#menuMain.menuMain ul li:hover > a {
+      color: #01afd4;
+      background: transparent; }
+    nav#menuMain.menuMain ul li a {
+      color: #444;
+      padding: 10px;
+      font-size: 24px;
+      letter-spacing: 1px; }
+      nav#menuMain.menuMain ul li a:hover {
+        color: #01afd4;
+        background: transparent; }
+    nav#menuMain.menuMain ul li ul {
+      background-color: #e4e4e4;
+      padding-top: 5px;
+      border-radius: 0;
+      margin-top: -2px;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+      margin-left: -10px;
+      padding-bottom: 5px;
+      border-top: 1px solid #d7d7d7; }
+      nav#menuMain.menuMain ul li ul li:hover {
+        background-color: #e4e4e4;
+        color: #01afd4; }
+      nav#menuMain.menuMain ul li ul li a {
+        color: #444;
+        line-height: 24px;
+        font-size: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px; }
+        nav#menuMain.menuMain ul li ul li a:hover {
+          color: #01afd4; }
+
+.homepage section.carousel {
+  margin-top: 0;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0; }
+  .homepage section.carousel li.carouselSlide a.carouselSlideTitle {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px; }
+  .homepage section.carousel li.carouselSlide img {
+    display: none; }
+  .homepage section.carousel .carouselDetailWrapper {
+    background-image: url("http://ataxia16to30.ritdns.co.uk/Handlers/GetImage.ashx?IDMF=b7d07c1d-51cc-405e-8054-31089470f42f&w=160&h=120");
+    background-size: cover;
+    width: 45%; }
+    .homepage section.carousel .carouselDetailWrapper .carouselSlideDetail {
+      width: auto;
+      margin: 60px 60px 0 60px; }
+
+.contentContainer {
+  background-color: #ededed; }
+
+.homeIntroWrapper {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff; }
+  .homeIntroWrapper .homeIntro {
+    max-width: 1180px;
+    padding: 15px 0;
+    margin: 0 auto; }
+    .homeIntroWrapper .homeIntro ul {
+      margin: 0 auto; }
+      .homeIntroWrapper .homeIntro ul li {
+        display: block;
+        float: left;
+        font-family: "league-gothic", sans-serif;
+        font-size: 24px;
+        color: #444;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: center;
+        width: 33.3333%;
+        border-right: 1px solid #ededed; }
+        .homeIntroWrapper .homeIntro ul li.helpline a i {
+          background-color: #50287d; }
+        .homeIntroWrapper .homeIntro ul li.phone a i {
+          background-color: #f7df35; }
+        .homeIntroWrapper .homeIntro ul li a {
+          color: #444;
+          display: block;
+          height: 52px;
+          line-height: 52px;
+          vertical-align: middle; }
+          .homeIntroWrapper .homeIntro ul li a:hover {
+            text-decoration: none;
+            color: #000; }
+          .homeIntroWrapper .homeIntro ul li a i {
+            border-radius: 50px;
+            color: #fff;
+            width: 42px;
+            height: 42px;
+            text-align: center;
+            line-height: 42px;
+            vertical-align: middle;
+            margin-right: 10px; }
+        .homeIntroWrapper .homeIntro ul li:last-child {
+          border-right: 0;
+          line-height: 26px; }
+
+.homeFeaturesWrapper {
+  background-color: #ededed; }
+  .homeFeaturesWrapper .homeFeatures {
+    margin: 60px auto;
+    padding: 0; }
+    .homeFeaturesWrapper .homeFeatures .homeFeature {
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      height: 300px;
+      position: relative; }
+      .homeFeaturesWrapper .homeFeatures .homeFeature img {
+        display: none; }
+      .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox1 {
+        background-image: url("http://ataxia16to30.ritdns.co.uk/Handlers/GetImage.ashx?w=600&h=400&f=1&IDMF=ed9f6fe0-6764-45aa-a998-3d5b1fa04a7c"); }
+      .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox2 {
+        background-image: url("http://ataxia16to30.ritdns.co.uk/Handlers/GetImage.ashx?IDMF=1537cde3-bca6-42f5-8b4f-b7871425d53d&w=600&h=400"); }
+      .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper {
+        padding: 15px;
+        background-color: rgba(1, 175, 212, 0.8);
+        bottom: 0;
+        position: absolute;
+        width: 100%; }
+        .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper h2, .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper a, .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper p {
+          color: #fff;
+          margin: 0; }
+        .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper h2 {
+          font-family: "league-gothic", sans-serif;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          font-size: 36px;
+          margin-bottom: 15px; }
+
+.homeFeedsWrapper {
+  background-color: #ededed; }
+  .homeFeedsWrapper .homeFeedblogs {
+    position: relative; }
+    .homeFeedsWrapper .homeFeedblogs h3.feedsTitle {
+      position: absolute;
+      top: 20px;
+      font-family: "league-gothic", sans-serif;
+      color: #fff;
+      background-color: rgba(1, 175, 212, 0.8);
+      padding: 5px 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 24px;
+      border-radius: 0;
+      font-size: 36px; }
+    .homeFeedsWrapper .homeFeedblogs ul {
+      padding: 0;
+      background-color: #fff;
+      min-height: initial; }
+      .homeFeedsWrapper .homeFeedblogs ul li {
+        margin-top: 0;
+        padding-bottom: 20px; }
+        .homeFeedsWrapper .homeFeedblogs ul li img {
+          width: 100%;
+          height: auto;
+          margin: 0 0 15px 0; }
+        .homeFeedsWrapper .homeFeedblogs ul li h3, .homeFeedsWrapper .homeFeedblogs ul li a, .homeFeedsWrapper .homeFeedblogs ul li p {
+          color: #444;
+          font-family: 'Arial', sans-serif;
+          width: 100%; }
+        .homeFeedsWrapper .homeFeedblogs ul li h3 {
+          font-size: 24px; }
+        .homeFeedsWrapper .homeFeedblogs ul li h3, .homeFeedsWrapper .homeFeedblogs ul li p {
+          padding-left: 15px;
+          padding-right: 15px; }
+          .homeFeedsWrapper .homeFeedblogs ul li h3 span.readMore, .homeFeedsWrapper .homeFeedblogs ul li p span.readMore {
+            display: block;
+            float: right;
+            background-color: #01afd4;
+            color: #fff;
+            font-family: "league-gothic", sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 16px;
+            position: relative;
+            padding: 5px 20px 5px 10px;
+            margin-top: 30px; }
+            .homeFeedsWrapper .homeFeedblogs ul li h3 span.readMore:hover, .homeFeedsWrapper .homeFeedblogs ul li p span.readMore:hover {
+              background-color: #019abb; }
+            .homeFeedsWrapper .homeFeedblogs ul li h3 span.readMore:after, .homeFeedsWrapper .homeFeedblogs ul li p span.readMore:after {
+              content: '\f105';
+              font-family: FontAwesome;
+              display: block;
+              font-size: 16px;
+              position: absolute;
+              right: 5px;
+              top: 0;
+              line-height: 30px;
+              height: 32px; }
+  .homeFeedsWrapper .homeFeednews .feedsTitle, .homeFeedsWrapper .homeFeedevents .feedsTitle {
+    font-family: "league-gothic", sans-serif;
+    color: #444;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 0 0 0 48px;
+    font-size: 36px;
+    position: relative; }
+    .homeFeedsWrapper .homeFeednews .feedsTitle:before, .homeFeedsWrapper .homeFeedevents .feedsTitle:before {
+      font-family: FontAwesome;
+      content: '\f0ac';
+      display: block;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      position: absolute;
+      left: 0;
+      top: 7px; }
+  .homeFeedsWrapper .homeFeednews ul.feedList, .homeFeedsWrapper .homeFeedevents ul.feedList {
+    background: transparent;
+    padding: 0; }
+    .homeFeedsWrapper .homeFeednews ul.feedList h3 a, .homeFeedsWrapper .homeFeedevents ul.feedList h3 a {
+      font-family: 'Arial', sans-serif;
+      color: #444; }
+  .homeFeedsWrapper .homeFeedevents .feedsTitle:before {
+    content: '\f073'; }
+
+footer.pageFooterWrapper {
+  padding: 0;
+  background-color: #505050; }
+  footer.pageFooterWrapper .footerTwitter {
+    display: none; }
+  footer.pageFooterWrapper .footerBox {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 16px; }
+  footer.pageFooterWrapper .footerBox1 {
+    width: 100%;
+    background-color: #fff;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 24px; }
+    footer.pageFooterWrapper .footerBox1 a {
+      color: #01afd4;
+      text-decoration: underline; }
+      footer.pageFooterWrapper .footerBox1 a img {
+        width: 160px;
+        height: auto;
+        margin-right: 15px; }
+      footer.pageFooterWrapper .footerBox1 a:hover {
+        text-decoration: none; }
+  footer.pageFooterWrapper .footerBox2, footer.pageFooterWrapper .footerBox3, footer.pageFooterWrapper .footerBox4 {
+    width: 33.3333%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+    clear: none;
+    color: #fff;
+    font-family: "league-gothic", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 20px; }
+    footer.pageFooterWrapper .footerBox2 h1, footer.pageFooterWrapper .footerBox3 h1, footer.pageFooterWrapper .footerBox4 h1 {
+      text-align: left;
+      color: #fff;
+      font-family: "league-gothic", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 20px; }
+    footer.pageFooterWrapper .footerBox2 p, footer.pageFooterWrapper .footerBox3 p, footer.pageFooterWrapper .footerBox4 p {
+      font-family: 'Arial', sans-serif;
+      font-size: 16px;
+      letter-spacing: 0;
+      text-transform: none; }
+    footer.pageFooterWrapper .footerBox2 ul, footer.pageFooterWrapper .footerBox3 ul, footer.pageFooterWrapper .footerBox4 ul {
+      margin-top: 0;
+      margin-bottom: 0; }
+      footer.pageFooterWrapper .footerBox2 ul li, footer.pageFooterWrapper .footerBox3 ul li, footer.pageFooterWrapper .footerBox4 ul li {
+        margin-bottom: 10px; }
+  footer.pageFooterWrapper .footerBox3 ul li i {
+    border-radius: 50px;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+    margin-right: 5px; }
+  footer.pageFooterWrapper .footerBox3 ul li.fbook a i {
+    background-color: #01afd4; }
+  footer.pageFooterWrapper .footerBox3 ul li.helpline a i {
+    background-color: #50287d; }
+  footer.pageFooterWrapper .footerBox3 ul li.phone a i {
+    background-color: #f7df35; }
+  footer.pageFooterWrapper .footerBox3 ul li a {
+    color: #fff; }
+    footer.pageFooterWrapper .footerBox3 ul li a:hover {
+      text-decoration: none; }
+  footer.pageFooterWrapper .footerBox3 ul li:last-child {
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 0;
+    text-transform: none;
+    font-size: 16px;
+    margin-top: 15px; }
+  footer.pageFooterWrapper .footerBox4 {
+    margin-right: 0;
+    text-align: left; }
+    footer.pageFooterWrapper .footerBox4 h1 {
+      font-style: normal; }
+    footer.pageFooterWrapper .footerBox4 .formQuestion {
+      margin-top: 0;
+      margin-bottom: 8px; }
+      footer.pageFooterWrapper .footerBox4 .formQuestion label {
+        font-family: 'Arial', sans-serif;
+        font-size: 16px;
+        letter-spacing: 0;
+        text-transform: none; }
+      footer.pageFooterWrapper .footerBox4 .formQuestion input {
+        margin-top: 0; }
+    footer.pageFooterWrapper .footerBox4 button.groupSignUpBtn {
+      background-color: #50287d;
+      font-family: "league-gothic", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 20px;
+      display: block;
+      float: right; }
+  footer.pageFooterWrapper .Footercredits {
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    clear: both; }
+    footer.pageFooterWrapper .Footercredits a {
+      color: #fff;
+      text-decoration: underline; }
+      footer.pageFooterWrapper .Footercredits a:hover {
+        text-decoration: none; }
+
+.adminBar, .adminBarEdit {
+  margin: 0; }
+
+@media only screen and (max-width: 1000px) {
+  .homepage section.carousel .carouselDetailWrapper {
+    width: 100%;
+    background-image: none;
+    background-color: #50287d; }
+    .homepage section.carousel .carouselDetailWrapper .carouselSlideDetail {
+      text-align: center; } }
+@media only screen and (max-width: 992px) {
+  nav#menuMain.menuMain ul li a {
+    font-size: 18px; }
+  nav#menuMain.menuMain ul li ul li a {
+    font-size: 16px; }
+
+  .homeIntroWrapper .homeIntro ul li {
+    font-size: 18px; } }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .content.headerContent a.mainLogo {
+    width: 140px;
+    height: 85px;
+    background-repeat: no-repeat;
+    background-size: contain; }
+
+  a.menuMainAlt {
+    background-color: #e4e4e4;
+    font-family: "league-gothic", sans-serif;
+    color: #444;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    width: auto;
+    right: 15px;
+    padding: 5px 10px; }
+    a.menuMainAlt:hover {
+      color: #000;
+      text-decoration: none; }
+    a.menuMainAlt:before {
+      font-size: 18px;
+      margin-right: 10px;
+      padding-top: 2px; }
+
+  nav#menuMain.menuMain {
+    position: absolute;
+    top: 85px;
+    margin-top: -50px;
+    right: 15px;
+    z-index: 10;
+    width: 100%;
+    max-width: 260px; }
+    nav#menuMain.menuMain li.mobile-search {
+      display: none; }
+    nav#menuMain.menuMain li.mobile-social {
+      display: none; }
+
+  .content.headerContent .mainCallToAction {
+    display: block;
+    margin: 45px 15px 0 15px; }
+    .content.headerContent .mainCallToAction ul.socialIcons li {
+      margin: 5px 5px 5px 0;
+      width: auto;
+      text-align: center; }
+
+  .homepage section.carousel li.carouselSlide a.carouselSlideTitle {
+    height: 250px; }
+  .homepage section.carousel .carouselDetailWrapper {
+    padding-bottom: 0; }
+    .homepage section.carousel .carouselDetailWrapper .carouselSlideDetail {
+      margin: 15px; }
+
+  .homeFeaturesWrapper .homeFeatures {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .homeFeaturesWrapper .homeFeatures .homeFeature {
+      width: 100%;
+      margin-bottom: 15px; }
+
+  footer.pageFooterWrapper .footerBox2, footer.pageFooterWrapper .footerBox3, footer.pageFooterWrapper .footerBox4 {
+    width: 100%;
+    text-align: center; }
+  footer.pageFooterWrapper .footerBox1 {
+    font-size: 16px; }
+    footer.pageFooterWrapper .footerBox1 a img {
+      display: block;
+      margin-top: 0;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 15px; }
+
+  .homeIntroWrapper .homeIntro {
+    padding-bottom: 0;
+    padding-top: 0; }
+    .homeIntroWrapper .homeIntro ul li {
+      font-size: 24px;
+      width: 100%;
+      border-right: 0;
+      border-bottom: 1px solid #e4e4e4;
+      padding-bottom: 15px;
+      padding-top: 15px; }
+      .homeIntroWrapper .homeIntro ul li:last-child {
+        border-bottom: 0; } }
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
 
 /*# sourceMappingURL=style.css.map */

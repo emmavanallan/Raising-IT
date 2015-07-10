@@ -1,3 +1,724 @@
-.test{
-	font-size: 13px;
+// global
+$main-font: 'league-gothic', sans-serif;
+$purple: #50287d;
+$blue: #01afd4;
+$yellow: #f7df35;
+$pink: #e6007e;
+
+body{
+	font-family: 'Arial', sans-serif;
+}
+
+// header
+header#pageHeader{
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+.content.headerContent{
+	background-color: #fff;
+	.mainLogo{
+		background-image: url('http://ataxia16to30.ritdns.co.uk/Handlers/GetImage.ashx?IDMF=4122559e-1a83-4f83-86ac-0f10360b4197&w=300&h=183');
+		background-size: cover;
+		width: 200px;
+		height: 122px;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: 15px;
+	}
+	.mainCallToAction{
+		margin: 73px 15px 0 0;
+		ul.socialIcons{
+			li{
+				list-style: none;
+				margin-left: 30px;
+				&.helpline{
+					a i{
+						background-color: $purple;
+					}
+				}
+				&.donate{
+					a i{
+						background-color: $pink;
+					}
+				}
+				&.phone{
+					a i{
+						background-color: $yellow;
+					}
+				}
+				&.fbook{
+					a i{
+						background-color: $blue;
+					}
+				}
+				a{
+					border-radius: 0;
+					font-family: $main-font;
+					text-transform: uppercase;
+					color: #444;
+					border: 0;
+					margin: 0;
+					font-size: 18px;
+					height: auto;
+					letter-spacing: 1px;
+					line-height: 30px;
+					vertical-align: middle;
+					&:hover{
+						background-color: transparent;
+						color: #000;
+					}
+					i{
+						border-radius: 50px;
+						color: #fff;
+						width: 30px;
+						height: 30px;
+						text-align: center;
+						line-height: 30px;
+					}
+				}
+			}
+		}
+	}
+	form{
+		display: none;
+	}
+}
+
+// nav
+nav#menuMain.menuMain{
+	background-color: #e4e4e4;
+	position: absolute;
+	top: 0;
+	right: 15px;
+	border-radius: 0;
+	max-width: none;
+	width: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	ul{
+		li{
+			font-family: $main-font, serif;
+			text-transform: uppercase;
+			&:hover{
+				&> a{
+					color: $blue;
+					background: transparent;
+				}
+			}
+			a{
+				color: #444;
+				padding: 10px;
+				font-size: 24px;
+				letter-spacing: 1px;
+				&:hover{
+					color: $blue;
+					background: transparent;
+				}
+			}
+			ul{
+				background-color: #e4e4e4;
+				padding-top: 5px;
+				border-radius: 0;
+				margin-top: -2px;
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none;
+				margin-left: -10px;
+				padding-bottom: 5px;
+				border-top: 1px solid darken(#e4e4e4,5%);
+				li{
+					&:hover{
+						background-color: #e4e4e4;
+						color: $blue;
+					}
+					a{
+						color: #444;
+						line-height: 24px;
+						font-size: 20px;
+						padding-top: 5px;
+						padding-bottom: 5px;
+						&:hover{
+							color: $blue;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//carousel
+.homepage section.carousel{
+	margin-top: 0;
+	max-width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	li.carouselSlide{
+		a.carouselSlideTitle{
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 450px;
+		}
+		img{
+			display: none;
+		}
+	}
+	.carouselDetailWrapper{
+		background-image: url('http://ataxia16to30.ritdns.co.uk/Handlers/GetImage.ashx?IDMF=b7d07c1d-51cc-405e-8054-31089470f42f&w=160&h=120');
+		background-size: cover;
+		width: 45%;
+		.carouselSlideDetail{
+			width: auto;
+			margin: 60px 60px 0 60px;
+		}
+	}
+}
+
+
+// content
+.contentContainer{
+	background-color: #ededed;
+}
+
+// strapline
+.homeIntroWrapper{
+	margin-top: 60px;
+	margin-bottom: 60px;
+	width: 100%;
+	max-width: 100%;
+	background-color: #fff;
+	.homeIntro{
+		max-width: 1180px;
+		padding: 15px 0;
+		margin: 0 auto;
+		ul{
+			margin: 0 auto;
+			li{
+				display: block;
+				float: left;
+				font-family: $main-font;
+				font-size: 24px;
+				color: #444;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				text-align: center;
+				width: 33.3333%;
+				border-right: 1px solid #ededed;
+				&.helpline{
+					a i{
+						background-color: $purple;
+					}
+				}
+				&.phone{
+					a i{
+						background-color: $yellow;
+					}
+				}
+				a{
+					color: #444;
+					display: block;
+					height: 52px;
+					line-height: 52px;
+					vertical-align: middle;
+					&:hover{
+						text-decoration: none;
+						color: #000;
+					}
+					i{
+						border-radius: 50px;
+						color: #fff;
+						width: 42px;
+						height: 42px;
+						text-align: center;
+						line-height: 42px;
+						vertical-align: middle;
+						margin-right: 10px;
+					}
+				}
+				&:last-child{
+					border-right: 0;
+					line-height: 26px;
+				}				
+			}
+		}
+	}
+}
+
+// features
+.homeFeaturesWrapper{
+	background-color: #ededed;
+	.homeFeatures{
+		margin: 60px auto;
+		padding: 0;
+		.homeFeature{
+			width: 50%;
+			margin: 0;
+			padding: 0;
+			background-size: cover;
+			height: 300px;
+			position: relative;
+			img{
+				display: none;
+			}
+			&.homeBox1{
+				background-image: url('http://ataxia16to30.ritdns.co.uk/Handlers/GetImage.ashx?w=600&h=400&f=1&IDMF=ed9f6fe0-6764-45aa-a998-3d5b1fa04a7c');
+			}
+			&.homeBox2{
+				background-image: url('http://ataxia16to30.ritdns.co.uk/Handlers/GetImage.ashx?IDMF=1537cde3-bca6-42f5-8b4f-b7871425d53d&w=600&h=400');
+			}
+			.homeFeatureDetailsWrapper{
+				padding: 15px;
+				background-color: rgba(1,175,212,0.8);
+				bottom: 0;
+				position: absolute;
+				width: 100%;
+				h2, a, p{
+					color: #fff;
+					margin: 0;
+				}
+				h2{
+					font-family: $main-font;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					font-size: 36px;
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+
+// feeds
+.homeFeedsWrapper{
+	background-color: #ededed;
+
+	//Latest blog
+	.homeFeedblogs{
+		position: relative;
+		h3.feedsTitle{
+			position: absolute;
+			top: 20px;
+			font-family: $main-font;
+			color: #fff;
+			background-color: rgba($blue, 0.8);
+			padding: 5px 15px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 24px;
+			border-radius: 0;
+			font-size: 36px;
+		}
+		ul{
+			padding: 0;
+			background-color: #fff;
+			min-height: initial;
+			li{
+				margin-top: 0;
+				padding-bottom: 20px;
+				img{
+					width: 100%;
+					height: auto;
+					margin: 0 0 15px 0;
+				}
+				h3, a, p{
+					color: #444;
+					font-family: 'Arial', sans-serif;
+					width: 100%;
+				}
+				h3{
+					font-size: 24px;
+				}
+				h3, p{
+					padding-left: 15px;
+					padding-right: 15px;
+					span.readMore{
+						display: block;
+						float: right;
+						background-color: $blue;
+						color: #fff;
+						font-family: $main-font;
+						letter-spacing: 1px;
+						text-transform: uppercase;
+						font-size: 16px;
+						position: relative;
+						padding: 5px 20px 5px 10px;
+						margin-top: 30px;
+						&:hover{
+							background-color: darken($blue,5%);
+						}
+						&:after{
+							content: '\f105';
+							font-family: FontAwesome;
+							display: block;
+							font-size: 16px;
+							position: absolute;
+							right: 5px;
+							top: 0;
+							line-height: 30px;
+							height: 32px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//Latest news
+	.homeFeednews, .homeFeedevents{
+		.feedsTitle{
+			font-family: $main-font;
+			color: #444;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			background-color: transparent;
+			padding: 0 0 0 48px;
+			font-size: 36px;
+			position: relative;
+			&:before{
+				font-family: FontAwesome;
+				content: '\f0ac';
+				display: block;
+				width: 36px;
+				height: 36px;
+				line-height: 36px;
+				position: absolute;
+				left: 0;
+				top: 7px;
+			}
+		}
+		ul.feedList{
+			background: transparent;
+			padding: 0;
+			h3 a{
+				font-family: 'Arial', sans-serif;
+				color: #444;
+			}
+		}
+	}
+
+	//Upcoming Events
+	.homeFeedevents{
+		.feedsTitle{
+			&:before{
+				content: '\f073';
+			}
+		}
+	}
+}
+
+// footer
+footer.pageFooterWrapper{
+	padding: 0;
+	background-color: #505050;
+	.footerTwitter{
+		display: none;
+	}
+	.footerBox{
+		padding-top: 30px;
+		padding-bottom: 30px;
+		font-size: 16px;
+	}
+	.footerBox1{
+		width: 100%;
+		background-color: #fff;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-size: 24px;
+		a{
+			color: $blue;
+			text-decoration: underline;
+			img{
+				width: 160px;
+				height: auto;
+				margin-right: 15px;
+			}
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	.footerBox2,.footerBox3,.footerBox4{
+		width: 33.3333%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-left: 0;
+		margin-right: 0;
+		float: left;
+		clear: none;
+		color: #fff;
+		font-family: $main-font;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		font-size: 20px;
+		h1{
+			text-align: left;
+			color: #fff;
+			font-family: $main-font;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			font-size: 20px;
+		}
+		p{
+			font-family: 'Arial', sans-serif;
+			font-size: 16px;
+			letter-spacing: 0;
+			text-transform: none;
+		}
+		ul{
+			margin-top: 0;
+			margin-bottom: 0;
+			li{
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.footerBox3{
+		ul{
+			li{
+				i{
+					border-radius: 50px;
+					color: #fff;
+					width: 36px;
+					height: 36px;
+					text-align: center;
+					line-height: 36px;
+					vertical-align: middle;
+					margin-right: 5px;
+				}
+				&.fbook{
+					a i{
+						background-color: $blue;
+					}
+				}
+				&.helpline{
+					a i{
+						background-color: $purple;
+					}
+				}
+				&.phone{
+					a i{
+						background-color: $yellow;
+					}
+				}
+				a{
+					color: #fff;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+				&:last-child{
+					font-family: 'Arial', sans-serif;
+					letter-spacing: 0;
+					text-transform: none;
+					font-size: 16px;
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+	.footerBox4{
+		margin-right: 0;
+		text-align: left;
+		h1{
+			font-style: normal;
+		}
+		.formQuestion{
+			margin-top: 0;
+			margin-bottom: 8px;
+			label{
+				font-family: 'Arial', sans-serif;
+				font-size: 16px;
+				letter-spacing: 0;
+				text-transform: none;
+			}
+			input{
+				margin-top: 0;
+			}
+		}
+		button.groupSignUpBtn{
+			background-color: $purple;
+			font-family: $main-font;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 20px;
+			display: block;
+			float: right;
+		}
+	}
+	.Footercredits{
+		width: 100%;
+		margin: 0 auto;
+		color: #fff;
+		font-size: 16px;
+		text-align: center;
+		clear: both;
+		a{
+			color: #fff;
+			text-decoration: underline;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+// admin bar
+.adminBar, .adminBarEdit{
+	margin: 0;
+}
+
+// Media queries
+@media only screen and (max-width : 1000px) {
+	.homepage section.carousel .carouselDetailWrapper{
+		width: 100%;
+		background-image: none;
+		background-color: $purple;
+		.carouselSlideDetail{
+			text-align: center;
+		}
+	}
+}
+
+@media only screen and (max-width : 992px) {
+	nav#menuMain.menuMain{
+		ul li{
+			a{
+				font-size: 18px;
+			}
+			ul li a {
+				font-size: 16px;
+			}	
+		}
+	}
+
+	.homeIntroWrapper .homeIntro ul li{
+		font-size: 18px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.content.headerContent a.mainLogo{
+		width: 140px;
+		height: 85px;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	a.menuMainAlt{
+		background-color: #e4e4e4;
+		font-family: $main-font;
+		color: #444;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		font-size: 18px;
+		position: absolute;
+		top: 0;
+		width: auto;
+		right: 15px;
+		padding: 5px 10px;
+		&:hover{
+			color: #000;
+			text-decoration: none;
+		}
+		&:before{
+			font-size: 18px;
+			margin-right: 10px;
+			padding-top: 2px;
+		}
+	}
+	nav#menuMain.menuMain{
+		position: absolute;
+		top: 85px;
+		margin-top: -50px;
+		right: 15px;
+		z-index: 10;
+		width: 100%;
+		max-width: 260px;
+		li.mobile-search{
+			display: none;
+		}
+		li.mobile-social{
+			display: none;
+		}
+	}
+
+	.content.headerContent .mainCallToAction{
+		display: block;
+		margin: 45px 15px 0 15px;
+		ul.socialIcons{
+			li{
+				margin: 5px 5px 5px 0;
+				width: auto;
+				text-align: center;
+			}
+		}
+	}
+
+	.homepage section.carousel{
+		li.carouselSlide a.carouselSlideTitle{
+			height: 250px;
+		}
+		.carouselDetailWrapper{
+			padding-bottom: 0;
+			.carouselSlideDetail{
+				margin: 15px;
+			}
+		}
+	}
+	.homeFeaturesWrapper .homeFeatures{
+		padding-left: 15px;
+		padding-right: 15px;
+		.homeFeature{
+			width: 100%;
+			margin-bottom: 15px;
+		}
+	}
+	footer.pageFooterWrapper{
+		.footerBox2, .footerBox3, .footerBox4{
+			width: 100%;
+			text-align: center;
+		}
+		.footerBox1{
+			font-size: 16px;
+			a img{
+				display: block;
+				margin-top: 0;
+				margin-right: auto;
+				margin-left: auto;
+				margin-bottom: 15px;
+			}
+		}
+	}
+	.homeIntroWrapper .homeIntro{
+		padding-bottom: 0;
+		padding-top: 0;
+		ul li{
+			font-size: 24px;
+			width: 100%;
+			border-right: 0;
+			border-bottom: 1px solid #e4e4e4;
+			padding-bottom: 15px;
+			padding-top: 15px;
+			&:last-child{
+				border-bottom: 0;
+			}
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
 }
