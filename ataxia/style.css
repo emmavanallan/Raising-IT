@@ -102,24 +102,52 @@ nav#menuMain.menuMain {
         nav#menuMain.menuMain ul li ul li a:hover {
           color: #01afd4; }
 
-.homepage section.carousel {
+section.carousel {
   margin-top: 0;
   max-width: 100%;
   padding-left: 0;
   padding-right: 0; }
-  .homepage section.carousel li.carouselSlide a.carouselSlideTitle {
+  section.carousel li.carouselSlide a.carouselSlideTitle {
     background-size: cover;
     background-repeat: no-repeat;
     height: 450px; }
-  .homepage section.carousel li.carouselSlide img {
-    display: none; }
-  .homepage section.carousel .carouselDetailWrapper {
+  section.carousel .carouselDetailWrapper {
     background-image: url("http://ataxia16to30.ritdns.co.uk/Handlers/GetImage.ashx?IDMF=b7d07c1d-51cc-405e-8054-31089470f42f&w=160&h=120");
     background-size: cover;
     width: 45%; }
-    .homepage section.carousel .carouselDetailWrapper .carouselSlideDetail {
+    section.carousel .carouselDetailWrapper .carouselSlideDetail {
       width: auto;
       margin: 60px 60px 0 60px; }
+      section.carousel .carouselDetailWrapper .carouselSlideDetail h2.carouselSlideHeading {
+        font-family: 'Arial', sans-serif; }
+
+.homepage section.carousel {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0; }
+  .homepage section.carousel li.carouselSlide img {
+    display: block; }
+
+header.headerWrapper {
+  padding-left: 0;
+  padding-right: 0; }
+
+.pageWrapper {
+  background-color: #ededed; }
+  .pageWrapper .contentBlockWrapper, .pageWrapper .headerText {
+    background-color: #fff; }
+  .pageWrapper .contentBlockWrapper {
+    padding: 20px 60px 60px 60px;
+    margin-top: 0; }
+  .pageWrapper .listing .contentBlockWrapper {
+    max-width: 1140px; }
+  .pageWrapper .headerText {
+    padding: 60px 60px 0 60px; }
+    .pageWrapper .headerText nav ol {
+      margin-top: 0;
+      margin-bottom: 0; }
+    .pageWrapper .headerText h1, .pageWrapper .headerText p {
+      margin-bottom: 0; }
 
 .contentContainer {
   background-color: #ededed; }
@@ -518,6 +546,17 @@ footer.pageFooterWrapper {
       padding-top: 15px; }
       .homeIntroWrapper .homeIntro ul li:last-child {
         border-bottom: 0; } }
+.pageContent a {
+  text-decoration: underline; }
+  .pageContent a:hover {
+    text-decoration: none; }
+.pageContent footer.postFooterWrapper a {
+  text-decoration: none; }
+
+aside h2, aside h3 {
+  margin-left: 20px;
+  margin-right: 20px; }
+
 /* Extra Small Devices, Phones */
 /* Custom, iPhone Retina */
 

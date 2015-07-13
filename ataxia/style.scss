@@ -150,7 +150,7 @@ nav#menuMain.menuMain{
 }
 
 //carousel
-.homepage section.carousel{
+section.carousel{
 	margin-top: 0;
 	max-width: 100%;
 	padding-left: 0;
@@ -161,9 +161,6 @@ nav#menuMain.menuMain{
 			background-repeat: no-repeat;
 			height: 450px;
 		}
-		img{
-			display: none;
-		}
 	}
 	.carouselDetailWrapper{
 		background-image: url('http://ataxia16to30.ritdns.co.uk/Handlers/GetImage.ashx?IDMF=b7d07c1d-51cc-405e-8054-31089470f42f&w=160&h=120');
@@ -172,12 +169,56 @@ nav#menuMain.menuMain{
 		.carouselSlideDetail{
 			width: auto;
 			margin: 60px 60px 0 60px;
+			h2.carouselSlideHeading{
+				font-family: 'Arial', sans-serif;
+			}
 		}
 	}
 }
 
+.homepage section.carousel{
+	max-width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+	li.carouselSlide{
+		img{
+			display: block;
+		}
+	}
+}
+
+header.headerWrapper{
+	padding-left: 0;
+	padding-right: 0;
+}
+
 
 // content
+
+.pageWrapper{
+	background-color: #ededed;
+	.contentBlockWrapper, .headerText{
+		background-color: #fff;
+	}
+	.contentBlockWrapper{
+		padding: 20px 60px 60px 60px;
+		margin-top: 0;
+	}
+	.listing .contentBlockWrapper{
+		max-width: 1140px;
+	}
+	.headerText{
+		padding: 60px 60px 0 60px;
+		nav ol{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		h1, p{
+			margin-bottom: 0;
+		}
+	}
+}
+
 .contentContainer{
 	background-color: #ededed;
 }
@@ -712,6 +753,31 @@ footer.pageFooterWrapper{
 		}
 	}
 }
+
+
+// content
+.pageContent{
+	a{
+		text-decoration: underline;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	footer.postFooterWrapper{
+		a{
+			text-decoration: none;
+		}
+	}
+}
+
+//aside
+aside{
+	h2, h3{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
