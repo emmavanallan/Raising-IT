@@ -22,10 +22,12 @@ header#pageHeader {
     .content.headerContent .mainCallToAction ul.socialIcons li {
       list-style: none;
       margin-left: 30px; }
+      .content.headerContent .mainCallToAction ul.socialIcons li.twitter:before {
+        content: none; }
       .content.headerContent .mainCallToAction ul.socialIcons li.helpline a i {
         background-color: #50287d; }
-      .content.headerContent .mainCallToAction ul.socialIcons li.donate a i {
-        background-color: #e6007e; }
+      .content.headerContent .mainCallToAction ul.socialIcons li.twitter a i {
+        background-color: #55acee; }
       .content.headerContent .mainCallToAction ul.socialIcons li.phone a i {
         background-color: #f7df35; }
       .content.headerContent .mainCallToAction ul.socialIcons li.fbook a i {

@@ -33,14 +33,17 @@ header#pageHeader{
 			li{
 				list-style: none;
 				margin-left: 30px;
+				&.twitter:before{
+					content: none;
+				}
 				&.helpline{
 					a i{
 						background-color: $purple;
 					}
 				}
-				&.donate{
+				&.twitter{
 					a i{
-						background-color: $pink;
+						background-color: #55acee;
 					}
 				}
 				&.phone{
