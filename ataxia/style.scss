@@ -177,6 +177,19 @@ section.carousel{
 			}
 		}
 	}
+	.carouselButtons{
+		background-color: rgba($purple, 0.9);
+		li.activeSlide{
+			background-color: rgba($blue, 0.9);
+		}
+		li{
+			a.button.carouselButton{
+				&:hover{
+					background-color: rgba($blue, 0.9);
+				}
+			}
+		}
+	}
 }
 
 .homepage section.carousel{
@@ -185,7 +198,7 @@ section.carousel{
 	padding-right: 0;
 	li.carouselSlide{
 		img{
-			display: block;
+			display: none;
 		}
 	}
 }
@@ -198,8 +211,9 @@ header.headerWrapper{
 
 // content
 
-.pageWrapper{
+.pageWrapper, {
 	background-color: #ededed;
+	padding-bottom: 120px;
 	.contentBlockWrapper, .headerText{
 		background-color: #fff;
 	}
@@ -207,9 +221,7 @@ header.headerWrapper{
 		padding: 20px 60px 60px 60px;
 		margin-top: 0;
 	}
-	.listing .contentBlockWrapper{
-		max-width: 1140px;
-	}
+
 	.headerText{
 		padding: 60px 60px 0 60px;
 		nav ol{
@@ -219,11 +231,107 @@ header.headerWrapper{
 		h1, p{
 			margin-bottom: 0;
 		}
+		h1{
+			font-size: 54px;
+		}
 	}
+
+	aside.postAside{
+		.associated{
+			ul{
+				margin-top: 0;
+				li{
+					margin-top: 0;
+					h3 a:hover{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+
+	&.newsListingPage, &.newsPostPage{
+		.associatedMostRead{
+			display: none;
+		}
+	}
+
+	&.blogListingPage{
+		aside.blogDetails{
+			display: none;
+		}
+	}
+	
+	&.blogPostPage{
+		aside.blogDetails{
+			display: none;
+			margin-bottom: 0;
+			min-height: 90px;
+			text-align: right;
+		}
+		.associatedMostRead{
+			display: none;
+		}
+	}
+
+	.listing .contentBlockWrapper{
+		max-width: 1140px;
+		.listContent{
+			.listedPost{
+				border-radius: 0;
+				img{
+					border-top-left-radius: 0;
+					border-top-right-radius: 0;
+				}
+				h2{
+					margin-top: 24px;
+					margin-bottom: 15px;
+					a:hover{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+	&.faqListingPage{
+		article{
+			background-color: #fff;
+			border-bottom: 1px solid #fff;
+			border-left: 1px solid #ededed;
+			border-right: 1px solid #ededed;
+			padding: 0;
+			header{
+				margin-top: 0;
+				background-color: #ededed;
+				padding: 15px;
+			}
+			.accordianBody{
+				padding: 15px;
+				footer{
+					display: none;
+				}
+			}
+		}
+	}
+	.postFooterWrapper{
+		.shareWrapper{
+			strong{
+				margin-bottom: 0;
+			}
+		}
+	}
+
 }
 
 .contentContainer{
 	background-color: #ededed;
+}
+
+//contact
+body.contact{
+	.contactUsBody, .contactForm{
+		padding: 0;
+	}
 }
 
 // strapline
@@ -234,7 +342,7 @@ header.headerWrapper{
 	max-width: 100%;
 	background-color: #fff;
 	.homeIntro{
-		max-width: 1180px;
+		max-width: 1140px;
 		padding: 15px 0;
 		margin: 0 auto;
 		ul{
@@ -456,6 +564,7 @@ header.headerWrapper{
 footer.pageFooterWrapper{
 	padding: 0;
 	background-color: #505050;
+	border-top: 0;
 	.footerTwitter{
 		display: none;
 	}
@@ -464,9 +573,8 @@ footer.pageFooterWrapper{
 		padding-bottom: 30px;
 		font-size: 16px;
 	}
-	.footerBox1{
+	.footerBox2, .NewsletterSign-up{
 		width: 100%;
-		background-color: #fff;
 		float: none;
 		margin: 0 auto;
 		text-align: center;
@@ -486,8 +594,108 @@ footer.pageFooterWrapper{
 			}
 		}
 	}
-	.footerBox2,.footerBox3,.footerBox4{
-		width: 33.3333%;
+	.newsletter-container{
+		background-color: #fff;
+		width: 100%;
+	}
+	.NewsletterSign-up{
+		background-color: #fff;
+		width: 100%;
+		max-width: 1140px;
+		margin: 0 auto;
+		padding: 15px;
+		height: auto;
+		.newsletter{
+			padding-bottom: 45px;
+		}
+		.featureForm{
+			overflow: auto;
+		}
+		h1{
+			color: #444;
+			font-family: $main-font;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			font-size: 48px;
+			text-align: center;
+			margin-bottom: 0;
+			margin-top: 15px;
+			border-top: 1px solid #ededed;
+			padding-top: 60px;
+			font-style: normal;
+		}
+		p{
+			color: #444;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+		.formQuestion{
+			width: 25%;
+			float: left;
+			padding-right: 15px;
+			margin-top: 0;
+			label{
+				color: #444;
+				text-align: left;
+				font-size: 16px;
+				font-family: 'Arial', sans-serif;
+			}
+			input{
+				border-radius: 0;
+				margin-top:0;
+				border: 0;
+				background-color: #ededed;
+				font-size: 18px;
+			}
+			button{
+				background-color: $blue;
+				font-family: $main-font;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				border-radius: 0;
+				font-size: 24px;
+				padding-top: 4px;
+				padding-bottom: 4px;
+				width: 180px;
+				margin-top: 23px;
+				&:hover{
+					background-color: darken($blue,5%);
+				}
+			}
+		}
+	}
+	.HealthUnlocked{
+		font-size: 16px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid #ededed;
+		padding-bottom: 15px;
+		padding-top: 15px;
+		background-color: $purple;
+		color: #fff;
+		border-bottom: 0;
+		.healthUnlockedLink{
+			background-color: transparent;
+			border: 1px solid lighten($purple, 10%);
+			color: #fff;
+			margin-right: 15px;
+			text-decoration: none;
+			font-family: $main-font;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			padding: 5px 10px;
+			font-size: 18px;
+			border-radius: 0;
+			&:hover{
+				background-color: darken($purple,5%);
+			}
+		}
+	}
+	.pageFooter{
+		max-width: 1140px;
+	}
+	.FooterMenu,.FooterSocial{
+		width: 50%;
 		padding-right: 15px;
 		padding-left: 15px;
 		margin-left: 0;
@@ -521,7 +729,7 @@ footer.pageFooterWrapper{
 			}
 		}
 	}
-	.footerBox3{
+	.FooterSocial{
 		ul{
 			li{
 				i{
@@ -549,51 +757,57 @@ footer.pageFooterWrapper{
 						background-color: $yellow;
 					}
 				}
+				&.twitter{
+					&:before{
+						content: '';
+					}
+					a i{
+						background-color: #55acee;
+					}
+				}
+				&.instagram{
+					a i{
+						background-color: $pink;
+					}
+				}
 				a{
 					color: #fff;
 					&:hover{
 						text-decoration: none;
 					}
 				}
-				&:last-child{
-					font-family: 'Arial', sans-serif;
-					letter-spacing: 0;
-					text-transform: none;
-					font-size: 16px;
-					margin-top: 15px;
-				}
 			}
 		}
 	}
-	.footerBox4{
-		margin-right: 0;
-		text-align: left;
-		h1{
-			font-style: normal;
-		}
-		.formQuestion{
-			margin-top: 0;
-			margin-bottom: 8px;
-			label{
-				font-family: 'Arial', sans-serif;
-				font-size: 16px;
-				letter-spacing: 0;
-				text-transform: none;
-			}
-			input{
-				margin-top: 0;
-			}
-		}
-		button.groupSignUpBtn{
-			background-color: $purple;
-			font-family: $main-font;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-			font-size: 20px;
-			display: block;
-			float: right;
-		}
-	}
+	// .footerBox4{
+	// 	margin-right: 0;
+	// 	text-align: left;
+	// 	h1{
+	// 		font-style: normal;
+	// 	}
+	// 	.formQuestion{
+	// 		margin-top: 0;
+	// 		margin-bottom: 8px;
+	// 		label{
+	// 			font-family: 'Arial', sans-serif;
+	// 			font-size: 16px;
+	// 			letter-spacing: 0;
+	// 			text-transform: none;
+	// 		}
+	// 		input{
+	// 			margin-top: 0;
+	// 		}
+	// 	}
+	// 	button.groupSignUpBtn{
+	// 		background-color: $purple;
+	// 		font-family: $main-font;
+	// 		text-transform: uppercase;
+	// 		letter-spacing: 1px;
+	// 		font-size: 20px;
+	// 		display: block;
+	// 		float: right;
+	// 	}
+	// }
 	.Footercredits{
 		width: 100%;
 		margin: 0 auto;
@@ -738,6 +952,10 @@ footer.pageFooterWrapper{
 				margin-left: auto;
 				margin-bottom: 15px;
 			}
+		}
+		.NewsletterSign-up .formQuestion{
+			width: 100%;
+			margin-bottom: 5px;
 		}
 	}
 	.homeIntroWrapper .homeIntro{

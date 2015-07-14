@@ -122,27 +122,32 @@ section.carousel {
       margin: 60px 60px 0 60px; }
       section.carousel .carouselDetailWrapper .carouselSlideDetail h2.carouselSlideHeading {
         font-family: 'Arial', sans-serif; }
+  section.carousel .carouselButtons {
+    background-color: rgba(80, 40, 125, 0.9); }
+    section.carousel .carouselButtons li.activeSlide {
+      background-color: rgba(1, 175, 212, 0.9); }
+    section.carousel .carouselButtons li a.button.carouselButton:hover {
+      background-color: rgba(1, 175, 212, 0.9); }
 
 .homepage section.carousel {
   max-width: 100%;
   padding-left: 0;
   padding-right: 0; }
   .homepage section.carousel li.carouselSlide img {
-    display: block; }
+    display: none; }
 
 header.headerWrapper {
   padding-left: 0;
   padding-right: 0; }
 
 .pageWrapper {
-  background-color: #ededed; }
+  background-color: #ededed;
+  padding-bottom: 120px; }
   .pageWrapper .contentBlockWrapper, .pageWrapper .headerText {
     background-color: #fff; }
   .pageWrapper .contentBlockWrapper {
     padding: 20px 60px 60px 60px;
     margin-top: 0; }
-  .pageWrapper .listing .contentBlockWrapper {
-    max-width: 1140px; }
   .pageWrapper .headerText {
     padding: 60px 60px 0 60px; }
     .pageWrapper .headerText nav ol {
@@ -150,9 +155,59 @@ header.headerWrapper {
       margin-bottom: 0; }
     .pageWrapper .headerText h1, .pageWrapper .headerText p {
       margin-bottom: 0; }
+    .pageWrapper .headerText h1 {
+      font-size: 54px; }
+  .pageWrapper aside.postAside .associated ul {
+    margin-top: 0; }
+    .pageWrapper aside.postAside .associated ul li {
+      margin-top: 0; }
+      .pageWrapper aside.postAside .associated ul li h3 a:hover {
+        text-decoration: none; }
+  .pageWrapper.newsListingPage .associatedMostRead, .pageWrapper.newsPostPage .associatedMostRead {
+    display: none; }
+  .pageWrapper.blogListingPage aside.blogDetails {
+    display: none; }
+  .pageWrapper.blogPostPage aside.blogDetails {
+    display: none;
+    margin-bottom: 0;
+    min-height: 90px;
+    text-align: right; }
+  .pageWrapper.blogPostPage .associatedMostRead {
+    display: none; }
+  .pageWrapper .listing .contentBlockWrapper {
+    max-width: 1140px; }
+    .pageWrapper .listing .contentBlockWrapper .listContent .listedPost {
+      border-radius: 0; }
+      .pageWrapper .listing .contentBlockWrapper .listContent .listedPost img {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0; }
+      .pageWrapper .listing .contentBlockWrapper .listContent .listedPost h2 {
+        margin-top: 24px;
+        margin-bottom: 15px; }
+        .pageWrapper .listing .contentBlockWrapper .listContent .listedPost h2 a:hover {
+          text-decoration: none; }
+  .pageWrapper.faqListingPage article {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    padding: 0; }
+    .pageWrapper.faqListingPage article header {
+      margin-top: 0;
+      background-color: #ededed;
+      padding: 15px; }
+    .pageWrapper.faqListingPage article .accordianBody {
+      padding: 15px; }
+      .pageWrapper.faqListingPage article .accordianBody footer {
+        display: none; }
+  .pageWrapper .postFooterWrapper .shareWrapper strong {
+    margin-bottom: 0; }
 
 .contentContainer {
   background-color: #ededed; }
+
+body.contact .contactUsBody, body.contact .contactForm {
+  padding: 0; }
 
 .homeIntroWrapper {
   margin-top: 60px;
@@ -161,7 +216,7 @@ header.headerWrapper {
   max-width: 100%;
   background-color: #fff; }
   .homeIntroWrapper .homeIntro {
-    max-width: 1180px;
+    max-width: 1140px;
     padding: 15px 0;
     margin: 0 auto; }
     .homeIntroWrapper .homeIntro ul {
@@ -327,33 +382,118 @@ header.headerWrapper {
 
 footer.pageFooterWrapper {
   padding: 0;
-  background-color: #505050; }
+  background-color: #505050;
+  border-top: 0; }
   footer.pageFooterWrapper .footerTwitter {
     display: none; }
   footer.pageFooterWrapper .footerBox {
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 16px; }
-  footer.pageFooterWrapper .footerBox1 {
+  footer.pageFooterWrapper .footerBox2, footer.pageFooterWrapper .NewsletterSign-up {
     width: 100%;
-    background-color: #fff;
     float: none;
     margin: 0 auto;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 24px; }
-    footer.pageFooterWrapper .footerBox1 a {
+    footer.pageFooterWrapper .footerBox2 a, footer.pageFooterWrapper .NewsletterSign-up a {
       color: #01afd4;
       text-decoration: underline; }
-      footer.pageFooterWrapper .footerBox1 a img {
+      footer.pageFooterWrapper .footerBox2 a img, footer.pageFooterWrapper .NewsletterSign-up a img {
         width: 160px;
         height: auto;
         margin-right: 15px; }
-      footer.pageFooterWrapper .footerBox1 a:hover {
+      footer.pageFooterWrapper .footerBox2 a:hover, footer.pageFooterWrapper .NewsletterSign-up a:hover {
         text-decoration: none; }
-  footer.pageFooterWrapper .footerBox2, footer.pageFooterWrapper .footerBox3, footer.pageFooterWrapper .footerBox4 {
-    width: 33.3333%;
+  footer.pageFooterWrapper .newsletter-container {
+    background-color: #fff;
+    width: 100%; }
+  footer.pageFooterWrapper .NewsletterSign-up {
+    background-color: #fff;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px;
+    height: auto; }
+    footer.pageFooterWrapper .NewsletterSign-up .newsletter {
+      padding-bottom: 45px; }
+    footer.pageFooterWrapper .NewsletterSign-up .featureForm {
+      overflow: auto; }
+    footer.pageFooterWrapper .NewsletterSign-up h1 {
+      color: #444;
+      font-family: "league-gothic", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 0;
+      margin-top: 15px;
+      border-top: 1px solid #ededed;
+      padding-top: 60px;
+      font-style: normal; }
+    footer.pageFooterWrapper .NewsletterSign-up p {
+      color: #444;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: 16px; }
+    footer.pageFooterWrapper .NewsletterSign-up .formQuestion {
+      width: 25%;
+      float: left;
+      padding-right: 15px;
+      margin-top: 0; }
+      footer.pageFooterWrapper .NewsletterSign-up .formQuestion label {
+        color: #444;
+        text-align: left;
+        font-size: 16px;
+        font-family: 'Arial', sans-serif; }
+      footer.pageFooterWrapper .NewsletterSign-up .formQuestion input {
+        border-radius: 0;
+        margin-top: 0;
+        border: 0;
+        background-color: #ededed;
+        font-size: 18px; }
+      footer.pageFooterWrapper .NewsletterSign-up .formQuestion button {
+        background-color: #01afd4;
+        font-family: "league-gothic", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 0;
+        font-size: 24px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        width: 180px;
+        margin-top: 23px; }
+        footer.pageFooterWrapper .NewsletterSign-up .formQuestion button:hover {
+          background-color: #019abb; }
+  footer.pageFooterWrapper .HealthUnlocked {
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: #50287d;
+    color: #fff;
+    border-bottom: 0; }
+    footer.pageFooterWrapper .HealthUnlocked .healthUnlockedLink {
+      background-color: transparent;
+      border: 1px solid #6934a4;
+      color: #fff;
+      margin-right: 15px;
+      text-decoration: none;
+      font-family: "league-gothic", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 5px 10px;
+      font-size: 18px;
+      border-radius: 0; }
+      footer.pageFooterWrapper .HealthUnlocked .healthUnlockedLink:hover {
+        background-color: #44226a; }
+  footer.pageFooterWrapper .pageFooter {
+    max-width: 1140px; }
+  footer.pageFooterWrapper .FooterMenu, footer.pageFooterWrapper .FooterSocial {
+    width: 50%;
     padding-right: 15px;
     padding-left: 15px;
     margin-left: 0;
@@ -365,24 +505,24 @@ footer.pageFooterWrapper {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 20px; }
-    footer.pageFooterWrapper .footerBox2 h1, footer.pageFooterWrapper .footerBox3 h1, footer.pageFooterWrapper .footerBox4 h1 {
+    footer.pageFooterWrapper .FooterMenu h1, footer.pageFooterWrapper .FooterSocial h1 {
       text-align: left;
       color: #fff;
       font-family: "league-gothic", sans-serif;
       letter-spacing: 1px;
       text-transform: uppercase;
       font-size: 20px; }
-    footer.pageFooterWrapper .footerBox2 p, footer.pageFooterWrapper .footerBox3 p, footer.pageFooterWrapper .footerBox4 p {
+    footer.pageFooterWrapper .FooterMenu p, footer.pageFooterWrapper .FooterSocial p {
       font-family: 'Arial', sans-serif;
       font-size: 16px;
       letter-spacing: 0;
       text-transform: none; }
-    footer.pageFooterWrapper .footerBox2 ul, footer.pageFooterWrapper .footerBox3 ul, footer.pageFooterWrapper .footerBox4 ul {
+    footer.pageFooterWrapper .FooterMenu ul, footer.pageFooterWrapper .FooterSocial ul {
       margin-top: 0;
       margin-bottom: 0; }
-      footer.pageFooterWrapper .footerBox2 ul li, footer.pageFooterWrapper .footerBox3 ul li, footer.pageFooterWrapper .footerBox4 ul li {
+      footer.pageFooterWrapper .FooterMenu ul li, footer.pageFooterWrapper .FooterSocial ul li {
         margin-bottom: 10px; }
-  footer.pageFooterWrapper .footerBox3 ul li i {
+  footer.pageFooterWrapper .FooterSocial ul li i {
     border-radius: 50px;
     color: #fff;
     width: 36px;
@@ -391,45 +531,22 @@ footer.pageFooterWrapper {
     line-height: 36px;
     vertical-align: middle;
     margin-right: 5px; }
-  footer.pageFooterWrapper .footerBox3 ul li.fbook a i {
+  footer.pageFooterWrapper .FooterSocial ul li.fbook a i {
     background-color: #01afd4; }
-  footer.pageFooterWrapper .footerBox3 ul li.helpline a i {
+  footer.pageFooterWrapper .FooterSocial ul li.helpline a i {
     background-color: #50287d; }
-  footer.pageFooterWrapper .footerBox3 ul li.phone a i {
+  footer.pageFooterWrapper .FooterSocial ul li.phone a i {
     background-color: #f7df35; }
-  footer.pageFooterWrapper .footerBox3 ul li a {
+  footer.pageFooterWrapper .FooterSocial ul li.twitter:before {
+    content: ''; }
+  footer.pageFooterWrapper .FooterSocial ul li.twitter a i {
+    background-color: #55acee; }
+  footer.pageFooterWrapper .FooterSocial ul li.instagram a i {
+    background-color: #e6007e; }
+  footer.pageFooterWrapper .FooterSocial ul li a {
     color: #fff; }
-    footer.pageFooterWrapper .footerBox3 ul li a:hover {
+    footer.pageFooterWrapper .FooterSocial ul li a:hover {
       text-decoration: none; }
-  footer.pageFooterWrapper .footerBox3 ul li:last-child {
-    font-family: 'Arial', sans-serif;
-    letter-spacing: 0;
-    text-transform: none;
-    font-size: 16px;
-    margin-top: 15px; }
-  footer.pageFooterWrapper .footerBox4 {
-    margin-right: 0;
-    text-align: left; }
-    footer.pageFooterWrapper .footerBox4 h1 {
-      font-style: normal; }
-    footer.pageFooterWrapper .footerBox4 .formQuestion {
-      margin-top: 0;
-      margin-bottom: 8px; }
-      footer.pageFooterWrapper .footerBox4 .formQuestion label {
-        font-family: 'Arial', sans-serif;
-        font-size: 16px;
-        letter-spacing: 0;
-        text-transform: none; }
-      footer.pageFooterWrapper .footerBox4 .formQuestion input {
-        margin-top: 0; }
-    footer.pageFooterWrapper .footerBox4 button.groupSignUpBtn {
-      background-color: #50287d;
-      font-family: "league-gothic", sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 20px;
-      display: block;
-      float: right; }
   footer.pageFooterWrapper .Footercredits {
     width: 100%;
     margin: 0 auto;
@@ -535,6 +652,9 @@ footer.pageFooterWrapper {
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 15px; }
+  footer.pageFooterWrapper .NewsletterSign-up .formQuestion {
+    width: 100%;
+    margin-bottom: 5px; }
 
   .homeIntroWrapper .homeIntro {
     padding-bottom: 0;
