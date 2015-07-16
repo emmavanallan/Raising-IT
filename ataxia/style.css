@@ -112,7 +112,11 @@ section.carousel {
   section.carousel li.carouselSlide a.carouselSlideTitle {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 450px; }
+    background-position: top center;
+    height: 450px;
+    display: block; }
+    section.carousel li.carouselSlide a.carouselSlideTitle img {
+      display: none; }
   section.carousel .carouselDetailWrapper {
     background-image: url("http://ataxia16to30.ritdns.co.uk/Handlers/GetImage.ashx?IDMF=b7d07c1d-51cc-405e-8054-31089470f42f&w=160&h=120");
     background-size: cover;
@@ -161,8 +165,47 @@ header.headerWrapper {
     margin-top: 0; }
     .pageWrapper aside.postAside .associated ul li {
       margin-top: 0; }
-      .pageWrapper aside.postAside .associated ul li h3 a:hover {
-        text-decoration: none; }
+      .pageWrapper aside.postAside .associated ul li h3 {
+        padding-left: 15px;
+        padding-right: 15px; }
+        .pageWrapper aside.postAside .associated ul li h3 a:hover {
+          text-decoration: none; }
+  .pageWrapper aside.postAside .eventDetails {
+    padding: 15px;
+    border: 1px solid #ededed; }
+    .pageWrapper aside.postAside .eventDetails h2, .pageWrapper aside.postAside .eventDetails h3 {
+      color: #50287d;
+      font-family: "league-gothic", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-style: normal;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 15px; }
+    .pageWrapper aside.postAside .eventDetails h2 {
+      font-size: 36px;
+      border-bottom: 1px solid #ededed;
+      margin-bottom: 30px; }
+    .pageWrapper aside.postAside .eventDetails h3 {
+      font-size: 24px; }
+    .pageWrapper aside.postAside .eventDetails .eventWhereWrapper, .pageWrapper aside.postAside .eventDetails .eventWhenWrapper {
+      text-align: center; }
+      .pageWrapper aside.postAside .eventDetails .eventWhereWrapper p, .pageWrapper aside.postAside .eventDetails .eventWhereWrapper h3, .pageWrapper aside.postAside .eventDetails .eventWhenWrapper p, .pageWrapper aside.postAside .eventDetails .eventWhenWrapper h3 {
+        text-align: left; }
+      .pageWrapper aside.postAside .eventDetails .eventWhereWrapper p, .pageWrapper aside.postAside .eventDetails .eventWhenWrapper p {
+        margin-top: 0; }
+    .pageWrapper aside.postAside .eventDetails a.button, .pageWrapper aside.postAside .eventDetails a.addToCalender {
+      font-size: 18px;
+      font-family: "league-gothic", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 0;
+      padding: 5px 10px;
+      background-color: #50287d;
+      color: #fff; }
+      .pageWrapper aside.postAside .eventDetails a.button:hover, .pageWrapper aside.postAside .eventDetails a.addToCalender:hover {
+        text-decoration: none;
+        background-color: #44226a; }
   .pageWrapper.newsListingPage .associatedMostRead, .pageWrapper.newsPostPage .associatedMostRead {
     display: none; }
   .pageWrapper.blogListingPage aside.blogDetails {
@@ -200,8 +243,131 @@ header.headerWrapper {
       padding: 15px; }
       .pageWrapper.faqListingPage article .accordianBody footer {
         display: none; }
+  .pageWrapper .pageContent table, .pageWrapper .postContent table {
+    border: 1px solid #ededed; }
+    .pageWrapper .pageContent table thead, .pageWrapper .postContent table thead {
+      background-color: transparent;
+      font-family: "league-gothic", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #50287d;
+      border-top: 1px solid #ededed;
+      border-bottom: 1px solid #ededed;
+      text-align: left; }
+    .pageWrapper .pageContent table tbody, .pageWrapper .postContent table tbody {
+      background-color: transparent; }
+      .pageWrapper .pageContent table tbody td, .pageWrapper .postContent table tbody td {
+        padding: 10px 0; }
+  .pageWrapper .eventContent .ticketsWrapper, .pageWrapper .eventContent .extrasWrapper, .pageWrapper .eventContent .eventSecondStepWrapper, .pageWrapper .eventContent .eventThirdStepWrapper {
+    background-color: #fff;
+    border: 1px solid #ededed;
+    padding: 15px; }
+    .pageWrapper .eventContent .ticketsWrapper h2, .pageWrapper .eventContent .ticketsWrapper legend, .pageWrapper .eventContent .extrasWrapper h2, .pageWrapper .eventContent .extrasWrapper legend, .pageWrapper .eventContent .eventSecondStepWrapper h2, .pageWrapper .eventContent .eventSecondStepWrapper legend, .pageWrapper .eventContent .eventThirdStepWrapper h2, .pageWrapper .eventContent .eventThirdStepWrapper legend {
+      font-family: "league-gothic", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #50287d;
+      font-style: normal;
+      margin-top: 0;
+      margin-bottom: 15px; }
+    .pageWrapper .eventContent .ticketsWrapper table, .pageWrapper .eventContent .extrasWrapper table, .pageWrapper .eventContent .eventSecondStepWrapper table, .pageWrapper .eventContent .eventThirdStepWrapper table {
+      margin-top: 0;
+      border: 0; }
+      .pageWrapper .eventContent .ticketsWrapper table thead, .pageWrapper .eventContent .extrasWrapper table thead, .pageWrapper .eventContent .eventSecondStepWrapper table thead, .pageWrapper .eventContent .eventThirdStepWrapper table thead {
+        background-color: transparent;
+        font-family: "league-gothic", sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #50287d;
+        border-top: 1px solid #ededed;
+        border-bottom: 1px solid #ededed; }
+      .pageWrapper .eventContent .ticketsWrapper table tbody, .pageWrapper .eventContent .extrasWrapper table tbody, .pageWrapper .eventContent .eventSecondStepWrapper table tbody, .pageWrapper .eventContent .eventThirdStepWrapper table tbody {
+        background-color: transparent; }
+        .pageWrapper .eventContent .ticketsWrapper table tbody td, .pageWrapper .eventContent .extrasWrapper table tbody td, .pageWrapper .eventContent .eventSecondStepWrapper table tbody td, .pageWrapper .eventContent .eventThirdStepWrapper table tbody td {
+          padding: 10px 0; }
+        .pageWrapper .eventContent .ticketsWrapper table tbody h3, .pageWrapper .eventContent .extrasWrapper table tbody h3, .pageWrapper .eventContent .eventSecondStepWrapper table tbody h3, .pageWrapper .eventContent .eventThirdStepWrapper table tbody h3 {
+          margin-top: 0; }
+        .pageWrapper .eventContent .ticketsWrapper table tbody a, .pageWrapper .eventContent .extrasWrapper table tbody a, .pageWrapper .eventContent .eventSecondStepWrapper table tbody a, .pageWrapper .eventContent .eventThirdStepWrapper table tbody a {
+          text-decoration: none;
+          background-color: rgba(80, 40, 125, 0.7);
+          color: #fff;
+          vertical-align: middle; }
+          .pageWrapper .eventContent .ticketsWrapper table tbody a:hover, .pageWrapper .eventContent .extrasWrapper table tbody a:hover, .pageWrapper .eventContent .eventSecondStepWrapper table tbody a:hover, .pageWrapper .eventContent .eventThirdStepWrapper table tbody a:hover {
+            background-color: #50287d; }
+        .pageWrapper .eventContent .ticketsWrapper table tbody input, .pageWrapper .eventContent .extrasWrapper table tbody input, .pageWrapper .eventContent .eventSecondStepWrapper table tbody input, .pageWrapper .eventContent .eventThirdStepWrapper table tbody input {
+          margin-top: 0; }
+    .pageWrapper .eventContent .ticketsWrapper .formButtons, .pageWrapper .eventContent .extrasWrapper .formButtons, .pageWrapper .eventContent .eventSecondStepWrapper .formButtons, .pageWrapper .eventContent .eventThirdStepWrapper .formButtons {
+      text-align: center; }
+    .pageWrapper .eventContent .ticketsWrapper button, .pageWrapper .eventContent .extrasWrapper button, .pageWrapper .eventContent .eventSecondStepWrapper button, .pageWrapper .eventContent .eventThirdStepWrapper button {
+      font-family: "league-gothic", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 0;
+      font-size: 24px;
+      text-decoration: none;
+      padding: 5px 10px; }
+  .pageWrapper .eventContent .extrasWrapper, .pageWrapper .eventContent .eventSecondStepWrapper {
+    border-bottom: 0; }
+  .pageWrapper .eventContent .eventBooking {
+    text-align: center; }
+    .pageWrapper .eventContent .eventBooking a {
+      font-family: "league-gothic", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-radius: 0;
+      font-size: 24px;
+      text-decoration: none;
+      padding: 5px 10px; }
+  .pageWrapper .eventContent .postFooter p {
+    display: none; }
   .pageWrapper .postFooterWrapper .shareWrapper strong {
     margin-bottom: 0; }
+
+.paymentPage {
+  padding: 15px;
+  background-color: transparent;
+  border: 1px solid #ededed; }
+  .paymentPage .formWrapper {
+    padding: 0;
+    margin: 0; }
+  .paymentPage table {
+    margin-top: 0; }
+    .paymentPage table thead {
+      background-color: transparent;
+      font-family: "league-gothic", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #50287d;
+      border-top: 1px solid #ededed;
+      border-bottom: 1px solid #ededed; }
+    .paymentPage table tbody {
+      background-color: #fff; }
+  .paymentPage legend, .paymentPage h2 {
+    font-family: "league-gothic", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #50287d;
+    font-style: normal;
+    margin-top: 0; }
+  .paymentPage .basketAdditional {
+    border-top: 1px solid #ededed;
+    margin-top: 45px;
+    padding-top: 15px; }
+    .paymentPage .basketAdditional .formQuestion {
+      min-height: 50px;
+      margin-top: 0;
+      margin-bottom: 0; }
+      .paymentPage .basketAdditional .formQuestion button, .paymentPage .basketAdditional .formQuestion input {
+        margin-top: 0; }
+    .paymentPage .basketAdditional h3, .paymentPage .basketAdditional h2, .paymentPage .basketAdditional label {
+      font-family: "league-gothic", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #50287d;
+      font-style: normal;
+      margin-top: 0;
+      font-size: 24px;
+      font-weight: 400; }
 
 .contentContainer {
   background-color: #ededed; }
@@ -401,10 +567,6 @@ footer.pageFooterWrapper {
     footer.pageFooterWrapper .footerBox2 a, footer.pageFooterWrapper .NewsletterSign-up a {
       color: #01afd4;
       text-decoration: underline; }
-      footer.pageFooterWrapper .footerBox2 a img, footer.pageFooterWrapper .NewsletterSign-up a img {
-        width: 160px;
-        height: auto;
-        margin-right: 15px; }
       footer.pageFooterWrapper .footerBox2 a:hover, footer.pageFooterWrapper .NewsletterSign-up a:hover {
         text-decoration: none; }
   footer.pageFooterWrapper .newsletter-container {
@@ -471,8 +633,7 @@ footer.pageFooterWrapper {
     font-size: 16px;
     margin-bottom: 15px;
     border-bottom: 1px solid #ededed;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding: 15px;
     background-color: #50287d;
     color: #fff;
     border-bottom: 0; }
@@ -480,7 +641,7 @@ footer.pageFooterWrapper {
       background-color: transparent;
       border: 1px solid #6934a4;
       color: #fff;
-      margin-right: 15px;
+      margin-left: 5px;
       text-decoration: none;
       font-family: "league-gothic", sans-serif;
       text-transform: uppercase;
@@ -564,12 +725,25 @@ footer.pageFooterWrapper {
   margin: 0; }
 
 @media only screen and (max-width: 1000px) {
-  .homepage section.carousel .carouselDetailWrapper {
+  section.carousel .carouselDetailWrapper {
     width: 100%;
     background-image: none;
     background-color: #50287d; }
-    .homepage section.carousel .carouselDetailWrapper .carouselSlideDetail {
-      text-align: center; } }
+    section.carousel .carouselDetailWrapper .carouselSlideDetail {
+      text-align: center;
+      margin: 15px 15px 0 15px; }
+  section.carousel .carouselButtons li.activeSlide {
+    background-color: transparent; }
+
+  .pageWrapper {
+    padding-bottom: 60px; }
+    .pageWrapper .contentBlockWrapper {
+      padding: 15px;
+      margin-top: 0; }
+    .pageWrapper .headerText {
+      padding: 15px 15px 0 15px; }
+      .pageWrapper .headerText h1 {
+        font-size: 48px; } }
 @media only screen and (max-width: 992px) {
   nav#menuMain.menuMain ul li a {
     font-size: 18px; }
@@ -618,21 +792,34 @@ footer.pageFooterWrapper {
       display: none; }
     nav#menuMain.menuMain li.mobile-social {
       display: none; }
+    nav#menuMain.menuMain ul li a {
+      font-size: 24px; }
+    nav#menuMain.menuMain ul li ul {
+      border-top-color: transparent;
+      padding-top: 0;
+      margin-right: 0;
+      margin-top: 0;
+      margin-left: 0; }
+      nav#menuMain.menuMain ul li ul li a {
+        border-bottom: 1px solid #fff;
+        color: #666;
+        font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px; }
 
   .content.headerContent .mainCallToAction {
     display: block;
-    margin: 45px 15px 0 15px; }
+    margin: 15px 15px 0 15px; }
     .content.headerContent .mainCallToAction ul.socialIcons li {
-      margin: 5px 5px 5px 0;
+      margin: 5px 8px 5px 0;
       width: auto;
       text-align: center; }
 
-  .homepage section.carousel li.carouselSlide a.carouselSlideTitle {
+  section.carousel li.carouselSlide a.carouselSlideTitle {
     height: 250px; }
-  .homepage section.carousel .carouselDetailWrapper {
-    padding-bottom: 0; }
-    .homepage section.carousel .carouselDetailWrapper .carouselSlideDetail {
-      margin: 15px; }
+  section.carousel .carouselDetailWrapper .carouselSlideDetail {
+    margin: 15px;
+    padding: 0; }
 
   .homeFeaturesWrapper .homeFeatures {
     padding-left: 15px;
@@ -667,19 +854,28 @@ footer.pageFooterWrapper {
       padding-bottom: 15px;
       padding-top: 15px; }
       .homeIntroWrapper .homeIntro ul li:last-child {
-        border-bottom: 0; } }
-.pageContent a {
-  text-decoration: underline; }
-  .pageContent a:hover {
-    text-decoration: none; }
-.pageContent footer.postFooterWrapper a {
-  text-decoration: none; }
+        border-bottom: 0; }
 
-aside h2, aside h3 {
-  margin-left: 20px;
-  margin-right: 20px; }
+  footer.postFooterWrapper .shareWrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center; }
+    footer.postFooterWrapper .shareWrapper strong {
+      margin-right: 0;
+      margin-bottom: 10px; }
 
+  aside h2, aside h3 {
+    margin-left: 20px;
+    margin-right: 20px; }
+
+  .listedPost {
+    margin-bottom: 15px; } }
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .healthUnlockedLink {
+    margin-top: 5px; } }
 /* Custom, iPhone Retina */
 
 /*# sourceMappingURL=style.css.map */

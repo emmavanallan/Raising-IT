@@ -162,7 +162,12 @@ section.carousel{
 		a.carouselSlideTitle{
 			background-size: cover;
 			background-repeat: no-repeat;
+			background-position: top center;
 			height: 450px;
+			display: block;
+			img{
+				display: none;
+			}
 		}
 	}
 	.carouselDetailWrapper{
@@ -211,7 +216,7 @@ header.headerWrapper{
 
 // content
 
-.pageWrapper, {
+.pageWrapper{
 	background-color: #ededed;
 	padding-bottom: 120px;
 	.contentBlockWrapper, .headerText{
@@ -242,11 +247,61 @@ header.headerWrapper{
 				margin-top: 0;
 				li{
 					margin-top: 0;
-					h3 a:hover{
-						text-decoration: none;
+					h3{
+						padding-left: 15px;
+						padding-right: 15px;
+						a:hover{
+							text-decoration: none;
+						}
 					}
 				}
 			}
+		}
+		.eventDetails{
+			padding: 15px;
+			border: 1px solid #ededed;
+			h2, h3{
+				color: $purple;
+				font-family: $main-font;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				font-style: normal;
+				margin-left: 0;
+				margin-right: 0;
+				margin-bottom: 15px;
+			}
+			h2{
+				font-size: 36px;
+				border-bottom: 1px solid #ededed;
+				margin-bottom: 30px;
+			}
+			h3{
+				font-size: 24px;
+			}
+			.eventWhereWrapper, .eventWhenWrapper{
+				text-align: center;
+				p, h3{
+					text-align: left;
+				}
+				p{
+					margin-top: 0;
+				}
+			}
+			a.button, a.addToCalender{
+				font-size: 18px;
+				font-family: $main-font;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				border-radius: 0;
+				padding: 5px 10px;
+				background-color: $purple;
+				color: #fff;
+				&:hover{
+					text-decoration: none;
+					background-color: darken($purple,5%);
+				}
+			}
+
 		}
 	}
 
@@ -313,6 +368,110 @@ header.headerWrapper{
 			}
 		}
 	}
+
+	.pageContent,.postContent{
+		table{
+			border: 1px solid #ededed;
+			thead{
+				background-color: transparent;
+				font-family: $main-font;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: $purple;
+				border-top: 1px solid #ededed;
+				border-bottom: 1px solid #ededed;
+				text-align: left;
+			}
+			tbody{
+				background-color: transparent;
+				td{
+					padding: 10px 0;
+				}
+			}
+		}
+	}
+
+	.eventContent{
+		.ticketsWrapper, .extrasWrapper, .eventSecondStepWrapper, .eventThirdStepWrapper{
+			background-color: #fff;
+			border: 1px solid #ededed;
+			padding: 15px;
+			h2, legend{
+				font-family: $main-font;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: $purple;
+				font-style: normal;
+				margin-top: 0;
+				margin-bottom: 15px;
+			}
+			table{
+				margin-top: 0;
+				border: 0;
+				thead{
+					background-color: transparent;
+					font-family: $main-font;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					color: $purple;
+					border-top: 1px solid #ededed;
+					border-bottom: 1px solid #ededed;
+				}
+				tbody{
+					background-color: transparent;
+					td{
+						padding: 10px 0;
+					}
+					h3{
+						margin-top: 0;
+					}
+					a{
+						text-decoration: none;
+						background-color: rgba($purple,0.7);
+						color: #fff;
+						vertical-align: middle;
+						&:hover{
+							background-color: rgba($purple,1);
+						}
+					}
+					input{
+						margin-top: 0;
+					}
+				}
+			}
+			.formButtons{
+				text-align: center;
+			}
+			button{
+				font-family: $main-font;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				border-radius: 0;
+				font-size: 24px;
+				text-decoration: none;
+				padding: 5px 10px;
+			}
+		}
+		.extrasWrapper, .eventSecondStepWrapper{
+			border-bottom: 0;
+		}
+		.eventBooking{
+			text-align: center;
+			a{
+				font-family: $main-font;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				border-radius: 0;
+				font-size: 24px;
+				text-decoration: none;
+				padding: 5px 10px;
+			}
+		}
+		.postFooter p{
+			display: none;
+		}
+	}
+
 	.postFooterWrapper{
 		.shareWrapper{
 			strong{
@@ -321,6 +480,62 @@ header.headerWrapper{
 		}
 	}
 
+}
+
+.paymentPage{
+	padding: 15px;
+	background-color: transparent;
+	border: 1px solid #ededed;
+	.formWrapper{
+		padding: 0;
+		margin: 0;
+	}
+	table{
+		margin-top: 0;
+		thead{
+			background-color: transparent;
+			font-family: $main-font;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: $purple;
+			border-top: 1px solid #ededed;
+			border-bottom: 1px solid #ededed;
+		}
+		tbody{
+			background-color: #fff;
+		}
+	}
+	legend, h2{
+		font-family: $main-font;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: $purple;
+		font-style: normal;
+		margin-top: 0;
+	}
+	.basketAdditional{
+		border-top: 1px solid #ededed;
+		margin-top: 45px;
+		padding-top: 15px;
+		.formQuestion{
+			min-height: 50px;
+			margin-top: 0;
+			margin-bottom: 0;
+			button, input{
+				margin-top: 0;
+			}
+		}
+		h3, h2, label{
+			font-family: $main-font;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: $purple;
+			font-style: normal;
+			margin-top: 0;
+			font-size: 24px;
+			font-weight: 400;
+		}
+	}
 }
 
 .contentContainer{
@@ -584,11 +799,6 @@ footer.pageFooterWrapper{
 		a{
 			color: $blue;
 			text-decoration: underline;
-			img{
-				width: 160px;
-				height: auto;
-				margin-right: 15px;
-			}
 			&:hover{
 				text-decoration: none;
 			}
@@ -669,8 +879,7 @@ footer.pageFooterWrapper{
 		font-size: 16px;
 		margin-bottom: 15px;
 		border-bottom: 1px solid #ededed;
-		padding-bottom: 15px;
-		padding-top: 15px;
+		padding: 15px;
 		background-color: $purple;
 		color: #fff;
 		border-bottom: 0;
@@ -678,7 +887,7 @@ footer.pageFooterWrapper{
 			background-color: transparent;
 			border: 1px solid lighten($purple, 10%);
 			color: #fff;
-			margin-right: 15px;
+			margin-left: 5px;
 			text-decoration: none;
 			font-family: $main-font;
 			text-transform: uppercase;
@@ -832,12 +1041,34 @@ footer.pageFooterWrapper{
 
 // Media queries
 @media only screen and (max-width : 1000px) {
-	.homepage section.carousel .carouselDetailWrapper{
-		width: 100%;
-		background-image: none;
-		background-color: $purple;
-		.carouselSlideDetail{
-			text-align: center;
+	section.carousel{
+		.carouselDetailWrapper{
+			width: 100%;
+			background-image: none;
+			background-color: $purple;
+			.carouselSlideDetail{
+				text-align: center;
+				margin: 15px 15px 0 15px;
+			}
+		}
+		.carouselButtons{
+			li.activeSlide{
+				background-color: transparent;
+			}
+		}
+	} 
+	.pageWrapper, {
+		padding-bottom: 60px;
+		.contentBlockWrapper{
+			padding: 15px;
+			margin-top: 0;
+		}
+
+		.headerText{
+			padding: 15px 15px 0 15px;
+			h1{
+				font-size: 48px;
+			}
 		}
 	}
 }
@@ -905,28 +1136,49 @@ footer.pageFooterWrapper{
 		li.mobile-social{
 			display: none;
 		}
+		ul li{
+			a{
+				font-size: 24px;
+			}
+			ul{
+				border-top-color: transparent;
+				padding-top: 0;
+				margin-right: 0;
+				margin-top: 0;
+				margin-left: 0;
+				li{
+					a{
+						border-bottom: 1px solid #fff;
+						color: #666;
+						font-size: 20px;
+						padding-top: 10px;
+						padding-bottom: 10px;
+					}
+				}
+			}
+		}
 	}
 
 	.content.headerContent .mainCallToAction{
 		display: block;
-		margin: 45px 15px 0 15px;
+		margin: 15px 15px 0 15px;
 		ul.socialIcons{
 			li{
-				margin: 5px 5px 5px 0;
+				margin: 5px 8px 5px 0;
 				width: auto;
 				text-align: center;
 			}
 		}
 	}
 
-	.homepage section.carousel{
+	section.carousel{
 		li.carouselSlide a.carouselSlideTitle{
 			height: 250px;
 		}
 		.carouselDetailWrapper{
-			padding-bottom: 0;
 			.carouselSlideDetail{
 				margin: 15px;
+				padding: 0;
 			}
 		}
 	}
@@ -973,36 +1225,40 @@ footer.pageFooterWrapper{
 			}
 		}
 	}
-}
 
-
-// content
-.pageContent{
-	a{
-		text-decoration: underline;
-		&:hover{
-			text-decoration: none;
-		}
-	}
 	footer.postFooterWrapper{
-		a{
-			text-decoration: none;
+		.shareWrapper{
+			padding-top: 15px;
+			padding-bottom: 15px;
+			margin-bottom: 30px;
+			margin-top: 30px;
+			text-align: center;
+			strong{
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
 		}
 	}
-}
 
-//aside
-aside{
-	h2, h3{
-		margin-left: 20px;
-		margin-right: 20px;
+	//aside
+	aside{
+		h2, h3{
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	}
+
+	.listedPost{
+		margin-bottom: 15px;
 	}
 }
 
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-
+	.healthUnlockedLink{
+		margin-top: 5px;
+	}
 }
 
 /* Custom, iPhone Retina */ 
