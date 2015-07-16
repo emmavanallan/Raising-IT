@@ -5,6 +5,4 @@
 
 *.scssc
 
-*.scssc
-
-*/.sass-cache/*
+*/.sass-cache/
