@@ -1,0 +1,28 @@
+//carousel
+section.carousel{
+	li.carouselSlide{
+		a.carouselSlideTitle{
+			img{
+			}
+		}
+	}
+	.carouselDetailWrapper{
+		.carouselSlideDetail{
+			h2.carouselSlideHeading{
+			}
+		}
+	}
+	.carouselButtons{
+		li.activeSlide{
+		}
+		li{
+			a.button.carouselButton{
+				&:hover{
+				}
+			}
+		}
+	}
+}
+
+.homepage section.carousel{
+}

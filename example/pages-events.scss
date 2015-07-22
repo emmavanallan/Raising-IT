@@ -1,0 +1,43 @@
+aside{
+	.eventDetails{
+		.eventWhereWrapper, .eventWhenWrapper{
+
+		}
+		a.button, a.addToCalender{
+			&:hover{
+			}
+		}
+	}
+}
+
+.eventContent{
+	.ticketsWrapper, .extrasWrapper, .eventSecondStepWrapper, .eventThirdStepWrapper{
+		table{
+			
+			thead{
+				
+			}
+			tbody{
+				td{
+				}
+				h3{
+				}
+				a{
+					&:hover{
+					}
+				}
+				input{
+				}
+			}
+		}
+		.formButtons{
+		}
+		button{
+
+		}
+	}
+	.extrasWrapper, .eventSecondStepWrapper{
+	}
+	.eventBooking{
+	}
+}

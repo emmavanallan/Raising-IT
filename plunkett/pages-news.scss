@@ -1,0 +1,265 @@
+.pageWrapper{
+	background-color: #ededed;
+	padding-bottom: 120px;
+	.contentBlockWrapper, .headerText{
+		background-color: #fff;
+	}
+	.contentBlockWrapper{
+		padding: 20px 60px 60px 60px;
+		margin-top: 0;
+	}
+
+	.headerText{
+		padding: 60px 60px 0 60px;
+		nav ol{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		h1, p{
+			margin-bottom: 0;
+		}
+		h1{
+			font-size: 54px;
+		}
+	}
+
+	aside.postAside{
+		.associated{
+			ul{
+				margin-top: 0;
+				li{
+					margin-top: 0;
+					h3{
+						padding-left: 15px;
+						padding-right: 15px;
+						a:hover{
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+		.eventDetails{
+			padding: 15px;
+			border: 1px solid #ededed;
+			h2, h3{
+				color: $purple;
+				font-family: $main-font;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				font-style: normal;
+				margin-left: 0;
+				margin-right: 0;
+				margin-bottom: 15px;
+			}
+			h2{
+				font-size: 36px;
+				border-bottom: 1px solid #ededed;
+				margin-bottom: 30px;
+			}
+			h3{
+				font-size: 24px;
+			}
+			.eventWhereWrapper, .eventWhenWrapper{
+				text-align: center;
+				p, h3{
+					text-align: left;
+				}
+				p{
+					margin-top: 0;
+				}
+			}
+			a.button, a.addToCalender{
+				font-size: 18px;
+				font-family: $main-font;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				border-radius: 0;
+				padding: 5px 10px;
+				background-color: $purple;
+				color: #fff;
+				&:hover{
+					text-decoration: none;
+					background-color: darken($purple,5%);
+				}
+			}
+
+		}
+	}
+
+	&.newsListingPage, &.newsPostPage{
+		.associatedMostRead{
+			display: none;
+		}
+	}
+
+	&.blogListingPage{
+		aside.blogDetails{
+			display: none;
+		}
+	}
+	
+	&.blogPostPage{
+		aside.blogDetails{
+			display: none;
+			margin-bottom: 0;
+			min-height: 90px;
+			text-align: right;
+		}
+		.associatedMostRead{
+			display: none;
+		}
+	}
+
+	.listing .contentBlockWrapper{
+		max-width: 1140px;
+		.listContent{
+			.listedPost{
+				border-radius: 0;
+				img{
+					border-top-left-radius: 0;
+					border-top-right-radius: 0;
+				}
+				h2{
+					margin-top: 24px;
+					margin-bottom: 15px;
+					a:hover{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+	&.faqListingPage{
+		article{
+			background-color: #fff;
+			border-bottom: 1px solid #fff;
+			border-left: 1px solid #ededed;
+			border-right: 1px solid #ededed;
+			padding: 0;
+			header{
+				margin-top: 0;
+				background-color: #ededed;
+				padding: 15px;
+			}
+			.accordianBody{
+				padding: 15px;
+				footer{
+					display: none;
+				}
+			}
+		}
+	}
+
+	.pageContent,.postContent{
+		table{
+			border: 1px solid #ededed;
+			thead{
+				background-color: transparent;
+				font-family: $main-font;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: $purple;
+				border-top: 1px solid #ededed;
+				border-bottom: 1px solid #ededed;
+				text-align: left;
+			}
+			tbody{
+				background-color: transparent;
+				td{
+					padding: 10px 0;
+				}
+			}
+		}
+	}
+
+	.eventContent{
+		.ticketsWrapper, .extrasWrapper, .eventSecondStepWrapper, .eventThirdStepWrapper{
+			background-color: #fff;
+			border: 1px solid #ededed;
+			padding: 15px;
+			h2, legend{
+				font-family: $main-font;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: $purple;
+				font-style: normal;
+				margin-top: 0;
+				margin-bottom: 15px;
+			}
+			table{
+				margin-top: 0;
+				border: 0;
+				thead{
+					background-color: transparent;
+					font-family: $main-font;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					color: $purple;
+					border-top: 1px solid #ededed;
+					border-bottom: 1px solid #ededed;
+				}
+				tbody{
+					background-color: transparent;
+					td{
+						padding: 10px 0;
+					}
+					h3{
+						margin-top: 0;
+					}
+					a{
+						text-decoration: none;
+						background-color: rgba($purple,0.7);
+						color: #fff;
+						vertical-align: middle;
+						&:hover{
+							background-color: rgba($purple,1);
+						}
+					}
+					input{
+						margin-top: 0;
+					}
+				}
+			}
+			.formButtons{
+				text-align: center;
+			}
+			button{
+				font-family: $main-font;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				border-radius: 0;
+				font-size: 24px;
+				text-decoration: none;
+				padding: 5px 10px;
+			}
+		}
+		.extrasWrapper, .eventSecondStepWrapper{
+			border-bottom: 0;
+		}
+		.eventBooking{
+			text-align: center;
+			a{
+				font-family: $main-font;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				border-radius: 0;
+				font-size: 24px;
+				text-decoration: none;
+				padding: 5px 10px;
+			}
+		}
+		.postFooter p{
+			display: none;
+		}
+	}
+
+	.postFooterWrapper{
+		.shareWrapper{
+			strong{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+}
