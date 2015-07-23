@@ -1,12 +1,76 @@
 // feeds
 .homeFeedsWrapper{
-
+	.homeFeed{
+		width: 50%;
+		padding: 0 90px;
+		margin: 0;
+		h3{
+			background-color: $mushroom;
+			border-radius: 0;
+		}
+		ul.feedList{
+			padding: 0;
+			border-bottom-right-radius: 60px;
+			border-bottom-left-radius: 60px;
+			min-height: inherit;
+			li{
+				margin-top: 0;
+				img{
+					margin: 0 0 30px;
+					width: 100%;
+					height: auto;
+				}
+				h3{
+					padding: 0 30px;
+					background-color: transparent;
+					a{
+						color: $purple;
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+				}
+				p{
+					width: 100%;
+					padding: 0 30px;
+					font-family: Arial, sans-serif;
+					span.readMore{
+						display: block;
+						background-color: $purple;
+						color: #fff;
+						padding: 10px 15px;
+						width: 120px;
+						text-align: center;
+						font-size: 14px;
+						margin: 15px auto 30px auto;
+						&:hover{
+							background-color: darken($purple, 5%);
+						}
+					}
+				}
+			}
+		}
+		@media only screen and (max-width : 1000px) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		@media only screen and (max-width : 768px) {
+			clear: none;
+			float: left;
+		}
+		@media only screen and (max-width : 480px) {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+			margin-bottom: 15px;
+		}
+	}
 	//Latest blog
 	.homeFeedblogs{
 
 	}
 
 	//Latest news
-	.homeFeednews, .homeFeedevents{
+	.homeFeedevents{
 	}
 }

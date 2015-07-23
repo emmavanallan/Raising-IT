@@ -1,9 +1,20 @@
 @import 'homepage-feeds';
 @import 'homepage-features';
 
+.homepage{
+	font-family: $main-font;
+}
+
 // strapline
 .homeIntroWrapper{
 	.homeIntro{
-		
+		color: $mushroom;
+		font-size: 48px;
+		margin: 30px auto 15px auto;
+		padding: 0;
+		font-family: $main-font;
+		@media only screen and (max-width : 768px) {
+			font-size: 36px;
+		}
 	}
 }
