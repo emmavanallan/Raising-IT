@@ -9,6 +9,10 @@
 				padding: 15px;
 			}
 			@media only screen and (max-width : 768px) {
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+			@media only screen and (max-width : 480px) {
 				width: 100%;
 				padding-left: 0;
 				padding-right: 0;
@@ -43,7 +47,7 @@
 				.homeFeatureDetailsWrapper{
 					background-color: rgba($yellow, 0.85);
 					h2:after{
-						content: '\f0c0';
+						content: '\f007';
 					}
 				}
 			}
@@ -121,10 +125,13 @@
 
 				}
 			}
+			@media only screen and (max-width : 1000px) {
+				.homeFeatureDetailsWrapper h2:after{
+					right: 50px;
+				}
+			}
 			@media only screen and (max-width : 768px) {
 				margin: 0;
-			}
-			@media only screen and (max-width : 480px) {
 				height: 200px;
 				.homeFeatureDetailsWrapper{
 					h2{

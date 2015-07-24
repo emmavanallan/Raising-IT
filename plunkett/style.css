@@ -1,26 +1,31 @@
 h1, h2, h3, h4, h5 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 700;
   font-style: normal; }
   h1.feedTitle, h2.feedTitle, h3.feedTitle, h4.feedTitle, h5.feedTitle {
     font-weight: 700; }
 
-button, #totaliserActions .buttonDonate, #totaliserActions .donateBtn, .appealActions .donateBtn:link, .appealActions .donateBtn:visited, .appealActions .donateBtn:active, button#btnSignIn, .groupSignUpBtn, a.button.donate {
+button, #totaliserActions .buttonDonate, #totaliserActions .donateBtn, .appealActions .donateBtn:link, .appealActions .donateBtn:visited, .appealActions .donateBtn:active, button#btnSignIn, .groupSignUpBtn, a.button.donate,
+.commentAddImage, .button, a.button:link, a.button:visited, a.button:active, #totaliserActions .buttonDonate, #totaliserActions .buttonFundraise, .listedFilters a.filter:link, .listedFilters a.filter:visited, .listedFilters a.filter:active, .searchListingPage .searchContainer button, .appliedFilters .filter, .associatedReadMore a, .associatedReadMore a:link, .associatedReadMore a:visited, .associatedReadMore a:active {
   border-radius: 0;
   background-color: #820551;
   color: #fff;
   font-size: 16px;
   padding: 6px 15px;
-  font-family: "Roboto", sans-serif; }
-  button:hover, #totaliserActions .buttonDonate:hover, #totaliserActions .donateBtn:hover, .appealActions .donateBtn:link:hover, .appealActions .donateBtn:visited:hover, .appealActions .donateBtn:active:hover, button#btnSignIn:hover, .groupSignUpBtn:hover, a.button.donate:hover {
+  font-family: "Noto Sans", sans-serif; }
+  button:hover, #totaliserActions .buttonDonate:hover, #totaliserActions .donateBtn:hover, .appealActions .donateBtn:link:hover, .appealActions .donateBtn:visited:hover, .appealActions .donateBtn:active:hover, button#btnSignIn:hover, .groupSignUpBtn:hover, a.button.donate:hover,
+  .commentAddImage:hover, .button:hover, a.button:link:hover, a.button:visited:hover, a.button:active:hover, #totaliserActions .buttonDonate:hover, #totaliserActions .buttonFundraise:hover, .listedFilters a.filter:link:hover, .listedFilters a.filter:visited:hover, .listedFilters a.filter:active:hover, .searchListingPage .searchContainer button:hover, .appliedFilters .filter:hover, .associatedReadMore a:hover, .associatedReadMore a:link:hover, .associatedReadMore a:visited:hover, .associatedReadMore a:active:hover {
     background-color: #690442; }
 
 header {
   position: relative;
   width: 100%;
-  max-width: 1180px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px; }
+  header.headerWrapper {
+    max-width: 100%;
+    padding: 0; }
 
 .content.headerContent {
   background-color: #fff;
@@ -36,7 +41,7 @@ header {
   .content.headerContent .mainCallToAction {
     margin: 0;
     position: absolute;
-    right: 300px;
+    right: 280px;
     top: 15px; }
     .content.headerContent .mainCallToAction ul.socialIcons {
       text-align: center; }
@@ -56,7 +61,7 @@ header {
   .content.headerContent .searchContainer {
     margin: 15px 0 0 0;
     position: absolute;
-    right: 400px; }
+    right: 380px; }
     .content.headerContent .searchContainer #siteSearch {
       background-color: #f0f0f0;
       color: #333;
@@ -79,7 +84,7 @@ header {
   height: auto; }
   .menuAdminContainer ul#menuAdmin {
     text-align: center;
-    padding: 0 15px 15px 15px; }
+    padding: 0 10px 10px 10px; }
     .menuAdminContainer ul#menuAdmin li {
       display: inline-block;
       padding: 15px 0 0 0; }
@@ -88,7 +93,7 @@ header {
         border-left: 1px solid white;
         padding: 0 10px;
         margin: 0;
-        font-size: 16px; }
+        font-size: 14px; }
       .menuAdminContainer ul#menuAdmin li:first-child a {
         border-left: 0; }
       .menuAdminContainer ul#menuAdmin li.menuAdminRegister {
@@ -102,11 +107,11 @@ footer.pageFooterWrapper {
   margin-top: 60px; }
   footer.pageFooterWrapper .newsletter-container {
     padding: 60px 0;
-    background-color: #f0f0f0;
+    background-color: #ededed;
     width: 100%; }
     footer.pageFooterWrapper .newsletter-container .NewsletterSign-up {
       width: 100%;
-      max-width: 1180px;
+      max-width: 1170px;
       padding: 0;
       margin: 0 auto;
       float: none; }
@@ -140,7 +145,7 @@ footer.pageFooterWrapper {
           footer.pageFooterWrapper .newsletter-container .NewsletterSign-up .formQuestion button {
             margin-top: 0; } }
   footer.pageFooterWrapper .pageFooter {
-    max-width: 1180px;
+    max-width: 1170px;
     border-top: 0;
     padding: 60px 15px;
     margin: 0 auto; }
@@ -239,7 +244,7 @@ nav#menuMain {
     width: auto;
     position: absolute;
     top: 0;
-    right: 15px;
+    right: 0;
     padding: 5px 10px;
     border: 1px solid #e5e5e5; }
     a.menuMainAlt:hover {
@@ -312,45 +317,106 @@ nav#menuMain {
               background-color: rgba(118, 96, 104, 0.2); } }
 section.carousel {
   padding: 0;
-  max-width: none; }
+  max-width: none;
+  height: 500px; }
+  section.carousel li.carouselSlide {
+    max-height: none; }
+    section.carousel li.carouselSlide a.carouselSlideTitle {
+      height: 500px;
+      display: block;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center; }
+      section.carousel li.carouselSlide a.carouselSlideTitle img {
+        display: none; }
+  section.carousel img {
+    border-radius: 0; }
+  @media only screen and (max-width: 1000px) {
+    section.carousel {
+      height: auto; }
+      section.carousel li.carouselSlide a.carouselSlideTitle {
+        height: 300px; } }
+  @media only screen and (max-width: 480px) {
+    section.carousel li.carouselSlide a.carouselSlideTitle {
+      height: 200px; } }
   section.carousel .carouselDetailWrapper {
     left: 0;
     right: 0;
     margin: 0 auto;
     width: 100%;
-    max-width: 1180px;
+    max-width: 1170px;
     padding: 0 15px;
     background-image: none; }
     @media only screen and (max-width: 1000px) {
       section.carousel .carouselDetailWrapper {
-        background-color: #820551; } }
+        background-color: #63a2bc; } }
     section.carousel .carouselDetailWrapper .carouselSlideDetail {
-      margin: 60px 0 0 0;
+      margin: 60px 0 0 80px;
       padding: 30px;
       width: 400px;
-      background-color: rgba(130, 5, 81, 0.85); }
+      background-color: rgba(99, 162, 188, 0.85); }
       section.carousel .carouselDetailWrapper .carouselSlideDetail h2.carouselSlideHeading, section.carousel .carouselDetailWrapper .carouselSlideDetail .carouselSlideSummary {
-        font-family: "Roboto", sans-serif; }
+        font-family: "Noto Sans", sans-serif; }
       @media only screen and (max-width: 1000px) {
         section.carousel .carouselDetailWrapper .carouselSlideDetail {
           background-color: transparent;
           width: 100%;
           margin-top: 0;
           text-align: center;
-          padding-bottom: 60px; } }
+          padding-bottom: 60px;
+          margin: 0;
+          padding: 15px 15px 60px 15px; } }
       @media only screen and (max-width: 480px) {
-        section.carousel .carouselDetailWrapper .carouselSlideDetail {
-          padding: 15px 15px 60px 15px; }
-          section.carousel .carouselDetailWrapper .carouselSlideDetail h2.carouselSlideHeading {
-            font-size: 24px;
-            margin-bottom: 0; }
-          section.carousel .carouselDetailWrapper .carouselSlideDetail .carouselSlideSummary {
-            font-size: 16px; } }
+        section.carousel .carouselDetailWrapper .carouselSlideDetail h2.carouselSlideHeading {
+          font-size: 24px;
+          margin-bottom: 0; }
+        section.carousel .carouselDetailWrapper .carouselSlideDetail .carouselSlideSummary {
+          font-size: 16px; } }
   section.carousel .carouselButtons {
+    position: absolute;
+    margin-top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto; }
+  section.carousel .carouselControls {
+    display: block;
+    position: absolute;
+    top: 275px;
+    width: 100%; }
+    section.carousel .carouselControls li a {
+      width: 50px;
+      height: 50px;
+      border: 2px solid #fff;
+      display: block;
+      color: transparent;
+      float: left; }
+      section.carousel .carouselControls li a:hover {
+        background-color: rgba(255, 255, 255, 0.4); }
+      section.carousel .carouselControls li a:before {
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 46px;
+        height: 46px;
+        display: block;
+        text-align: center;
+        line-height: 46px;
+        font-family: 'FontAwesome'; }
+      section.carousel .carouselControls li a.carouselControlNext {
+        float: right; }
+        section.carousel .carouselControls li a.carouselControlNext:before {
+          content: '\f105'; }
+      section.carousel .carouselControls li a.carouselControlPrev:before {
+        content: '\f104'; }
+    @media only screen and (max-width: 1000px) {
+      section.carousel .carouselControls {
+        top: 150px; } }
+    @media only screen and (max-width: 480px) {
+      section.carousel .carouselControls {
+        top: 100px; } }
 
 .homepage section.carousel {
   padding: 0;
@@ -364,6 +430,7 @@ section.carousel {
     background-color: #766068;
     border-radius: 0; }
   .homeFeedsWrapper .homeFeed ul.feedList {
+    background-color: #ededed;
     padding: 0;
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
@@ -420,6 +487,10 @@ section.carousel {
       padding: 15px; } }
   @media only screen and (max-width: 768px) {
     .homeFeaturesWrapper .homeFeatures .feature-wrapper {
+      padding-left: 5px;
+      padding-right: 5px; } }
+  @media only screen and (max-width: 480px) {
+    .homeFeaturesWrapper .homeFeatures .feature-wrapper {
       width: 100%;
       padding-left: 0;
       padding-right: 0; } }
@@ -444,7 +515,7 @@ section.carousel {
   .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox3 .homeFeatureDetailsWrapper {
     background-color: rgba(235, 188, 0, 0.85); }
     .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox3 .homeFeatureDetailsWrapper h2:after {
-      content: '\f0c0'; }
+      content: '\f007'; }
   .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox4 {
     clear: none;
     border-bottom-right-radius: 100px; }
@@ -499,11 +570,12 @@ section.carousel {
       background-color: #63a2bc; }
     .homeFeaturesWrapper .homeFeatures .homeFeature:hover .homeFeatureDetailsWrapper h2 {
       margin-top: 60px; }
+  @media only screen and (max-width: 1000px) {
+    .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper h2:after {
+      right: 50px; } }
   @media only screen and (max-width: 768px) {
     .homeFeaturesWrapper .homeFeatures .homeFeature {
-      margin: 0; } }
-  @media only screen and (max-width: 480px) {
-    .homeFeaturesWrapper .homeFeatures .homeFeature {
+      margin: 0;
       height: 200px; }
       .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper h2 {
         margin-top: 0;
@@ -514,195 +586,65 @@ section.carousel {
         margin-top: 0; } }
 
 .homepage {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Noto Sans", sans-serif; }
 
 .homeIntroWrapper .homeIntro {
   color: #766068;
   font-size: 48px;
   margin: 30px auto 15px auto;
   padding: 0;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Noto Sans", sans-serif; }
   @media only screen and (max-width: 768px) {
     .homeIntroWrapper .homeIntro {
       font-size: 36px; } }
 
-.pageWrapper {
-  background-color: #ededed;
-  padding-bottom: 120px; }
-  .pageWrapper .contentBlockWrapper, .pageWrapper .headerText {
-    background-color: #fff; }
-  .pageWrapper .contentBlockWrapper {
-    padding: 20px 60px 60px 60px;
+.headerText, .contentBlockWrapper {
+  padding: 0 15px;
+  max-width: 1170px; }
+
+aside.postAside .associated ul {
+  margin-top: 0; }
+  aside.postAside .associated ul li {
     margin-top: 0; }
-  .pageWrapper .headerText {
-    padding: 60px 60px 0 60px; }
-    .pageWrapper .headerText nav ol {
-      margin-top: 0;
-      margin-bottom: 0; }
-    .pageWrapper .headerText h1, .pageWrapper .headerText p {
-      margin-bottom: 0; }
-    .pageWrapper .headerText h1 {
-      font-size: 54px; }
-  .pageWrapper aside.postAside .associated ul {
-    margin-top: 0; }
-    .pageWrapper aside.postAside .associated ul li {
-      margin-top: 0; }
-      .pageWrapper aside.postAside .associated ul li h3 {
-        padding-left: 15px;
-        padding-right: 15px; }
-        .pageWrapper aside.postAside .associated ul li h3 a:hover {
-          text-decoration: none; }
-  .pageWrapper aside.postAside .eventDetails {
-    padding: 15px;
-    border: 1px solid #ededed; }
-    .pageWrapper aside.postAside .eventDetails h2, .pageWrapper aside.postAside .eventDetails h3 {
-      color: #820551;
-      font-family: "Roboto", sans-serif;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      font-style: normal;
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom: 15px; }
-    .pageWrapper aside.postAside .eventDetails h2 {
-      font-size: 36px;
-      border-bottom: 1px solid #ededed;
-      margin-bottom: 30px; }
-    .pageWrapper aside.postAside .eventDetails h3 {
-      font-size: 24px; }
-    .pageWrapper aside.postAside .eventDetails .eventWhereWrapper, .pageWrapper aside.postAside .eventDetails .eventWhenWrapper {
-      text-align: center; }
-      .pageWrapper aside.postAside .eventDetails .eventWhereWrapper p, .pageWrapper aside.postAside .eventDetails .eventWhereWrapper h3, .pageWrapper aside.postAside .eventDetails .eventWhenWrapper p, .pageWrapper aside.postAside .eventDetails .eventWhenWrapper h3 {
-        text-align: left; }
-      .pageWrapper aside.postAside .eventDetails .eventWhereWrapper p, .pageWrapper aside.postAside .eventDetails .eventWhenWrapper p {
-        margin-top: 0; }
-    .pageWrapper aside.postAside .eventDetails a.button, .pageWrapper aside.postAside .eventDetails a.addToCalender {
-      font-size: 18px;
-      font-family: "Roboto", sans-serif;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      border-radius: 0;
-      padding: 5px 10px;
-      background-color: #820551;
-      color: #fff; }
-      .pageWrapper aside.postAside .eventDetails a.button:hover, .pageWrapper aside.postAside .eventDetails a.addToCalender:hover {
-        text-decoration: none;
-        background-color: #690442; }
-  .pageWrapper.newsListingPage .associatedMostRead, .pageWrapper.newsPostPage .associatedMostRead {
-    display: none; }
-  .pageWrapper.blogListingPage aside.blogDetails {
-    display: none; }
-  .pageWrapper.blogPostPage aside.blogDetails {
-    display: none;
-    margin-bottom: 0;
-    min-height: 90px;
-    text-align: right; }
-  .pageWrapper.blogPostPage .associatedMostRead {
-    display: none; }
-  .pageWrapper .listing .contentBlockWrapper {
-    max-width: 1140px; }
-    .pageWrapper .listing .contentBlockWrapper .listContent .listedPost {
-      border-radius: 0; }
-      .pageWrapper .listing .contentBlockWrapper .listContent .listedPost img {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0; }
-      .pageWrapper .listing .contentBlockWrapper .listContent .listedPost h2 {
-        margin-top: 24px;
-        margin-bottom: 15px; }
-        .pageWrapper .listing .contentBlockWrapper .listContent .listedPost h2 a:hover {
-          text-decoration: none; }
-  .pageWrapper.faqListingPage article {
-    background-color: #fff;
-    border-bottom: 1px solid #fff;
-    border-left: 1px solid #ededed;
-    border-right: 1px solid #ededed;
-    padding: 0; }
-    .pageWrapper.faqListingPage article header {
-      margin-top: 0;
-      background-color: #ededed;
-      padding: 15px; }
-    .pageWrapper.faqListingPage article .accordianBody {
-      padding: 15px; }
-      .pageWrapper.faqListingPage article .accordianBody footer {
-        display: none; }
-  .pageWrapper .pageContent table, .pageWrapper .postContent table {
-    border: 1px solid #ededed; }
-    .pageWrapper .pageContent table thead, .pageWrapper .postContent table thead {
-      background-color: transparent;
-      font-family: "Roboto", sans-serif;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: #820551;
-      border-top: 1px solid #ededed;
-      border-bottom: 1px solid #ededed;
-      text-align: left; }
-    .pageWrapper .pageContent table tbody, .pageWrapper .postContent table tbody {
-      background-color: transparent; }
-      .pageWrapper .pageContent table tbody td, .pageWrapper .postContent table tbody td {
-        padding: 10px 0; }
-  .pageWrapper .eventContent .ticketsWrapper, .pageWrapper .eventContent .extrasWrapper, .pageWrapper .eventContent .eventSecondStepWrapper, .pageWrapper .eventContent .eventThirdStepWrapper {
-    background-color: #fff;
-    border: 1px solid #ededed;
-    padding: 15px; }
-    .pageWrapper .eventContent .ticketsWrapper h2, .pageWrapper .eventContent .ticketsWrapper legend, .pageWrapper .eventContent .extrasWrapper h2, .pageWrapper .eventContent .extrasWrapper legend, .pageWrapper .eventContent .eventSecondStepWrapper h2, .pageWrapper .eventContent .eventSecondStepWrapper legend, .pageWrapper .eventContent .eventThirdStepWrapper h2, .pageWrapper .eventContent .eventThirdStepWrapper legend {
-      font-family: "Roboto", sans-serif;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: #820551;
-      font-style: normal;
-      margin-top: 0;
-      margin-bottom: 15px; }
-    .pageWrapper .eventContent .ticketsWrapper table, .pageWrapper .eventContent .extrasWrapper table, .pageWrapper .eventContent .eventSecondStepWrapper table, .pageWrapper .eventContent .eventThirdStepWrapper table {
-      margin-top: 0;
-      border: 0; }
-      .pageWrapper .eventContent .ticketsWrapper table thead, .pageWrapper .eventContent .extrasWrapper table thead, .pageWrapper .eventContent .eventSecondStepWrapper table thead, .pageWrapper .eventContent .eventThirdStepWrapper table thead {
-        background-color: transparent;
-        font-family: "Roboto", sans-serif;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        color: #820551;
-        border-top: 1px solid #ededed;
-        border-bottom: 1px solid #ededed; }
-      .pageWrapper .eventContent .ticketsWrapper table tbody, .pageWrapper .eventContent .extrasWrapper table tbody, .pageWrapper .eventContent .eventSecondStepWrapper table tbody, .pageWrapper .eventContent .eventThirdStepWrapper table tbody {
-        background-color: transparent; }
-        .pageWrapper .eventContent .ticketsWrapper table tbody td, .pageWrapper .eventContent .extrasWrapper table tbody td, .pageWrapper .eventContent .eventSecondStepWrapper table tbody td, .pageWrapper .eventContent .eventThirdStepWrapper table tbody td {
-          padding: 10px 0; }
-        .pageWrapper .eventContent .ticketsWrapper table tbody h3, .pageWrapper .eventContent .extrasWrapper table tbody h3, .pageWrapper .eventContent .eventSecondStepWrapper table tbody h3, .pageWrapper .eventContent .eventThirdStepWrapper table tbody h3 {
-          margin-top: 0; }
-        .pageWrapper .eventContent .ticketsWrapper table tbody a, .pageWrapper .eventContent .extrasWrapper table tbody a, .pageWrapper .eventContent .eventSecondStepWrapper table tbody a, .pageWrapper .eventContent .eventThirdStepWrapper table tbody a {
-          text-decoration: none;
-          background-color: rgba(130, 5, 81, 0.7);
-          color: #fff;
-          vertical-align: middle; }
-          .pageWrapper .eventContent .ticketsWrapper table tbody a:hover, .pageWrapper .eventContent .extrasWrapper table tbody a:hover, .pageWrapper .eventContent .eventSecondStepWrapper table tbody a:hover, .pageWrapper .eventContent .eventThirdStepWrapper table tbody a:hover {
-            background-color: #820551; }
-        .pageWrapper .eventContent .ticketsWrapper table tbody input, .pageWrapper .eventContent .extrasWrapper table tbody input, .pageWrapper .eventContent .eventSecondStepWrapper table tbody input, .pageWrapper .eventContent .eventThirdStepWrapper table tbody input {
-          margin-top: 0; }
-    .pageWrapper .eventContent .ticketsWrapper .formButtons, .pageWrapper .eventContent .extrasWrapper .formButtons, .pageWrapper .eventContent .eventSecondStepWrapper .formButtons, .pageWrapper .eventContent .eventThirdStepWrapper .formButtons {
-      text-align: center; }
-    .pageWrapper .eventContent .ticketsWrapper button, .pageWrapper .eventContent .extrasWrapper button, .pageWrapper .eventContent .eventSecondStepWrapper button, .pageWrapper .eventContent .eventThirdStepWrapper button {
-      font-family: "Roboto", sans-serif;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      border-radius: 0;
-      font-size: 24px;
-      text-decoration: none;
-      padding: 5px 10px; }
-  .pageWrapper .eventContent .extrasWrapper, .pageWrapper .eventContent .eventSecondStepWrapper {
-    border-bottom: 0; }
-  .pageWrapper .eventContent .eventBooking {
-    text-align: center; }
-    .pageWrapper .eventContent .eventBooking a {
-      font-family: "Roboto", sans-serif;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      border-radius: 0;
-      font-size: 24px;
-      text-decoration: none;
-      padding: 5px 10px; }
-  .pageWrapper .eventContent .postFooter p {
-    display: none; }
-  .pageWrapper .postFooterWrapper .shareWrapper strong {
+    aside.postAside .associated ul li h3 {
+      padding-left: 15px;
+      padding-right: 15px; }
+      aside.postAside .associated ul li h3 a:hover {
+        text-decoration: none; }
+
+.listing .listContent .listedPost {
+  border-radius: 0; }
+  .listing .listContent .listedPost img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .listing .listContent .listedPost h2 {
+    margin-top: 24px;
+    margin-bottom: 15px; }
+    .listing .listContent .listedPost h2 a:hover {
+      text-decoration: none; }
+
+.pageContent table, .postContent table {
+  border: 1px solid #ededed; }
+  .pageContent table thead, .postContent table thead {
+    background-color: transparent;
+    font-family: "Noto Sans", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #820551;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    text-align: left; }
+  .pageContent table tbody, .postContent table tbody {
+    background-color: transparent; }
+    .pageContent table tbody td, .postContent table tbody td {
+      padding: 10px 0; }
+
+footer .shareWrapper {
+  margin: 60px 0;
+  padding: 30px 0;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed; }
+  footer .shareWrapper strong {
     margin-bottom: 0; }
 
 /* Small Devices, Tablets */

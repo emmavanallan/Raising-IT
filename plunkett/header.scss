@@ -1,9 +1,13 @@
 header{
 	position: relative;
 	width: 100%;
-	max-width: 1180px;
+	max-width: 1170px;
 	margin: 0 auto;
 	padding: 0 15px;
+	&.headerWrapper{
+		max-width: 100%;
+		padding: 0;
+	}
 }
 .content{
 	&.headerContent{
@@ -25,7 +29,7 @@ header{
 		.mainCallToAction {
 			margin: 0;
 			position: absolute;
-			right: 300px;
+			right: 280px;
 			top: 15px;
 			ul.socialIcons{
 				text-align: center;
@@ -52,7 +56,7 @@ header{
 		.searchContainer{
 			margin: 15px 0 0 0;
 			position: absolute;
-			right: 400px;
+			right: 380px;
 			#siteSearch{
 				background-color: #f0f0f0;
 				color: #333;
@@ -81,7 +85,7 @@ header{
 	height: auto;
 	ul#menuAdmin{
 		text-align: center;
-		padding: 0 15px 15px 15px;
+		padding: 0 10px 10px 10px;
 		li{
 		display: inline-block;
 		padding: 15px 0 0 0;
@@ -90,7 +94,7 @@ header{
 				border-left: 1px solid white;
 				padding: 0 10px;
 				margin: 0;
-				font-size: 16px;
+				font-size: 14px;
 			}
 			&:first-child{
 				a{

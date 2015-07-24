@@ -6,16 +6,19 @@ $(document).ready(function(){
 		$(this).css('background-image',  'url(' + imgUrl + ')');
 	});
 
-
 	//make homepage features images work better
 	$('.homeFeature').each(function(){	
 		var imgUrl = $(this).find('img').attr('src');
 		$(this).css('background-image',  'url(' + imgUrl + ')');
 	});
 
-
 	$('.homeFeature ').wrap('<div class="feature-wrapper"></div>');
 	
+
+	//move the mobile menu button to the right container
+	$('.menuMainAlt').prependTo($('.headerContent'));
+
+
 	//move the Newsletter up a level and wrap it in a container
 	$('.NewsletterSign-up').prependTo($('.pageFooterWrapper'));
 	$('.NewsletterSign-up').wrap('<div class="newsletter-container"></div>');

@@ -1,26 +1,77 @@
-.pageWrapper{
+.headerText, .contentBlockWrapper{
+	padding: 0 15px;
+	max-width: 1170px;
+}
 
-	.contentBlockWrapper, .headerText{
-	}
-	.contentBlockWrapper{
-	}
-
-	.headerText{
-	}
-
-	aside.postAside{
-		.associated{
-			ul{
-				li{
-					h3{
-						a:hover{
-						}
+aside.postAside{
+	.associated{
+		ul{
+			margin-top: 0;
+			li{
+				margin-top: 0;
+				h3{
+					padding-left: 15px;
+					padding-right: 15px;
+					a:hover{
+						text-decoration: none;
 					}
 				}
 			}
 		}
 	}
 }
+.listing{
+	.listContent{
+		.listedPost{
+			border-radius: 0;
+			img{
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+			}
+			h2{
+				margin-top: 24px;
+				margin-bottom: 15px;
+				a:hover{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.pageContent,.postContent{
+	table{
+		border: 1px solid #ededed;
+		thead{
+			background-color: transparent;
+			font-family: $main-font;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: $purple;
+			border-top: 1px solid #ededed;
+			border-bottom: 1px solid #ededed;
+			text-align: left;
+		}
+		tbody{
+			background-color: transparent;
+			td{
+				padding: 10px 0;
+			}
+		}
+	}
+}
+
+footer .shareWrapper{
+	margin: 60px 0;
+	padding: 30px 0;
+	border-top: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+	strong{
+			margin-bottom: 0;
+	}
+}
+
+
 
 @import 'pages-blogs';
 @import 'pages-news';
