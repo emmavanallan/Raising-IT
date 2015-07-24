@@ -24,6 +24,9 @@ nav#menuMain{
 					background-color: #fff;
 					border-bottom-color: $mushroom;	
 				}
+				@media screen and (max-width: 1000px){
+					font-size: 14px;
+				}
 			}
 			ul{
 				background-color: rgba(#fff, 0.9);

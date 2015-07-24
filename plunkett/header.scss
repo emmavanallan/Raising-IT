@@ -17,6 +17,7 @@ header{
 		.mainLogo{
 			background-image: url('http://plunkett.ritdns.co.uk/Handlers/GetImage.ashx?IDMF=21b6f80c-ac51-47b2-8ab7-3fb64721e79a&w=300&h=223
 ');
+			width: 115px;
 			background-size: contain;
 			background-repeat: no-repeat;
 			margin: 15px 0 0 0;
@@ -28,9 +29,8 @@ header{
 		// social media icons
 		.mainCallToAction {
 			margin: 0;
-			position: absolute;
-			right: 280px;
-			top: 15px;
+			float: right;
+			margin: 15px 15px 0 0;
 			ul.socialIcons{
 				text-align: center;
 				li{
@@ -53,10 +53,14 @@ header{
 				}
 			}
 		}
+		form{
+			clear: none;
+			float: right;
+			position: initial;
+			right: auto;
+		}
 		.searchContainer{
-			margin: 15px 0 0 0;
-			position: absolute;
-			right: 380px;
+			margin: 15px 15px 0 0;
 			#siteSearch{
 				background-color: #f0f0f0;
 				color: #333;
@@ -77,24 +81,22 @@ header{
 	background-color: $purple;
 	float: right;
 	width: auto;
-	position: absolute;
-	right: 15px;
 	z-index: 3;
-	border-bottom-left-radius: 40px;
-	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 	height: auto;
 	ul#menuAdmin{
 		text-align: center;
-		padding: 0 10px 10px 10px;
+		padding: 0 10px 12px 10px;
 		li{
 		display: inline-block;
 		padding: 15px 0 0 0;
 			a {
 				color: #fff;
 				border-left: 1px solid white;
-				padding: 0 10px;
+				padding: 0 7px;
 				margin: 0;
-				font-size: 14px;
+				font-size: 12px;
 			}
 			&:first-child{
 				a{

@@ -11,7 +11,7 @@ button, #totaliserActions .buttonDonate, #totaliserActions .donateBtn, .appealAc
   background-color: #820551;
   color: #fff;
   font-size: 16px;
-  padding: 6px 15px;
+  padding: 5px 15px;
   font-family: "Noto Sans", sans-serif; }
   button:hover, #totaliserActions .buttonDonate:hover, #totaliserActions .donateBtn:hover, .appealActions .donateBtn:link:hover, .appealActions .donateBtn:visited:hover, .appealActions .donateBtn:active:hover, button#btnSignIn:hover, .groupSignUpBtn:hover, a.button.donate:hover,
   .commentAddImage:hover, .button:hover, a.button:link:hover, a.button:visited:hover, a.button:active:hover, #totaliserActions .buttonDonate:hover, #totaliserActions .buttonFundraise:hover, .listedFilters a.filter:link:hover, .listedFilters a.filter:visited:hover, .listedFilters a.filter:active:hover, .searchListingPage .searchContainer button:hover, .appliedFilters .filter:hover, .associatedReadMore a:hover, .associatedReadMore a:link:hover, .associatedReadMore a:visited:hover, .associatedReadMore a:active:hover {
@@ -32,6 +32,7 @@ header {
   position: relative; }
   .content.headerContent .mainLogo {
     background-image: url("http://plunkett.ritdns.co.uk/Handlers/GetImage.ashx?IDMF=21b6f80c-ac51-47b2-8ab7-3fb64721e79a&w=300&h=223\a");
+    width: 115px;
     background-size: contain;
     background-repeat: no-repeat;
     margin: 15px 0 0 0; }
@@ -40,9 +41,8 @@ header {
         margin-top: 0; } }
   .content.headerContent .mainCallToAction {
     margin: 0;
-    position: absolute;
-    right: 280px;
-    top: 15px; }
+    float: right;
+    margin: 15px 15px 0 0; }
     .content.headerContent .mainCallToAction ul.socialIcons {
       text-align: center; }
       .content.headerContent .mainCallToAction ul.socialIcons li {
@@ -58,10 +58,13 @@ header {
             background-color: #55acee; }
           .content.headerContent .mainCallToAction ul.socialIcons li a.facebook {
             background-color: #3b5998; }
+  .content.headerContent form {
+    clear: none;
+    float: right;
+    position: initial;
+    right: auto; }
   .content.headerContent .searchContainer {
-    margin: 15px 0 0 0;
-    position: absolute;
-    right: 380px; }
+    margin: 15px 15px 0 0; }
     .content.headerContent .searchContainer #siteSearch {
       background-color: #f0f0f0;
       color: #333;
@@ -76,24 +79,22 @@ header {
   background-color: #820551;
   float: right;
   width: auto;
-  position: absolute;
-  right: 15px;
   z-index: 3;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   height: auto; }
   .menuAdminContainer ul#menuAdmin {
     text-align: center;
-    padding: 0 10px 10px 10px; }
+    padding: 0 10px 12px 10px; }
     .menuAdminContainer ul#menuAdmin li {
       display: inline-block;
       padding: 15px 0 0 0; }
       .menuAdminContainer ul#menuAdmin li a {
         color: #fff;
         border-left: 1px solid white;
-        padding: 0 10px;
+        padding: 0 7px;
         margin: 0;
-        font-size: 14px; }
+        font-size: 12px; }
       .menuAdminContainer ul#menuAdmin li:first-child a {
         border-left: 0; }
       .menuAdminContainer ul#menuAdmin li.menuAdminRegister {
@@ -132,7 +133,8 @@ footer.pageFooterWrapper {
           border-radius: 0;
           border: 0; }
         footer.pageFooterWrapper .newsletter-container .NewsletterSign-up .formQuestion button {
-          margin-top: 24px; }
+          margin-top: 24px;
+          width: 100%; }
     @media screen and (max-width: 480px) {
       footer.pageFooterWrapper .newsletter-container {
         padding: 30px 0; }
@@ -216,6 +218,9 @@ nav#menuMain {
         nav#menuMain ul li a:hover, nav#menuMain ul li a.active {
           background-color: #fff;
           border-bottom-color: #766068; }
+        @media screen and (max-width: 1000px) {
+          nav#menuMain ul li a {
+            font-size: 14px; } }
       nav#menuMain ul li ul {
         background-color: rgba(255, 255, 255, 0.9);
         padding-top: 15px;

@@ -14,10 +14,11 @@ $(document).ready(function(){
 
 	$('.homeFeature ').wrap('<div class="feature-wrapper"></div>');
 	
-
 	//move the mobile menu button to the right container
 	$('.menuMainAlt').prependTo($('.headerContent'));
 
+	//move the admin menu to the right container
+	$('.menuAdminContainer').prependTo($('.headerContent'));
 
 	//move the Newsletter up a level and wrap it in a container
 	$('.NewsletterSign-up').prependTo($('.pageFooterWrapper'));
