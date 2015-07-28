@@ -165,3 +165,31 @@ nav#menuMain{
 		}
 	}
 }
+
+//navigation
+nav{
+	margin-top: 30px;
+	ol.breadcrumbList{
+		li.breadcrumbItem{
+			margin-right: 0;
+			background-color: #ededed;
+			padding: 5px 0 5px 15px;
+			position: relative;
+			color: $green;
+			&:last-child{
+				padding-right: 15px;
+			}
+			&:before{
+				font-family: 'FontAwesome';
+				content: '\f105';
+				color: $green;
+			}
+			&:first-child:before{
+				display: none;
+			}
+			a{
+				font-family: $main-font;
+			}
+		}
+	}
+}

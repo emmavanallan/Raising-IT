@@ -3,20 +3,44 @@
 	max-width: 1170px;
 }
 
+//side content
+
 aside.postAside{
+	border: 1px solid #eee;
 	.associated{
+		background-color: #fff;
+		margin:0 15px 45px 15px;
 		ul{
-			margin-top: 0;
+			margin:0;
+			padding-bottom: 0;
 			li{
 				margin-top: 0;
+				padding: 15px 5px 0 5px ;
+				//border-bottom: 1px solid #ededed;
 				h3{
-					padding-left: 15px;
-					padding-right: 15px;
+					padding: 0;
+					margin: 0;
+					font-size: 14px;
+					text-align: center;
 					a:hover{
-						text-decoration: none;
+						text-decoration: underline;
 					}
 				}
 			}
+		}
+		h2{
+			background-color: #fff;
+			border-radius: 0;
+			padding: 15px;
+			//border-top: 1px solid #ededed;
+			border-bottom: 1px solid #ededed;
+			text-align: center;
+			font-weight: 400;
+			color: #777;
+			text-transform: uppercase;
+		}
+		&.associatedMostRead{
+			display: none;
 		}
 	}
 }
@@ -24,6 +48,11 @@ aside.postAside{
 	.listContent{
 		.listedPost{
 			border-radius: 0;
+			border: 1px solid #ededed;
+			background-color: #fff;
+			&:hover{
+				background-color: #ededed;
+			}
 			img{
 				border-top-left-radius: 0;
 				border-top-right-radius: 0;
@@ -31,6 +60,7 @@ aside.postAside{
 			h2{
 				margin-top: 24px;
 				margin-bottom: 15px;
+				font-style: normal;
 				a:hover{
 					text-decoration: none;
 				}
@@ -61,18 +91,106 @@ aside.postAside{
 	}
 }
 
+//sharing
+
 footer .shareWrapper{
 	margin: 60px 0;
-	padding: 30px 0;
+	padding: 15px 0;
 	border-top: 1px solid #ededed;
 	border-bottom: 1px solid #ededed;
+	text-align: center;
 	strong{
-			margin-bottom: 0;
+		margin-bottom: 0;
+		text-transform: uppercase;
+		font-style: normal;
+		font-family: $main-font;
+		font-size: 22px;
+		color: #777;
+	}
+	ul li{
+		height: 33px;
 	}
 }
 
 
+//comments
 
+.postComments{
+	border: 1px solid #ededed;
+	padding: 30px;
+	header{
+		padding: 0 0 30px 0;
+		margin: 0;
+		border-bottom: 1px solid #ededed;
+		h3{
+			margin: 0;
+			font-size: 22px;
+			color: #777;
+			text-transform: uppercase;
+		}
+	}
+	.commentForm{
+		margin-top: 0;
+		label{
+			color: #777;
+			font-size: 16px;
+		}
+		textarea, input{
+			border: 0;
+			border-radius: 0;
+			font-family: $main-font;
+			&[type="checkbox"]#notifyComments{
+				margin: 5px 5px 0 0;
+			}
+		}
+		button{
+			margin: 15px auto 0 auto;
+			display: block;
+		}
+		.commentAddImage{
+			background-color: #ededed !important;
+			padding: 5px 15px !important;
+			color: #333 !important;
+		}
+		.commentsList{
+			margin: 0;
+			padding: 0;
+			li{
+				margin-top: 30px;
+				margin-bottom: 30px;
+				padding-bottom: 30px;
+				border-bottom: 1px solid #ededed;
+			}
+			.commentContentWrapper{
+				float: right;
+				width: 83%;
+				footer{
+					text-align: center;
+					p{
+						display: inline;
+						font-size: 12px;
+						color: #777;
+						font-family: $main-font;
+						strong{
+							font-weight: 400;
+						}
+						&.commentDate{
+							margin-left: 15px;
+						}
+					}
+					.helpfulComment, .commentHelpfulness{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@import 'pages-appeals';
+@import 'pages-fundraisers';
 @import 'pages-blogs';
 @import 'pages-news';
 @import 'pages-events';
+@import 'pages-faq';

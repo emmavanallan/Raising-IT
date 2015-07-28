@@ -1,0 +1,27 @@
+.faqListingPage{
+	article{
+		border: 1px solid #ededed;
+		margin-bottom: 15px;
+		header{
+			background-color: #fff;
+			margin-top: 0;
+			padding: 15px;
+			a.buttonIcon{
+				background-color: #ededed;
+				color: #777;
+				&:hover{
+					color: #fff;
+					background-color: #777;
+				}
+			}
+		}
+		.accordianBody{
+			background-color: #fff;
+			padding: 15px;
+			border-top: 1px solid #ededed;
+			footer.postFooterWrapper{
+				display: none;
+			}
+		}
+	}
+}

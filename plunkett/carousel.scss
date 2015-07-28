@@ -4,16 +4,21 @@ section.carousel{
 	max-width: none;
 	height: 500px;
 	li.carouselSlide{
-		max-height: none;	
+		max-height: none;
+		height: 500px;
+		display: block;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top center;
+		img{
+			display: none;
+		}
 		a.carouselSlideTitle{
 			height: 500px;
 			display: block;
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: top center;
-			img{
-				display: none;
-			}
 		}
 	}
 	img{
@@ -21,12 +26,12 @@ section.carousel{
 	}
 	@media only screen and (max-width : 1000px) {
 		height: auto;
-		li.carouselSlide a.carouselSlideTitle{
+		li.carouselSlide, li.carouselSlide a.carouselSlideTitle{
 			height: 300px;
 		}
 	}
 	@media only screen and (max-width : 480px) {
-		li.carouselSlide a.carouselSlideTitle{
+		li.carouselSlide, li.carouselSlide a.carouselSlideTitle{
 			height: 200px;
 		}
 	}
@@ -48,6 +53,18 @@ section.carousel{
 			margin: 60px 0 0 0;
 			h2.carouselSlideHeading, .carouselSlideSummary{
 				font-family: $main-font;
+			}
+			h2.carouselSlideHeading{
+				font-size: 24px;
+			}
+			.carouselSlideSummary{
+				font-size: 16px;
+			}
+			#totaliserActions{
+				a{
+					background-color: #fff;
+					color: #777;
+				}
 			}
 			@media only screen and (max-width: 1300px){
 				margin-left: 60px;
@@ -80,7 +97,13 @@ section.carousel{
 		position: absolute;
 		margin-top: 0;
 		bottom: 0;
-		li.activeSlide{
+		background-color: transparent;
+		li{
+			background-color: rgba($blue,0.85);
+			margin: 0;
+			&.activeSlide, a.button:hover, a.button:focus, a.button:active{
+				background-color: $blue;
+			}
 		}
 		li{
 			a.button.carouselButton{

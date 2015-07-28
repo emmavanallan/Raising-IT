@@ -4,6 +4,13 @@ h1, h2, h3, h4, h5 {
   font-style: normal; }
   h1.feedTitle, h2.feedTitle, h3.feedTitle, h4.feedTitle, h5.feedTitle {
     font-weight: 700; }
+  h1.title, h2.title, h3.title, h4.title, h5.title {
+    color: #333; }
+
+h1 {
+  font-size: 24px; }
+  h1.title {
+    font-size: 36px; }
 
 button, #totaliserActions .buttonDonate, #totaliserActions .donateBtn, .appealActions .donateBtn:link, .appealActions .donateBtn:visited, .appealActions .donateBtn:active, button#btnSignIn, .groupSignUpBtn, a.button.donate,
 .commentAddImage, .button, a.button:link, a.button:visited, a.button:active, #totaliserActions .buttonDonate, #totaliserActions .buttonFundraise, .listedFilters a.filter:link, .listedFilters a.filter:visited, .listedFilters a.filter:active, .searchListingPage .searchContainer button, .appliedFilters .filter, .associatedReadMore a, .associatedReadMore a:link, .associatedReadMore a:visited, .associatedReadMore a:active {
@@ -321,29 +328,53 @@ nav#menuMain {
             border-bottom: 0; }
             nav#menuMain ul li > ul li a:hover {
               background-color: rgba(118, 96, 104, 0.2); } }
+nav {
+  margin-top: 30px; }
+  nav ol.breadcrumbList li.breadcrumbItem {
+    margin-right: 0;
+    background-color: #ededed;
+    padding: 5px 0 5px 15px;
+    position: relative;
+    color: #52924d; }
+    nav ol.breadcrumbList li.breadcrumbItem:last-child {
+      padding-right: 15px; }
+    nav ol.breadcrumbList li.breadcrumbItem:before {
+      font-family: 'FontAwesome';
+      content: '\f105';
+      color: #52924d; }
+    nav ol.breadcrumbList li.breadcrumbItem:first-child:before {
+      display: none; }
+    nav ol.breadcrumbList li.breadcrumbItem a {
+      font-family: "Noto Sans", sans-serif; }
+
 section.carousel {
   padding: 0;
   max-width: none;
   height: 500px; }
   section.carousel li.carouselSlide {
-    max-height: none; }
+    max-height: none;
+    height: 500px;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center; }
+    section.carousel li.carouselSlide img {
+      display: none; }
     section.carousel li.carouselSlide a.carouselSlideTitle {
       height: 500px;
       display: block;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: top center; }
-      section.carousel li.carouselSlide a.carouselSlideTitle img {
-        display: none; }
   section.carousel img {
     border-radius: 0; }
   @media only screen and (max-width: 1000px) {
     section.carousel {
       height: auto; }
-      section.carousel li.carouselSlide a.carouselSlideTitle {
+      section.carousel li.carouselSlide, section.carousel li.carouselSlide a.carouselSlideTitle {
         height: 300px; } }
   @media only screen and (max-width: 480px) {
-    section.carousel li.carouselSlide a.carouselSlideTitle {
+    section.carousel li.carouselSlide, section.carousel li.carouselSlide a.carouselSlideTitle {
       height: 200px; } }
   section.carousel .carouselDetailWrapper {
     left: 0;
@@ -363,6 +394,13 @@ section.carousel {
       margin: 60px 0 0 0; }
       section.carousel .carouselDetailWrapper .carouselSlideDetail h2.carouselSlideHeading, section.carousel .carouselDetailWrapper .carouselSlideDetail .carouselSlideSummary {
         font-family: "Noto Sans", sans-serif; }
+      section.carousel .carouselDetailWrapper .carouselSlideDetail h2.carouselSlideHeading {
+        font-size: 24px; }
+      section.carousel .carouselDetailWrapper .carouselSlideDetail .carouselSlideSummary {
+        font-size: 16px; }
+      section.carousel .carouselDetailWrapper .carouselSlideDetail #totaliserActions a {
+        background-color: #fff;
+        color: #777; }
       @media only screen and (max-width: 1300px) {
         section.carousel .carouselDetailWrapper .carouselSlideDetail {
           margin-left: 60px; } }
@@ -389,10 +427,16 @@ section.carousel {
     position: absolute;
     margin-top: 0;
     bottom: 0;
+    background-color: transparent;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto; }
+    section.carousel .carouselButtons li {
+      background-color: rgba(99, 162, 188, 0.85);
+      margin: 0; }
+      section.carousel .carouselButtons li.activeSlide, section.carousel .carouselButtons li a.button:hover, section.carousel .carouselButtons li a.button:focus, section.carousel .carouselButtons li a.button:active {
+        background-color: #63a2bc; }
   section.carousel .carouselControls {
     display: block;
     position: absolute;
@@ -615,24 +659,49 @@ section.carousel {
   padding: 0 15px;
   max-width: 1170px; }
 
-aside.postAside .associated ul {
-  margin-top: 0; }
-  aside.postAside .associated ul li {
-    margin-top: 0; }
-    aside.postAside .associated ul li h3 {
-      padding-left: 15px;
-      padding-right: 15px; }
-      aside.postAside .associated ul li h3 a:hover {
-        text-decoration: none; }
+aside.postAside {
+  border: 1px solid #eee; }
+  aside.postAside .associated {
+    background-color: #fff;
+    margin: 0 15px 45px 15px; }
+    aside.postAside .associated ul {
+      margin: 0;
+      padding-bottom: 0; }
+      aside.postAside .associated ul li {
+        margin-top: 0;
+        padding: 15px 5px 0 5px; }
+        aside.postAside .associated ul li h3 {
+          padding: 0;
+          margin: 0;
+          font-size: 14px;
+          text-align: center; }
+          aside.postAside .associated ul li h3 a:hover {
+            text-decoration: underline; }
+    aside.postAside .associated h2 {
+      background-color: #fff;
+      border-radius: 0;
+      padding: 15px;
+      border-bottom: 1px solid #ededed;
+      text-align: center;
+      font-weight: 400;
+      color: #777;
+      text-transform: uppercase; }
+    aside.postAside .associated.associatedMostRead {
+      display: none; }
 
 .listing .listContent .listedPost {
-  border-radius: 0; }
+  border-radius: 0;
+  border: 1px solid #ededed;
+  background-color: #fff; }
+  .listing .listContent .listedPost:hover {
+    background-color: #ededed; }
   .listing .listContent .listedPost img {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
   .listing .listContent .listedPost h2 {
     margin-top: 24px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-style: normal; }
     .listing .listContent .listedPost h2 a:hover {
       text-decoration: none; }
 
@@ -654,11 +723,344 @@ aside.postAside .associated ul {
 
 footer .shareWrapper {
   margin: 60px 0;
-  padding: 30px 0;
+  padding: 15px 0;
   border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed; }
+  border-bottom: 1px solid #ededed;
+  text-align: center; }
   footer .shareWrapper strong {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-style: normal;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 22px;
+    color: #777; }
+  footer .shareWrapper ul li {
+    height: 33px; }
+
+.postComments {
+  border: 1px solid #ededed;
+  padding: 30px; }
+  .postComments header {
+    padding: 0 0 30px 0;
+    margin: 0;
+    border-bottom: 1px solid #ededed; }
+    .postComments header h3 {
+      margin: 0;
+      font-size: 22px;
+      color: #777;
+      text-transform: uppercase; }
+  .postComments .commentForm {
+    margin-top: 0; }
+    .postComments .commentForm label {
+      color: #777;
+      font-size: 16px; }
+    .postComments .commentForm textarea, .postComments .commentForm input {
+      border: 0;
+      border-radius: 0;
+      font-family: "Noto Sans", sans-serif; }
+      .postComments .commentForm textarea[type="checkbox"]#notifyComments, .postComments .commentForm input[type="checkbox"]#notifyComments {
+        margin: 5px 5px 0 0; }
+    .postComments .commentForm button {
+      margin: 15px auto 0 auto;
+      display: block; }
+    .postComments .commentForm .commentAddImage {
+      background-color: #ededed !important;
+      padding: 5px 15px !important;
+      color: #333 !important; }
+    .postComments .commentForm .commentsList {
+      margin: 0;
+      padding: 0; }
+      .postComments .commentForm .commentsList li {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ededed; }
+      .postComments .commentForm .commentsList .commentContentWrapper {
+        float: right;
+        width: 83%; }
+        .postComments .commentForm .commentsList .commentContentWrapper footer {
+          text-align: center; }
+          .postComments .commentForm .commentsList .commentContentWrapper footer p {
+            display: inline;
+            font-size: 12px;
+            color: #777;
+            font-family: "Noto Sans", sans-serif; }
+            .postComments .commentForm .commentsList .commentContentWrapper footer p strong {
+              font-weight: 400; }
+            .postComments .commentForm .commentsList .commentContentWrapper footer p.commentDate {
+              margin-left: 15px; }
+          .postComments .commentForm .commentsList .commentContentWrapper footer .helpfulComment, .postComments .commentForm .commentsList .commentContentWrapper footer .commentHelpfulness {
+            display: none; }
+
+.appealListingPage .listing .listContent .listedPost:hover {
+  background-color: #fff; }
+.appealListingPage .tabsWrapper {
+  border-bottom: 0; }
+.appealListingPage .tabs {
+  width: 1170px;
+  padding: 0; }
+  .appealListingPage .tabs li.tab a {
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    border-radius: 0;
+    color: #777;
+    background-color: #f4f4f4; }
+  .appealListingPage .tabs li.tab.active a, .appealListingPage .tabs li.tab:hover a {
+    background-color: #fff; }
+.appealListingPage .tabbedListing {
+  background-color: #fff;
+  border: 1px solid #ededed;
+  padding: 30px 0;
+  margin: 0 auto; }
+.appealListingPage .currentProjectsListWrapper {
+  margin-top: 0; }
+.appealListingPage .listedPost {
+  text-align: center; }
+  .appealListingPage .listedPost img {
+    margin: 0; }
+  .appealListingPage .listedPost .totaliserFigure, .appealListingPage .listedPost .totaliserLabel {
+    text-align: center; }
+.appealListingPage aside.appealFeedsWrapper {
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 1px solid #ededed; }
+.appealListingPage .findAFundraiserWidget {
+  border: 0;
+  padding: 0 0 0 30px; }
+  .appealListingPage .findAFundraiserWidget h3 {
+    font-size: 22px;
+    font-weight: 400; }
+    .appealListingPage .findAFundraiserWidget h3 a {
+      display: inline; }
+  .appealListingPage .findAFundraiserWidget ul {
+    margin: 0; }
+    .appealListingPage .findAFundraiserWidget ul li {
+      margin: 5px 4px; }
+  .appealListingPage .findAFundraiserWidget input {
+    border: 0;
+    border-radius: 0;
+    background-color: #fff; }
+  .appealListingPage .findAFundraiserWidget fieldset {
+    margin-top: 0; }
+.appealListingPage .fundraisersWrapper legend {
+  border-bottom: 0; }
+.appealListingPage .fundraisersWrapper input, .appealListingPage .fundraisersWrapper select {
+  border-radius: 0;
+  border: 0; }
+
+.appealPostPage h1.title, .appealPostPage nav {
+  width: 66%;
+  float: left; }
+.appealPostPage aside.postAside {
+  border: 0; }
+.appealPostPage .appealWidgets, .appealPostPage .appealTotaliser {
+  background-color: #fff; }
+.appealPostPage .findAFundraiserWidget {
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
+  border-top: 1px solid #ededed;
+  padding: 30px 15px 15px 15px; }
+  .appealPostPage .findAFundraiserWidget input {
+    border: 0;
+    border-radius: 0; }
+.appealPostPage .topFundraisersWrapper {
+  border: 1px solid #ededed;
+  padding: 15px; }
+  .appealPostPage .topFundraisersWrapper strong {
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    display: block;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    color: #777;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 10px; }
+  .appealPostPage .topFundraisersWrapper ol {
+    padding: 0; }
+    .appealPostPage .topFundraisersWrapper ol li {
+      display: inline-block;
+      width: 49.5%; }
+.appealPostPage .appealInteractions .tabsWrapper {
+  border-bottom: 0; }
+  .appealPostPage .appealInteractions .tabsWrapper .tab a {
+    border-radius: 0;
+    background-color: #ededed;
+    color: #777;
+    border-top: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+    border-left: 1px solid #ededed; }
+  .appealPostPage .appealInteractions .tabsWrapper .tab.active a, .appealPostPage .appealInteractions .tabsWrapper .tab a:hover, .appealPostPage .appealInteractions .tabsWrapper .tab.active a:hover {
+    background-color: #fff; }
+.appealPostPage .appealInteractions section {
+  background-color: #fff; }
+  .appealPostPage .appealInteractions section#appealComments, .appealPostPage .appealInteractions section#appealFundraisers {
+    border: 1px solid #ededed; }
+  .appealPostPage .appealInteractions section .appealFundraisersHeader {
+    padding: 30px; }
+    .appealPostPage .appealInteractions section .appealFundraisersHeader .findAFundraiser {
+      margin-top: 0;
+      padding-bottom: 0; }
+    .appealPostPage .appealInteractions section .appealFundraisersHeader legend {
+      border-bottom: 0; }
+    .appealPostPage .appealInteractions section .appealFundraisersHeader input, .appealPostPage .appealInteractions section .appealFundraisersHeader select {
+      border: 0;
+      border-radius: 0; }
+  .appealPostPage .appealInteractions section .postComments {
+    margin-top: 0;
+    border: 0; }
+    .appealPostPage .appealInteractions section .postComments header {
+      border-bottom: 0;
+      padding-bottom: 15px; }
+
+.appealWidgets {
+  border: 1px solid #ededed; }
+
+.content.appealActions {
+  width: 100%;
+  margin: 30px 0 0 0;
+  padding: 0 15px; }
+  .content.appealActions a.button {
+    display: block;
+    width: 100%;
+    font-size: 22px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-bottom: 15px; }
+
+.appealBody .pageFooterWrapper {
+  margin-top: 0; }
+
+.fundraiserPostPage .tabsWrapper {
+  display: none; }
+.fundraiserPostPage aside.postAside {
+  border: 0; }
+.fundraiserPostPage aside .appealWidgets {
+  display: none; }
+.fundraiserPostPage aside .appealTotaliser {
+  background-color: #fff;
+  margin-bottom: 30px;
+  border: 1px solid #ededed; }
+.fundraiserPostPage footer .fundraiserFooter {
+  text-align: center; }
+  .fundraiserPostPage footer .fundraiserFooter p {
+    padding: 15px 30px;
+    color: #777 !important;
+    background-color: #ededed;
+    display: inline-block; }
+
+.fundraiserListingPage .listedPost {
+  text-align: center; }
+  .fundraiserListingPage .listedPost:hover {
+    background-color: #fff !important; }
+  .fundraiserListingPage .listedPost img {
+    margin: 0; }
+  .fundraiserListingPage .listedPost .totaliserFigure, .fundraiserListingPage .listedPost .totaliserLabel {
+    text-align: center; }
+.fundraiserListingPage .findAFundraiserWrapper, .fundraiserListingPage #top {
+  max-width: 1170px;
+  padding: 0 15px; }
+  .fundraiserListingPage .findAFundraiserWrapper legend, .fundraiserListingPage #top legend {
+    border-bottom: 0; }
+  .fundraiserListingPage .findAFundraiserWrapper input, .fundraiserListingPage .findAFundraiserWrapper select, .fundraiserListingPage #top input, .fundraiserListingPage #top select {
+    border: 0;
+    border-radius: 0; }
+.fundraiserListingPage aside {
+  display: none; }
+.fundraiserListingPage .fundraiserSearchResults {
+  width: 100%;
+  margin: 0; }
+
+.blogPostPage .blogDetails {
+  display: none; }
+
+.newsListingPage .postAside {
+  display: none; }
+.newsListingPage .listContent {
+  width: 100%;
+  margin: 0; }
+
+.eventListingPage .listContent {
+  width: 100%;
+  margin-right: 0; }
+.eventListingPage aside {
+  display: none; }
+
+aside .eventDetails .eventWhereWrapper, aside .eventDetails .eventWhenWrapper {
+  background-color: #fff;
+  margin-top: 0; }
+  aside .eventDetails .eventWhereWrapper p, aside .eventDetails .eventWhenWrapper p {
+    margin: 0;
+    padding: 15px; }
+aside .eventDetails .eventWhenWrapper {
+  padding: 15px; }
+  aside .eventDetails .eventWhenWrapper p strong {
+    font-weight: 700; }
+
+.eventContent .eventBookingWrapper, .eventContent .ticketsWrapper, .eventContent .extrasWrapper, .eventContent .eventSecondStepWrapper, .eventContent .eventThirdStepWrapper {
+  background-color: #fff;
+  border: 1px solid #ededed;
+  border-radius: 0;
+  padding-right: 15px;
+  padding-left: 15px; }
+  .eventContent .eventBookingWrapper table, .eventContent .ticketsWrapper table, .eventContent .extrasWrapper table, .eventContent .eventSecondStepWrapper table, .eventContent .eventThirdStepWrapper table {
+    margin-top: 15px;
+    border: 0; }
+    .eventContent .eventBookingWrapper table caption h2, .eventContent .ticketsWrapper table caption h2, .eventContent .extrasWrapper table caption h2, .eventContent .eventSecondStepWrapper table caption h2, .eventContent .eventThirdStepWrapper table caption h2 {
+      color: #777;
+      margin: 0 0 15px 0;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 24px; }
+    .eventContent .eventBookingWrapper table tr, .eventContent .ticketsWrapper table tr, .eventContent .extrasWrapper table tr, .eventContent .eventSecondStepWrapper table tr, .eventContent .eventThirdStepWrapper table tr {
+      background-color: #fff;
+      color: #777; }
+      .eventContent .eventBookingWrapper table tr span, .eventContent .ticketsWrapper table tr span, .eventContent .extrasWrapper table tr span, .eventContent .eventSecondStepWrapper table tr span, .eventContent .eventThirdStepWrapper table tr span {
+        color: #777; }
+    .eventContent .eventBookingWrapper table a.buttonIcon, .eventContent .ticketsWrapper table a.buttonIcon, .eventContent .extrasWrapper table a.buttonIcon, .eventContent .eventSecondStepWrapper table a.buttonIcon, .eventContent .eventThirdStepWrapper table a.buttonIcon {
+      background-color: #ededed;
+      color: #777;
+      vertical-align: middle; }
+  .eventContent .eventBookingWrapper .formButtons, .eventContent .ticketsWrapper .formButtons, .eventContent .extrasWrapper .formButtons, .eventContent .eventSecondStepWrapper .formButtons, .eventContent .eventThirdStepWrapper .formButtons {
+    margin-bottom: 20px;
+    text-align: center; }
+.eventContent .ticketsWrapper {
+  border-bottom: 0; }
+.eventContent .eventBookingWrapper {
+  border-top: 0;
+  padding: 0 15px;
+  text-align: center; }
+  .eventContent .eventBookingWrapper a {
+    float: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 30px; }
+.eventContent .postFooterWrapper {
+  display: none; }
+
+.faqListingPage article {
+  border: 1px solid #ededed;
+  margin-bottom: 15px; }
+  .faqListingPage article header {
+    background-color: #fff;
+    margin-top: 0;
+    padding: 15px; }
+    .faqListingPage article header a.buttonIcon {
+      background-color: #ededed;
+      color: #777; }
+      .faqListingPage article header a.buttonIcon:hover {
+        color: #fff;
+        background-color: #777; }
+  .faqListingPage article .accordianBody {
+    background-color: #fff;
+    padding: 15px;
+    border-top: 1px solid #ededed; }
+    .faqListingPage article .accordianBody footer.postFooterWrapper {
+      display: none; }
 
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */

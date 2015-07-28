@@ -1,0 +1,209 @@
+// appeals listing
+
+.appealListingPage{
+
+	.listing .listContent .listedPost:hover{
+		background-color: #fff;
+	}
+	.tabsWrapper{
+		border-bottom: 0;
+	}
+	.tabs{
+		width: 1170px;
+		padding: 0;
+		li.tab{
+			a{
+				border-left: 1px solid #ededed;
+				border-right: 1px solid #ededed;
+				border-top: 1px solid #ededed;
+				border-radius: 0;
+				color: #777;
+				background-color: #f4f4f4;
+			}
+			&.active, &:hover{
+				a{
+					background-color: #fff;
+				}
+			}
+		}
+	}
+	
+	.tabbedListing{
+		background-color: #fff;
+		border: 1px solid #ededed;
+		padding: 30px 0 ;
+		margin: 0 auto;
+	}
+	.currentProjectsListWrapper{
+		margin-top: 0;
+	}
+
+	.listedPost{
+		text-align: center;
+		img{
+			margin: 0;
+		}
+		.totaliserFigure, .totaliserLabel{
+			text-align: center;
+		}
+	}
+
+	aside.appealFeedsWrapper{
+		border-top: 0;
+		border-right: 0;
+		border-bottom: 0;
+		border-left: 1px solid #ededed;
+	}
+
+	.findAFundraiserWidget{
+		border: 0;
+		padding: 0 0 0 30px;
+		h3{
+			font-size: 22px;
+			font-weight: 400;
+			a{
+				display: inline;
+			}
+		}
+		ul{
+			margin: 0;
+			li{
+				margin: 5px 4px; 
+			}
+		}
+		input{
+			border: 0;
+			border-radius: 0;
+			background-color: #fff;
+		}
+		fieldset{
+			margin-top: 0;
+		}
+	}
+
+	.fundraisersWrapper{
+		legend{
+			border-bottom: 0;
+		}
+		input, select{
+			border-radius: 0;
+			border: 0;
+		}
+	}
+}
+
+// appeals post
+.appealPostPage{
+	h1.title, nav{
+		width: 66%;
+		float: left;
+	}
+	aside.postAside{
+		border: 0;
+	}
+
+	.appealWidgets, .appealTotaliser{
+		background-color: #fff;
+	}
+	.findAFundraiserWidget{
+		border-bottom: 0;
+		border-right: 0;
+		border-left: 0;
+		border-top: 1px solid #ededed;
+		padding: 30px 15px 15px 15px;
+		input{
+			border: 0;
+			border-radius: 0;
+		}
+	}
+	.topFundraisersWrapper{
+		border: 1px solid #ededed;
+		padding: 15px;
+		strong{
+			text-transform: uppercase;
+			font-size: 22px;
+			text-align: center;
+			display: block;
+			font-family: $main-font;
+			font-weight: 400;
+			color: #777;
+			border-bottom: 1px solid #ededed;
+			padding-bottom: 10px;
+		}
+		ol{
+			padding: 0;
+			li{
+				display: inline-block;
+				width: 49.5%;
+			}
+		}
+	}
+	.appealInteractions{
+		.tabsWrapper{
+			border-bottom: 0;
+			.tab a{
+				border-radius: 0;
+				background-color: #ededed;
+				color: #777;
+				border-top: 1px solid #ededed;
+				border-right: 1px solid #ededed;
+				border-left: 1px solid #ededed;
+			}
+			.tab.active a, .tab a:hover, .tab.active a:hover{
+				background-color: #fff;
+			}
+		}
+		section{
+			background-color: #fff;
+			&#appealComments, &#appealFundraisers{
+				border: 1px solid #ededed;
+			}
+			.appealFundraisersHeader{
+				padding: 30px;
+				.findAFundraiser{
+					margin-top: 0;
+					padding-bottom: 0;
+				}
+				legend{
+					border-bottom: 0;
+				}
+				input, select{
+					border: 0;
+					border-radius: 0;
+				}
+			}
+			.postComments{
+				margin-top: 0;
+				border: 0;
+				header{
+					border-bottom: 0;
+					padding-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+
+.appealWidgets{
+	border: 1px solid #ededed;
+}
+
+.content.appealActions{
+	width: 100%;
+	margin: 30px 0 0 0;
+	padding: 0 15px;
+	a.button{
+		display: block;
+		width: 100%;
+		font-size: 22px;
+		padding-bottom: 15px;
+		padding-top: 15px;
+		margin-bottom: 15px;
+	}
+}
+
+.appealBody{
+	.pageFooterWrapper{
+		margin-top: 0;
+	}
+}

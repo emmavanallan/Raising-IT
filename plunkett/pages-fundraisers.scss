@@ -1,0 +1,63 @@
+.fundraiserPostPage{
+	.tabsWrapper{
+		display: none;
+	}
+
+	aside{
+		&.postAside{
+			border: 0;
+		}
+		.appealWidgets{
+			display: none;
+		}
+		.appealTotaliser{
+			background-color: #fff;
+			margin-bottom: 30px;
+			border: 1px solid #ededed;
+		}
+	}
+	footer{
+		.fundraiserFooter{
+			text-align: center;
+			p{
+				padding: 15px 30px;
+				color: #777 !important;
+				background-color: #ededed;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.fundraiserListingPage{
+	.listedPost{
+		text-align: center;
+		&:hover{
+			background-color: #fff !important;
+		}
+		img{
+			margin: 0;
+		}
+		.totaliserFigure, .totaliserLabel{
+			text-align: center;
+		}
+	}
+	.findAFundraiserWrapper, #top{
+		max-width: 1170px;
+		padding: 0 15px;
+		legend{
+			border-bottom: 0;
+		}
+		input, select{
+			border: 0;
+			border-radius: 0;
+		}
+	}
+	aside{
+		display: none;
+	}
+	.fundraiserSearchResults{
+		width: 100%;
+		margin: 0;
+	}
+}
