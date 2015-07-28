@@ -42,14 +42,21 @@ section.carousel{
 			background-color: $blue;
 		}
 		.carouselSlideDetail{
-			margin: 60px 0 0 80px;
 			padding: 30px;
 			width: 400px;
 			background-color: rgba($blue, 0.85);
+			margin: 60px 0 0 0;
 			h2.carouselSlideHeading, .carouselSlideSummary{
 				font-family: $main-font;
 			}
+			@media only screen and (max-width: 1300px){
+				margin-left: 60px;
+			}
+			@media only screen and (max-width: 1200px){
+				margin-left: 100px;
+			}
 			@media only screen and (max-width : 1000px) {
+				margin-left: 0;
 				background-color: transparent;
 				width: 100%;
 				margin-top: 0;

@@ -32,7 +32,8 @@ header {
   position: relative; }
   .content.headerContent .mainLogo {
     background-image: url("http://plunkett.ritdns.co.uk/Handlers/GetImage.ashx?IDMF=21b6f80c-ac51-47b2-8ab7-3fb64721e79a&w=300&h=223\a");
-    width: 115px;
+    width: 170px;
+    height: 125px;
     background-size: contain;
     background-repeat: no-repeat;
     margin: 15px 0 0 0; }
@@ -356,14 +357,21 @@ section.carousel {
       section.carousel .carouselDetailWrapper {
         background-color: #63a2bc; } }
     section.carousel .carouselDetailWrapper .carouselSlideDetail {
-      margin: 60px 0 0 80px;
       padding: 30px;
       width: 400px;
-      background-color: rgba(99, 162, 188, 0.85); }
+      background-color: rgba(99, 162, 188, 0.85);
+      margin: 60px 0 0 0; }
       section.carousel .carouselDetailWrapper .carouselSlideDetail h2.carouselSlideHeading, section.carousel .carouselDetailWrapper .carouselSlideDetail .carouselSlideSummary {
         font-family: "Noto Sans", sans-serif; }
+      @media only screen and (max-width: 1300px) {
+        section.carousel .carouselDetailWrapper .carouselSlideDetail {
+          margin-left: 60px; } }
+      @media only screen and (max-width: 1200px) {
+        section.carousel .carouselDetailWrapper .carouselSlideDetail {
+          margin-left: 100px; } }
       @media only screen and (max-width: 1000px) {
         section.carousel .carouselDetailWrapper .carouselSlideDetail {
+          margin-left: 0;
           background-color: transparent;
           width: 100%;
           margin-top: 0;
@@ -540,7 +548,7 @@ section.carousel {
     bottom: 0; }
     .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper h2 {
       transition: all 0.4s ease 0.1s;
-      margin: 15px 0 0 0;
+      margin: 0;
       padding: 15px;
       position: relative; }
       .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper h2:after {
@@ -574,7 +582,7 @@ section.carousel {
     .homeFeaturesWrapper .homeFeatures .homeFeature:hover.homeBox4 .homeFeatureDetailsWrapper {
       background-color: #63a2bc; }
     .homeFeaturesWrapper .homeFeatures .homeFeature:hover .homeFeatureDetailsWrapper h2 {
-      margin-top: 60px; }
+      margin-top: 15px; }
   @media only screen and (max-width: 1000px) {
     .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper h2:after {
       right: 50px; } }
