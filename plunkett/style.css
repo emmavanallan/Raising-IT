@@ -439,9 +439,9 @@ section.carousel {
         background-color: rgba(99, 162, 188, 0.85); }
         section.carousel .carouselButtons li a.button.carouselButton:hover {
           background-color: #63a2bc; }
-      section.carousel .carouselButtons li.activeSlide a, section.carousel .carouselButtons li:active a, section.carousel .carouselButtons li:focus a {
+      section.carousel .carouselButtons li.activeSlide a.button.carouselButton, section.carousel .carouselButtons li:active a.button.carouselButton, section.carousel .carouselButtons li:focus a.button.carouselButton {
         background-color: #63a2bc; }
-        section.carousel .carouselButtons li.activeSlide a:hover, section.carousel .carouselButtons li:active a:hover, section.carousel .carouselButtons li:focus a:hover {
+        section.carousel .carouselButtons li.activeSlide a.button.carouselButton:hover, section.carousel .carouselButtons li:active a.button.carouselButton:hover, section.carousel .carouselButtons li:focus a.button.carouselButton:hover {
           background-color: #63a2bc; }
   section.carousel .carouselControls {
     display: block;
@@ -484,6 +484,8 @@ section.carousel {
 .homepage section.carousel {
   padding: 0;
   max-width: none; }
+  .homepage section.carousel .carouselButtons li.activeSlide a.button {
+    background-color: #63a2bc; }
 
 .homeFeedsWrapper .homeFeed {
   width: 50%;

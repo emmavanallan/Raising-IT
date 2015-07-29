@@ -107,7 +107,7 @@ section.carousel{
 					background-color: $blue;
 				}
 			}
-			&.activeSlide a, &:active a, &:focus a{
+			&.activeSlide a.button.carouselButton, &:active a.button.carouselButton, &:focus a.button.carouselButton{
 				background-color: $blue;
 				&:hover{
 					background-color: $blue;
@@ -169,5 +169,8 @@ section.carousel{
 
 .homepage section.carousel{
 	padding: 0;
-	max-width: none;	
+	max-width: none;
+	.carouselButtons li.activeSlide a.button{
+		background-color: $blue;
+	}
 }
