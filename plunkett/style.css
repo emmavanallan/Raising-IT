@@ -433,10 +433,16 @@ section.carousel {
     margin-left: auto;
     margin-right: auto; }
     section.carousel .carouselButtons li {
-      background-color: rgba(99, 162, 188, 0.85);
+      background-color: transparent;
       margin: 0; }
-      section.carousel .carouselButtons li.activeSlide, section.carousel .carouselButtons li a.button:hover, section.carousel .carouselButtons li a.button:focus, section.carousel .carouselButtons li a.button:active {
+      section.carousel .carouselButtons li a.button.carouselButton {
+        background-color: rgba(99, 162, 188, 0.85); }
+        section.carousel .carouselButtons li a.button.carouselButton:hover {
+          background-color: #63a2bc; }
+      section.carousel .carouselButtons li.activeSlide a, section.carousel .carouselButtons li:active a, section.carousel .carouselButtons li:focus a {
         background-color: #63a2bc; }
+        section.carousel .carouselButtons li.activeSlide a:hover, section.carousel .carouselButtons li:active a:hover, section.carousel .carouselButtons li:focus a:hover {
+          background-color: #63a2bc; }
   section.carousel .carouselControls {
     display: block;
     position: absolute;

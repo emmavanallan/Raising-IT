@@ -99,15 +99,18 @@ section.carousel{
 		bottom: 0;
 		background-color: transparent;
 		li{
-			background-color: rgba($blue,0.85);
+			background-color: transparent;
 			margin: 0;
-			&.activeSlide, a.button:hover, a.button:focus, a.button:active{
-				background-color: $blue;
-			}
-		}
-		li{
 			a.button.carouselButton{
+				background-color: rgba($blue,0.85);
 				&:hover{
+					background-color: $blue;
+				}
+			}
+			&.activeSlide a, &:active a, &:focus a{
+				background-color: $blue;
+				&:hover{
+					background-color: $blue;
 				}
 			}
 		}
