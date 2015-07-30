@@ -217,10 +217,16 @@ nav#menuMain {
       padding: 5px 10px 0 10px; }
       nav#menuMain ul li:hover > a {
         background-color: #fff; }
+      nav#menuMain ul li#menu74b947ee-6bc6-47da-9357-a9cd295b5eb5 a {
+        margin: 0; }
+        nav#menuMain ul li#menu74b947ee-6bc6-47da-9357-a9cd295b5eb5 a:hover {
+          color: #766068;
+          border-radius: 0;
+          margin: 0; }
       nav#menuMain ul li a {
         color: #766068;
         border-bottom: 2px solid #fff;
-        padding: 0;
+        padding: 0 0 4px 0;
         font-weight: 700;
         font-size: 16px; }
         nav#menuMain ul li a:hover, nav#menuMain ul li a.active {
@@ -236,14 +242,16 @@ nav#menuMain {
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
         margin-left: -15px;
-        box-shadow: none; }
+        box-shadow: none;
+        text-align: left; }
         nav#menuMain ul li ul li {
           background-color: transparent;
           padding: 5px 20px; }
           nav#menuMain ul li ul li:hover > a {
             background-color: transparent; }
           nav#menuMain ul li ul li a {
-            border-bottom-color: transparent; }
+            border-bottom-color: transparent;
+            display: inline; }
             nav#menuMain ul li ul li a:hover {
               background-color: transparent;
               border-bottom-color: #766068; }
@@ -350,10 +358,10 @@ nav {
 section.carousel {
   padding: 0;
   max-width: none;
-  height: 500px; }
+  height: 450px; }
   section.carousel li.carouselSlide {
     max-height: none;
-    height: 500px;
+    height: 450px;
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
@@ -361,7 +369,7 @@ section.carousel {
     section.carousel li.carouselSlide img {
       display: none; }
     section.carousel li.carouselSlide a.carouselSlideTitle {
-      height: 500px;
+      height: 450px;
       display: block;
       background-size: cover;
       background-repeat: no-repeat;
@@ -446,7 +454,7 @@ section.carousel {
   section.carousel .carouselControls {
     display: block;
     position: absolute;
-    top: 275px;
+    top: 250px;
     width: 100%; }
     section.carousel .carouselControls li a {
       width: 50px;
@@ -558,7 +566,8 @@ section.carousel {
     .homeFeaturesWrapper .homeFeatures .feature-wrapper {
       width: 100%;
       padding-left: 0;
-      padding-right: 0; } }
+      padding-right: 0;
+      padding-top: 0; } }
 .homeFeaturesWrapper .homeFeatures .homeFeature {
   width: 100%;
   padding: 0;
@@ -569,26 +578,26 @@ section.carousel {
   background-size: cover; }
   .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox1 {
     border-top-left-radius: 100px; }
+    @media only screen and (max-width: 480px) {
+      .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox1 {
+        border-top-left-radius: 0; } }
     .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox1 .homeFeatureDetailsWrapper {
       background-color: rgba(82, 146, 77, 0.85); }
-      .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox1 .homeFeatureDetailsWrapper h2:after {
-        content: '\f18e'; }
   .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox2 .homeFeatureDetailsWrapper {
     background-color: rgba(130, 5, 81, 0.85); }
-    .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox2 .homeFeatureDetailsWrapper h2:after {
-      content: '\f004'; }
   .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox3 .homeFeatureDetailsWrapper {
     background-color: rgba(235, 188, 0, 0.85); }
-    .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox3 .homeFeatureDetailsWrapper h2:after {
-      content: '\f007'; }
   .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox4 {
     clear: none;
     border-bottom-right-radius: 100px; }
     .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox4 .homeFeatureDetailsWrapper {
       background-color: rgba(99, 162, 188, 0.85);
       border-bottom-right-radius: 100px; }
-      .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox4 .homeFeatureDetailsWrapper h2:after {
-        content: '\f055'; }
+    @media only screen and (max-width: 480px) {
+      .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox4 {
+        border-bottom-right-radius: 0; }
+        .homeFeaturesWrapper .homeFeatures .homeFeature.homeBox4 .homeFeatureDetailsWrapper {
+          border-bottom-right-radius: 0; } }
   .homeFeaturesWrapper .homeFeatures .homeFeature img {
     display: none; }
   .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper {
@@ -604,6 +613,7 @@ section.carousel {
       padding: 15px;
       position: relative; }
       .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper h2:after {
+        content: '\f18e';
         top: 15px;
         display: block;
         position: absolute;

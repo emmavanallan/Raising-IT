@@ -16,6 +16,7 @@
 				width: 100%;
 				padding-left: 0;
 				padding-right: 0;
+				padding-top: 0;
 			}
 		}
 		.homeFeature{
@@ -28,27 +29,21 @@
 			background-size: cover;
 			&.homeBox1{
 					border-top-left-radius: 100px;
+					@media only screen and (max-width : 480px) {
+						border-top-left-radius: 0;
+					}
 				.homeFeatureDetailsWrapper{
 					background-color: rgba($green, 0.85);
-					h2:after{
-						content: '\f18e';
-					}
 				}
 			}
 			&.homeBox2{
 				.homeFeatureDetailsWrapper{
 					background-color: rgba($purple, 0.85);
-					h2:after{
-						content: '\f004';
-					}
 				}
 			}
 			&.homeBox3{
 				.homeFeatureDetailsWrapper{
 					background-color: rgba($yellow, 0.85);
-					h2:after{
-						content: '\f007';
-					}
 				}
 			}
 			&.homeBox4{
@@ -57,8 +52,11 @@
 				.homeFeatureDetailsWrapper{
 					background-color: rgba($blue, 0.85);
 					border-bottom-right-radius: 100px;
-					h2:after{
-						content: '\f055';
+				}
+				@media only screen and (max-width : 480px) {
+					border-bottom-right-radius: 0;
+					.homeFeatureDetailsWrapper{
+						border-bottom-right-radius: 0;
 					}
 				}
 			}
@@ -78,6 +76,7 @@
 					padding:15px;
 					position: relative;
 					&:after{
+						content: '\f18e';
 						top: 15px;
 						display: block;
 						position: absolute;
