@@ -104,6 +104,9 @@ nav#menuMain.menuMain {
         nav#menuMain.menuMain ul li ul li a:hover {
           color: #01afd4; }
 
+ul#menuAdmin li.menuAdminBasket, li.menuAdminBasket, li.menuAdminShop {
+  display: none; }
+
 section.carousel {
   margin-top: 0;
   max-width: 100%;

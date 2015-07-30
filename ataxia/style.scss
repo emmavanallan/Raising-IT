@@ -16,6 +16,7 @@ header#pageHeader{
 	padding: 0;
 	position: relative;
 }
+
 .content.headerContent{
 	background-color: #fff;
 	.mainLogo{
@@ -150,6 +151,9 @@ nav#menuMain.menuMain{
 			}
 		}
 	}
+}
+ul#menuAdmin li.menuAdminBasket, li.menuAdminBasket, li.menuAdminShop{
+	display: none;
 }
 
 //carousel
