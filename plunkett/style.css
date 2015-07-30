@@ -512,19 +512,35 @@ section.carousel {
   .homepage section.carousel .carouselButtons li.activeSlide a.button {
     background-color: #63a2bc; }
 
+.homeFeedsWrapper .feed-wrapper {
+  width: 33.33333%;
+  padding: 0 30px;
+  float: left; }
+  @media only screen and (max-width: 1000px) {
+    .homeFeedsWrapper .feed-wrapper {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  @media only screen and (max-width: 768px) {
+    .homeFeedsWrapper .feed-wrapper {
+      float: none;
+      width: 100%;
+      padding: 0; } }
 .homeFeedsWrapper .homeFeed {
-  width: 50%;
-  padding: 0 90px;
-  margin: 0; }
+  background-color: #ededed;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  margin: 0;
+  width: 100%;
+  float: none;
+  clear: none;
+  min-height: 600px; }
   .homeFeedsWrapper .homeFeed h3 {
     background-color: #766068;
     border-radius: 0; }
   .homeFeedsWrapper .homeFeed ul.feedList {
-    background-color: #ededed;
+    min-height: auto;
     padding: 0;
-    border-bottom-right-radius: 60px;
-    border-bottom-left-radius: 60px;
-    min-height: inherit; }
+    background-color: transparent; }
     .homeFeedsWrapper .homeFeed ul.feedList li {
       margin-top: 0; }
       .homeFeedsWrapper .homeFeed ul.feedList li img {
@@ -550,17 +566,48 @@ section.carousel {
           width: 120px;
           text-align: center;
           font-size: 14px;
-          margin: 15px auto 30px auto; }
+          margin: 15px auto 30px auto;
+          font-family: "Noto Sans", sans-serif; }
           .homeFeedsWrapper .homeFeed ul.feedList li p span.readMore:hover {
             background-color: #690442; }
-  @media only screen and (max-width: 1000px) {
-    .homeFeedsWrapper .homeFeed {
-      padding-left: 15px;
-      padding-right: 15px; } }
+      .homeFeedsWrapper .homeFeed ul.feedList li.tweet img {
+        display: none; }
+      .homeFeedsWrapper .homeFeed ul.feedList li.tweet p {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 14px;
+        margin: 0;
+        padding: 25px 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+      .homeFeedsWrapper .homeFeed ul.feedList li.tweet time {
+        display: none; }
+    .homeFeedsWrapper .homeFeed ul.feedList.tweetsWrapper {
+      position: relative; }
+      .homeFeedsWrapper .homeFeed ul.feedList.tweetsWrapper:before {
+        content: '\f099';
+        font-family: 'FontAwesome';
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+        font-size: 248px;
+        color: rgba(0, 0, 0, 0.07);
+        display: block;
+        height: 200px;
+        line-height: 200px; }
+  .homeFeedsWrapper .homeFeed .feedActionWrapper {
+    text-align: center;
+    background-color: transparent; }
+    .homeFeedsWrapper .homeFeed .feedActionWrapper a.button {
+      padding: 10px 15px;
+      font-size: 14px;
+      width: 120px;
+      margin: 30px 0; }
+      @media only screen and (max-width: 768px) {
+        .homeFeedsWrapper .homeFeed .feedActionWrapper a.button {
+          margin: 15px 0; } }
   @media only screen and (max-width: 768px) {
     .homeFeedsWrapper .homeFeed {
-      clear: none;
-      float: left; } }
+      min-height: auto;
+      margin-bottom: 15px; } }
   @media only screen and (max-width: 480px) {
     .homeFeedsWrapper .homeFeed {
       width: 100%;

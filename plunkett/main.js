@@ -18,7 +18,9 @@ $(document).ready(function(){
 		$(this).css('background-image',  'url(' + imgUrl + ')');
 	});
 
-	$('.homeFeature ').wrap('<div class="feature-wrapper"></div>');
+	//wrap homepage items
+	$('.homeFeature').wrap('<div class="feature-wrapper"></div>');
+	$('.homeFeed').wrap('<div class="feed-wrapper"></div>');
 	
 	//move the mobile menu button to the right container
 	$('.menuMainAlt, #menuMain').prependTo($('header.pageHeader .headerContent'));
