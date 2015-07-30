@@ -810,6 +810,9 @@ footer .shareWrapper {
           .postComments .commentForm .commentsList .commentContentWrapper footer .helpfulComment, .postComments .commentForm .commentsList .commentContentWrapper footer .commentHelpfulness {
             display: none; }
 
+p.commentCount {
+  display: none; }
+
 .appealListingPage .listing .listContent .listedPost:hover {
   background-color: #fff; }
 .appealListingPage .tabsWrapper {
