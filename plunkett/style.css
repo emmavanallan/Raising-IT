@@ -210,7 +210,7 @@ nav#menuMain {
   width: auto;
   position: absolute;
   bottom: 0;
-  right: 15px; }
+  right: 0; }
   nav#menuMain ul {
     text-align: right; }
     nav#menuMain ul li {
@@ -280,12 +280,14 @@ nav#menuMain {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
     nav#menuMain ul li {
       padding: 0; }
+      nav#menuMain ul li.mobile-search form {
+        float: none; }
       nav#menuMain ul li.mobile-search .searchContainer {
         padding: 0;
         margin: 0; }
         nav#menuMain ul li.mobile-search .searchContainer #siteSearch {
           background-color: #766068;
-          padding: 5px 30px 5px 15px;
+          padding: 10px 30px 10px 15px;
           color: #fff; }
           nav#menuMain ul li.mobile-search .searchContainer #siteSearch::-webkit-input-placeholder, nav#menuMain ul li.mobile-search .searchContainer #siteSearch:-moz-placeholder, nav#menuMain ul li.mobile-search .searchContainer #siteSearch::-moz-placeholder, nav#menuMain ul li.mobile-search .searchContainer #siteSearch:-ms-input-placeholder {
             color: #fff; }
@@ -295,7 +297,8 @@ nav#menuMain {
           nav#menuMain ul li.mobile-search .searchContainer button:before {
             color: #fff; }
       nav#menuMain ul li .mainCallToAction {
-        margin: 0; }
+        margin: 0;
+        float: none; }
         nav#menuMain ul li .mainCallToAction ul {
           margin: 10px 0;
           text-align: center; }
@@ -305,6 +308,7 @@ nav#menuMain {
             text-align: center; }
             nav#menuMain ul li .mainCallToAction ul li a {
               margin: 0 5px;
+              display: inline-block;
               padding: 0;
               border-bottom: 0; }
               nav#menuMain ul li .mainCallToAction ul li a:before {
@@ -333,7 +337,8 @@ nav#menuMain {
           padding: 0; }
           nav#menuMain ul li > ul li a {
             background-color: rgba(118, 96, 104, 0.05);
-            border-bottom: 0; }
+            border-bottom: 0;
+            display: block; }
             nav#menuMain ul li > ul li a:hover {
               background-color: rgba(118, 96, 104, 0.2); } }
 nav {
@@ -367,6 +372,8 @@ section.carousel {
     background-repeat: no-repeat;
     background-position: top center; }
     section.carousel li.carouselSlide img {
+      display: block; }
+    section.carousel li.carouselSlide a img {
       display: none; }
     section.carousel li.carouselSlide a.carouselSlideTitle {
       height: 450px;
@@ -379,10 +386,12 @@ section.carousel {
   @media only screen and (max-width: 1000px) {
     section.carousel {
       height: auto; }
-      section.carousel li.carouselSlide, section.carousel li.carouselSlide a.carouselSlideTitle {
-        height: 300px; } }
+      section.carousel li.carouselSlide {
+        height: auto; }
+        section.carousel li.carouselSlide a.carouselSlideTitle {
+          height: 300px; } }
   @media only screen and (max-width: 480px) {
-    section.carousel li.carouselSlide, section.carousel li.carouselSlide a.carouselSlideTitle {
+    section.carousel li.carouselSlide a.carouselSlideTitle {
       height: 200px; } }
   section.carousel .carouselDetailWrapper {
     left: 0;
@@ -424,7 +433,7 @@ section.carousel {
           text-align: center;
           padding-bottom: 60px;
           margin: 0;
-          padding: 15px 15px 60px 15px; } }
+          padding: 15px; } }
       @media only screen and (max-width: 480px) {
         section.carousel .carouselDetailWrapper .carouselSlideDetail h2.carouselSlideHeading {
           font-size: 24px;
@@ -451,6 +460,14 @@ section.carousel {
         background-color: #63a2bc; }
         section.carousel .carouselButtons li.activeSlide a.button.carouselButton:hover, section.carousel .carouselButtons li:active a.button.carouselButton:hover, section.carousel .carouselButtons li:focus a.button.carouselButton:hover {
           background-color: #63a2bc; }
+    @media only screen and (max-width: 1000px) {
+      section.carousel .carouselButtons {
+        bottom: auto;
+        top: 260px;
+        margin-top: 0 !important; } }
+    @media only screen and (max-width: 480px) {
+      section.carousel .carouselButtons {
+        top: 160px; } }
   section.carousel .carouselControls {
     display: block;
     position: absolute;

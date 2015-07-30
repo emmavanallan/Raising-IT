@@ -11,6 +11,9 @@ section.carousel{
 		background-repeat: no-repeat;
 		background-position: top center;
 		img{
+			display: block;
+		}
+		a img{
 			display: none;
 		}
 		a.carouselSlideTitle{
@@ -26,12 +29,15 @@ section.carousel{
 	}
 	@media only screen and (max-width : 1000px) {
 		height: auto;
-		li.carouselSlide, li.carouselSlide a.carouselSlideTitle{
-			height: 300px;
+		li.carouselSlide{
+			height: auto;
+			a.carouselSlideTitle{
+				height: 300px;
+			}
 		}
 	}
 	@media only screen and (max-width : 480px) {
-		li.carouselSlide, li.carouselSlide a.carouselSlideTitle{
+		li.carouselSlide a.carouselSlideTitle{
 			height: 200px;
 		}
 	}
@@ -80,7 +86,7 @@ section.carousel{
 				text-align: center;
 				padding-bottom: 60px;
 				margin: 0;
-				padding: 15px 15px 60px 15px;
+				padding: 15px;
 			}
 			@media only screen and (max-width : 480px) {
 				h2.carouselSlideHeading{
@@ -118,6 +124,14 @@ section.carousel{
 		right: 0;
 		margin-left: auto;
 		margin-right: auto;
+		@media only screen and (max-width : 1000px) {
+			bottom: auto;
+			top: 260px;
+			margin-top: 0 !important;
+		}
+		@media only screen and (max-width : 480px) {
+			top: 160px;
+		}
 	}
 	.carouselControls{
 		display: block;

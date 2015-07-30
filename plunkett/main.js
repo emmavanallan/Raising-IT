@@ -7,7 +7,7 @@ $(document).ready(function(){
 	});
 
 	//make the carousel work better
-	$('.carouselSlide').each(function(){	
+	$('a.carouselSlide').each(function(){	
 		var imgUrl = $(this).find('img').attr('src');
 		$(this).css('background-image',  'url(' + imgUrl + ')');
 	});
@@ -21,7 +21,7 @@ $(document).ready(function(){
 	$('.homeFeature ').wrap('<div class="feature-wrapper"></div>');
 	
 	//move the mobile menu button to the right container
-	$('.menuMainAlt').prependTo($('header.pageHeader .headerContent'));
+	$('.menuMainAlt, #menuMain').prependTo($('header.pageHeader .headerContent'));
 
 	//move the admin menu to the right container
 	$('.menuAdminContainer').prependTo($('header.pageHeader .headerContent'));
