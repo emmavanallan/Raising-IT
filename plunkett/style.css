@@ -751,7 +751,10 @@ aside.postAside {
       padding-bottom: 0; }
       aside.postAside .associated ul li {
         margin-top: 0;
-        padding: 15px 5px 0 5px; }
+        padding: 15px 5px 0 5px;
+        display: none; }
+        aside.postAside .associated ul li:nth-child(-n+4) {
+          display: block; }
         aside.postAside .associated ul li h3 {
           padding: 0;
           margin: 0;
@@ -770,6 +773,27 @@ aside.postAside {
       text-transform: uppercase; }
     aside.postAside .associated.associatedMostRead {
       display: none; }
+    aside.postAside .associated.pages {
+      margin: 70px 0 0 0;
+      background-color: #f9f9f9; }
+      aside.postAside .associated.pages:hover {
+        background-color: #ededed; }
+      aside.postAside .associated.pages img {
+        border-radius: 0; }
+      aside.postAside .associated.pages h2 {
+        margin: 0;
+        border-bottom: 0;
+        padding: 10px 0;
+        background-color: transparent; }
+      aside.postAside .associated.pages p {
+        margin: 0;
+        text-align: center;
+        font-size: 14px;
+        font-family: "Noto Sans", sans-serif;
+        padding-left: 15px;
+        padding-right: 15px; }
+        aside.postAside .associated.pages p a {
+          font-size: 14px; }
 
 .listing .listContent .listedPost {
   border-radius: 0;

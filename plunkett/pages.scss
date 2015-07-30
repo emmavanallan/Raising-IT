@@ -16,7 +16,10 @@ aside.postAside{
 			li{
 				margin-top: 0;
 				padding: 15px 5px 0 5px ;
-				//border-bottom: 1px solid #ededed;
+				display: none;
+				&:nth-child(-n+4){
+					display: block;
+				}
 				h3{
 					padding: 0;
 					margin: 0;
@@ -41,6 +44,33 @@ aside.postAside{
 		}
 		&.associatedMostRead{
 			display: none;
+		}
+		&.pages{
+			margin: 70px 0 0 0;
+			background-color: #f9f9f9;
+			&:hover{
+				background-color: #ededed;
+			}
+			img{
+				border-radius: 0;
+			}
+			h2{
+				margin: 0;
+				border-bottom: 0;
+				padding: 10px 0;
+				background-color: transparent
+			}
+			p{
+				margin: 0;
+				text-align: center;
+				font-size: 14px;
+				font-family: $main-font;
+				padding-left: 15px;
+				padding-right: 15px;
+				a{
+					font-size: 14px;
+				}
+			}
 		}
 	}
 }
