@@ -1,6 +1,8 @@
+html, body {
+  font-family: "MotivaSans-Regular", sans-serif; }
+
 h1, h2, h3, h4, h5 {
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 700;
+  font-family: "MotivaSans-Bold", sans-serif;
   font-style: normal; }
   h1.feedTitle, h2.feedTitle, h3.feedTitle, h4.feedTitle, h5.feedTitle {
     font-weight: 700; }
@@ -8,9 +10,21 @@ h1, h2, h3, h4, h5 {
     color: #333; }
 
 h1 {
-  font-size: 24px; }
+  font-size: 28px; }
   h1.title {
     font-size: 36px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 18px; }
+
+p, ul li, ol li {
+  font-size: 16px; }
+
+blockquote p {
+  font-size: 24px; }
 
 button, #totaliserActions .buttonDonate, #totaliserActions .donateBtn, .appealActions .donateBtn:link, .appealActions .donateBtn:visited, .appealActions .donateBtn:active, button#btnSignIn, .groupSignUpBtn, a.button.donate,
 .commentAddImage, .button, a.button:link, a.button:visited, a.button:active, #totaliserActions .buttonDonate, #totaliserActions .buttonFundraise, .listedFilters a.filter:link, .listedFilters a.filter:visited, .listedFilters a.filter:active, .searchListingPage .searchContainer button, .appliedFilters .filter, .associatedReadMore a, .associatedReadMore a:link, .associatedReadMore a:visited, .associatedReadMore a:active {
@@ -19,10 +33,52 @@ button, #totaliserActions .buttonDonate, #totaliserActions .donateBtn, .appealAc
   color: #fff;
   font-size: 16px;
   padding: 5px 15px;
-  font-family: "Noto Sans", sans-serif; }
+  font-family: "MotivaSans-Regular", sans-serif; }
   button:hover, #totaliserActions .buttonDonate:hover, #totaliserActions .donateBtn:hover, .appealActions .donateBtn:link:hover, .appealActions .donateBtn:visited:hover, .appealActions .donateBtn:active:hover, button#btnSignIn:hover, .groupSignUpBtn:hover, a.button.donate:hover,
   .commentAddImage:hover, .button:hover, a.button:link:hover, a.button:visited:hover, a.button:active:hover, #totaliserActions .buttonDonate:hover, #totaliserActions .buttonFundraise:hover, .listedFilters a.filter:link:hover, .listedFilters a.filter:visited:hover, .listedFilters a.filter:active:hover, .searchListingPage .searchContainer button:hover, .appliedFilters .filter:hover, .associatedReadMore a:hover, .associatedReadMore a:link:hover, .associatedReadMore a:visited:hover, .associatedReadMore a:active:hover {
     background-color: #690442; }
+
+@font-face {
+  font-family: 'MotivaSans-Regular';
+  src: url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans.eot");
+  src: url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans.eot?#iefix") format("embedded-opentype"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans.woff2") format("woff2"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans.woff") format("woff"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans.ttf") format("truetype"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans.svg#youworkforthem") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MotivaSans-Bold';
+  src: url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-bold.eot");
+  src: url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-bold.eot?#iefix") format("embedded-opentype"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-bold.woff2") format("woff2"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-bold.woff") format("woff"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-bold.ttf") format("truetype"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-bold.svg#youworkforthem") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MotivaSans-BoldItalic';
+  src: url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-bold-italic.eot");
+  src: url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-bold-italic.eot?#iefix") format("embedded-opentype"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-bold-italic.woff2") format("woff2"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-bold-italic.woff") format("woff"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-bold-italic.ttf") format("truetype"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-bold-italic.svg#youworkforthem") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MotivaSans-Light';
+  src: url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-light.eot");
+  src: url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-light.eot?#iefix") format("embedded-opentype"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-light.woff2") format("woff2"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-light.woff") format("woff"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-light.ttf") format("truetype"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-light.svg#youworkforthem") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MotivaSans-LightItalic';
+  src: url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-light-italic.eot");
+  src: url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-light-italic.eot?#iefix") format("embedded-opentype"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-light-italic.woff2") format("woff2"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-light-italic.woff") format("woff"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-light-italic.ttf") format("truetype"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-light-italic.svg#youworkforthem") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'MotivaSans-RegularItalic';
+  src: url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-regular-italic.eot");
+  src: url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-regular-italic.eot?#iefix") format("embedded-opentype"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-regular-italic.woff2") format("woff2"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-regular-italic.woff") format("woff"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-regular-italic.ttf") format("truetype"), url("http://www.raisingit.com/Platforms/Plunkett/Fonts/motiva-sans-regular-italic.svg#youworkforthem") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+em {
+  font-family: "MotivaSans-RegularItalic", sans-serif; }
+
+b, strong {
+  font-family: "MotivaSans-Bold", sans-serif; }
 
 header {
   position: relative;
@@ -109,6 +165,9 @@ header {
         display: inline-block; }
       .menuAdminContainer ul#menuAdmin li.menuAdminBasket {
         display: none; }
+
+.adminBar, .adminBarEdit {
+  margin: 0; }
 
 footer.pageFooterWrapper {
   padding: 0;
@@ -214,7 +273,7 @@ nav#menuMain {
   nav#menuMain ul {
     text-align: right; }
     nav#menuMain ul li {
-      padding: 5px 10px 0 10px; }
+      padding: 0; }
       nav#menuMain ul li:hover > a {
         background-color: #fff; }
       nav#menuMain ul li#menu74b947ee-6bc6-47da-9357-a9cd295b5eb5 a {
@@ -225,36 +284,34 @@ nav#menuMain {
           margin: 0; }
       nav#menuMain ul li a {
         color: #766068;
-        border-bottom: 2px solid #fff;
-        padding: 0 0 4px 0;
+        padding: 4px 10px;
         font-weight: 700;
-        font-size: 16px; }
+        font-size: 18px;
+        border-radius: 0; }
         nav#menuMain ul li a:hover, nav#menuMain ul li a.active {
-          background-color: #fff;
-          border-bottom-color: #766068; }
+          background-color: rgba(118, 96, 104, 0.2); }
         @media screen and (max-width: 1000px) {
           nav#menuMain ul li a {
             font-size: 14px; } }
       nav#menuMain ul li ul {
         background-color: rgba(255, 255, 255, 0.9);
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border-bottom-left-radius: 40px;
-        border-bottom-right-radius: 40px;
-        margin-left: -15px;
+        padding: 5px 0 0 0;
+        margin-left: -5px;
         box-shadow: none;
-        text-align: left; }
+        text-align: left;
+        border-radius: 0; }
         nav#menuMain ul li ul li {
           background-color: transparent;
-          padding: 5px 20px; }
+          padding: 0; }
           nav#menuMain ul li ul li:hover > a {
             background-color: transparent; }
           nav#menuMain ul li ul li a {
-            border-bottom-color: transparent;
-            display: inline; }
+            display: block;
+            width: 100%;
+            font-size: 16px;
+            padding: 5px 15px; }
             nav#menuMain ul li ul li a:hover {
-              background-color: transparent;
-              border-bottom-color: #766068; }
+              background-color: rgba(118, 96, 104, 0.2); }
 
 @media screen and (max-width: 768px) {
   a.menuMainAlt {
@@ -358,12 +415,12 @@ nav {
     nav ol.breadcrumbList li.breadcrumbItem:first-child:before {
       display: none; }
     nav ol.breadcrumbList li.breadcrumbItem a {
-      font-family: "Noto Sans", sans-serif; }
+      font-family: "MotivaSans-Regular", sans-serif; }
 
 section.carousel {
   padding: 0;
   max-width: none;
-  height: 450px; }
+  height: auto; }
   section.carousel li.carouselSlide {
     max-height: none;
     height: 450px;
@@ -410,7 +467,7 @@ section.carousel {
       background-color: rgba(99, 162, 188, 0.85);
       margin: 60px 0 0 0; }
       section.carousel .carouselDetailWrapper .carouselSlideDetail h2.carouselSlideHeading, section.carousel .carouselDetailWrapper .carouselSlideDetail .carouselSlideSummary {
-        font-family: "Noto Sans", sans-serif; }
+        font-family: "MotivaSans-Regular", sans-serif; }
       section.carousel .carouselDetailWrapper .carouselSlideDetail h2.carouselSlideHeading {
         font-size: 24px; }
       section.carousel .carouselDetailWrapper .carouselSlideDetail .carouselSlideSummary {
@@ -557,7 +614,7 @@ section.carousel {
       .homeFeedsWrapper .homeFeed ul.feedList li p {
         width: 100%;
         padding: 0 30px;
-        font-family: Arial, sans-serif; }
+        font-family: "MotivaSans-Regular", sans-serif, sans-serif; }
         .homeFeedsWrapper .homeFeed ul.feedList li p span.readMore {
           display: block;
           background-color: #820551;
@@ -567,13 +624,13 @@ section.carousel {
           text-align: center;
           font-size: 14px;
           margin: 15px auto 30px auto;
-          font-family: "Noto Sans", sans-serif; }
+          font-family: "MotivaSans-Regular", sans-serif; }
           .homeFeedsWrapper .homeFeed ul.feedList li p span.readMore:hover {
             background-color: #690442; }
       .homeFeedsWrapper .homeFeed ul.feedList li.tweet img {
         display: none; }
       .homeFeedsWrapper .homeFeed ul.feedList li.tweet p {
-        font-family: "Noto Sans", sans-serif;
+        font-family: "MotivaSans-Regular", sans-serif;
         font-size: 14px;
         margin: 0;
         padding: 25px 30px;
@@ -725,14 +782,14 @@ section.carousel {
         margin-top: 0; } }
 
 .homepage {
-  font-family: "Noto Sans", sans-serif; }
+  font-family: "MotivaSans-Regular", sans-serif; }
 
 .homeIntroWrapper .homeIntro {
   color: #766068;
   font-size: 48px;
   margin: 30px auto 15px auto;
   padding: 0;
-  font-family: "Noto Sans", sans-serif; }
+  font-family: "MotivaSans-Regular", sans-serif; }
   @media only screen and (max-width: 768px) {
     .homeIntroWrapper .homeIntro {
       font-size: 36px; } }
@@ -789,7 +846,7 @@ aside.postAside {
         margin: 0;
         text-align: center;
         font-size: 14px;
-        font-family: "Noto Sans", sans-serif;
+        font-family: "MotivaSans-Regular", sans-serif;
         padding-left: 15px;
         padding-right: 15px; }
         aside.postAside .associated.pages p a {
@@ -815,7 +872,7 @@ aside.postAside {
   border: 1px solid #ededed; }
   .pageContent table thead, .postContent table thead {
     background-color: transparent;
-    font-family: "Noto Sans", sans-serif;
+    font-family: "MotivaSans-Regular", sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #820551;
@@ -837,7 +894,7 @@ footer .shareWrapper {
     margin-bottom: 0;
     text-transform: uppercase;
     font-style: normal;
-    font-family: "Noto Sans", sans-serif;
+    font-family: "MotivaSans-Bold", sans-serif;
     font-size: 22px;
     color: #777; }
   footer .shareWrapper ul li {
@@ -855,6 +912,8 @@ footer .shareWrapper {
       font-size: 22px;
       color: #777;
       text-transform: uppercase; }
+      .postComments header h3#makeComment {
+        font-size: 22px; }
   .postComments .commentForm {
     margin-top: 0; }
     .postComments .commentForm label {
@@ -863,7 +922,7 @@ footer .shareWrapper {
     .postComments .commentForm textarea, .postComments .commentForm input {
       border: 0;
       border-radius: 0;
-      font-family: "Noto Sans", sans-serif; }
+      font-family: "MotivaSans-Regular", sans-serif; }
       .postComments .commentForm textarea[type="checkbox"]#notifyComments, .postComments .commentForm input[type="checkbox"]#notifyComments {
         margin: 5px 5px 0 0; }
     .postComments .commentForm button {
@@ -890,7 +949,7 @@ footer .shareWrapper {
             display: inline;
             font-size: 12px;
             color: #777;
-            font-family: "Noto Sans", sans-serif; }
+            font-family: "MotivaSans-Regular", sans-serif; }
             .postComments .commentForm .commentsList .commentContentWrapper footer p strong {
               font-weight: 400; }
             .postComments .commentForm .commentsList .commentContentWrapper footer p.commentDate {
@@ -983,7 +1042,7 @@ p.commentCount {
     font-size: 22px;
     text-align: center;
     display: block;
-    font-family: "Noto Sans", sans-serif;
+    font-family: "MotivaSans-Regular", sans-serif;
     font-weight: 400;
     color: #777;
     border-bottom: 1px solid #ededed;

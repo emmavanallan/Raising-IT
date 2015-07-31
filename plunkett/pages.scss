@@ -133,7 +133,7 @@ footer .shareWrapper{
 		margin-bottom: 0;
 		text-transform: uppercase;
 		font-style: normal;
-		font-family: $main-font;
+		font-family: $main-font-bold;
 		font-size: 22px;
 		color: #777;
 	}
@@ -157,6 +157,9 @@ footer .shareWrapper{
 			font-size: 22px;
 			color: #777;
 			text-transform: uppercase;
+			&#makeComment{
+				font-size: 22px;
+			}
 		}
 	}
 	.commentForm{

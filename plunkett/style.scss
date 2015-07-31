@@ -1,5 +1,7 @@
 // fonts
-$main-font: 'Noto Sans', sans-serif;
+$main-font: 'MotivaSans-Regular', sans-serif;
+$main-font-italic: 'MotivaSans-RegularItalic', sans-serif;
+$main-font-bold: 'MotivaSans-Bold', sans-serif;
 
 // colours
 $mushroom: #766068;
@@ -8,8 +10,10 @@ $yellow: #ebbc00;
 $purple: #820551;
 $green: #52924d;
 
+
 // imports
 @import 'global';
+@import 'fonts';
 @import 'header';
 @import 'footer';
 @import 'navigation';

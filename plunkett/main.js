@@ -47,4 +47,13 @@ $(document).ready(function(){
 	//move comments above form
 	$('.commentsListWrapper').prependTo($('.commentForm'));
 
+	//tabbed content
+	$('.tabsWrapper li a').click(function(){
+		var showClass = $(this).attr('class');
+
+		$('section.tabbedListing').addClass('hidden');
+		$('section.' + showClass).removeClass('hidden');
+
+	});
+
 });

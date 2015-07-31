@@ -1,6 +1,9 @@
-h1,h2,h3,h4,h5{
+html,body{
 	font-family: $main-font;
-	font-weight: 700;
+}
+
+h1,h2,h3,h4,h5{
+	font-family: $main-font-bold;
 	font-style: normal;
 	&.feedTitle{
 		font-weight: 700;
@@ -11,10 +14,26 @@ h1,h2,h3,h4,h5{
 }
 
 h1{
-	font-size: 24px;
+	font-size: 28px;
 	&.title{
 		font-size: 36px;
 	}	
+}
+
+h2{
+	font-size: 24px;
+}
+
+h3{
+	font-size: 18px;
+}
+
+p, ul li, ol li{
+	font-size: 16px;
+}
+
+blockquote p{
+	font-size: 24px;
 }
 
 button, #totaliserActions .buttonDonate, #totaliserActions .donateBtn, .appealActions .donateBtn:link, .appealActions .donateBtn:visited, .appealActions .donateBtn:active, button#btnSignIn, .groupSignUpBtn, a.button.donate,
