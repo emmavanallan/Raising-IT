@@ -28,6 +28,9 @@ $(document).ready(function(){
 	//move the admin menu to the right container
 	$('.menuAdminContainer').prependTo($('header.pageHeader .headerContent'));
 
+	// change admin menu text
+	$('ul#menuAdmin li.menuAdminLogin a').text("Member login");
+
 	//move the Newsletter up a level and wrap it in a container
 	$('.NewsletterSign-up').prependTo($('.pageFooterWrapper'));
 	$('.NewsletterSign-up').wrap('<div class="newsletter-container"></div>');
@@ -47,13 +50,5 @@ $(document).ready(function(){
 	//move comments above form
 	$('.commentsListWrapper').prependTo($('.commentForm'));
 
-	//tabbed content
-	$('.tabsWrapper li a').click(function(){
-		var showClass = $(this).attr('class');
-
-		$('section.tabbedListing').addClass('hidden');
-		$('section.' + showClass).removeClass('hidden');
-
-	});
 
 });

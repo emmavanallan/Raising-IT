@@ -24,6 +24,8 @@ header{
 			margin: 15px 0 0 0;
 			@media screen and (max-width: 768px){
 				margin-top: 0;
+				width: 130px;
+    			height: 100px;
 			}
 		}
 		
@@ -57,7 +59,7 @@ header{
 		form{
 			clear: none;
 			float: right;
-			position: initial;
+			position: static;
 			right: auto;
 		}
 		.searchContainer{
@@ -94,7 +96,7 @@ header{
 		padding: 15px 0 0 0;
 			a {
 				color: #fff;
-				border-left: 1px solid white;
+				//border-left: 1px solid white;
 				padding: 0 7px;
 				margin: 0;
 				font-size: 12px;
@@ -104,10 +106,7 @@ header{
 					border-left: 0;
 				}
 			}
-			&.menuAdminRegister{
-				display: inline-block;
-			}
-			&.menuAdminBasket{
+			&.menuAdminRegister, &.menuAdminBasket{
 				display: none;
 			}
 

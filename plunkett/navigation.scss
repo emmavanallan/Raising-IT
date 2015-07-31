@@ -26,7 +26,7 @@ nav#menuMain{
 				color:$mushroom;
 				//border-bottom: 2px solid #fff;
 				padding: 4px 10px;
-				font-weight: 700;
+				font-family: $main-font-bold;
 				font-size: 18px;
 				border-radius: 0;
 				&:hover, &.active{
@@ -109,6 +109,8 @@ nav#menuMain{
 						background-color: $mushroom;
 						padding: 10px 30px 10px 15px;
 						color: #fff;
+						-webkit-appearance: none;
+    					border-radius: 0;
 						&::-webkit-input-placeholder,
 						&:-moz-placeholder,
 						&::-moz-placeholder,
@@ -140,6 +142,8 @@ nav#menuMain{
 							display: inline-block;
 							padding: 0;
 							border-bottom: 0;
+							border-radius: 100px;
+    						width: 30px;
 							&:before{
 								color: #fff;
 							}
@@ -156,6 +160,7 @@ nav#menuMain{
 			a{
 				padding: 10px 15px;
 				border-bottom: 1px solid rgba($mushroom, 0.3);
+				font-size: 16px;
 				&:hover, &.active{
 					background-color: rgba($mushroom,0.2);
 					border-bottom-color: rgba($mushroom, 0.3);
