@@ -7,13 +7,25 @@
 
 // strapline
 .homeIntroWrapper{
+	margin: 0 auto;
+	padding: 0;
+	max-width: 100%;
+	background-size: cover;
+	background-image: url('http://millenniumpoint.ritdns.com/Handlers/GetImage.ashx?w=1400&h=400&f=1&IDMF=9c1d8516-c825-47f0-8b5c-46b564ebcf63');
 	.homeIntro{
-		color: $mushroom;
-		margin: 30px auto 15px auto;
-		padding: 0;
+		background-color: rgba(#000,0.6);
+		color: #fff;
+		padding: 60px 0;
+		margin: 0;
 		font-family: $main-font;
 		p{
 			font-size: 48px;
+			margin: 0;
+			a.button{
+				font-size: 24px;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+			}
 		}
 		@media only screen and (max-width : 768px) {
 			margin: 30px auto;

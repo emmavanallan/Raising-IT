@@ -1,8 +1,10 @@
 // feeds
 .homeFeedsWrapper{
+	margin-top: 60px;
+	margin-bottom: 60px;
 	.feed-wrapper{
 		width: 33.33333%;
-		padding: 0 30px;	
+		padding: 0 15px;	
 		float: left;
 		@media only screen and (max-width : 1000px) {
 			padding-left: 15px;
@@ -15,17 +17,99 @@
 		}
 	}
 	.homeFeed{
-		background-color: #ededed;
-		border-bottom-right-radius: 60px;
-		border-bottom-left-radius: 60px;
 		margin: 0;
 		width: 100%;
 		float: none;
 		clear: none;
-		min-height: 600px;
 		h3{
-			background-color: $mushroom;
 			border-radius: 0;
+			color: #fff;
+			font-size: 36px;
+			background-color: transparent;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			position: relative;
+			
+			&:before{
+				font-family: 'FontAwesome';
+				position: absolute;
+				top: 0;
+				left: 33px;
+				display: block;
+			}
+		}
+		&.LatesttweetFeed{
+			background-color: $blue;
+			padding: 30px;
+			h3{
+				padding-left: 33px;
+				&:before{
+					content:'\f099';
+				}
+			}
+		}
+		&.LatestnewsFeed{
+			position: relative;
+			background-color: #000;
+			h3{
+				position: absolute;
+				top: 30px;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+			}
+			li img{
+				opacity: 0.5;
+			}
+			p{
+				display: none;
+			}
+			ul{
+				h3{
+					top: 50%;
+					padding: 0;
+					a{
+						color: #fff;
+						font-weight: 400;
+						font-size: 24px;
+					}
+				}
+			}
+		}
+
+		&.OurpartnersFeed{
+			background-color: $pink;
+			padding: 30px;
+			height: 228px;
+			&>h3, p{
+				display: none;
+			}
+			h3{
+				a{
+					color: #fff;
+					font-weight: 400;
+					width: 100%;
+					display: block;
+					height: 180px;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+				&:after{
+					content: '\f0f7';
+					font-family: 'FontAwesome';
+					font-size: 80px;
+					width: 80px;
+					height: 80px;
+					line-height: 80px;
+					margin: 0 auto;
+					left: 0;
+					right: 0;
+					position: absolute;
+					top: 70px;
+				}
+			}
 		}
 		ul.feedList{
 			min-height: 100%;
@@ -34,83 +118,38 @@
 			li{
 				margin-top: 0;
 				img{
-					margin: 0 0 30px;
+					margin: 0;
 					width: 100%;
 					height: auto;
 				}
-				h3{
-					padding: 0 30px;
-					background-color: transparent;
-					a{
-						color: $purple;
-						&:hover{
-							text-decoration: underline;
-						}
-					}
-				}
-				p{
-					width: 100%;
-					padding: 0 30px;
-					font-family: $main-font, sans-serif;
-					span.readMore{
-						display: block;
-						background-color: $purple;
-						color: #fff;
-						padding: 10px 15px;
-						width: 120px;
-						text-align: center;
-						font-size: 14px;
-						margin: 15px auto 30px auto;
-						font-family: $main-font;
-						&:hover{
-							background-color: darken($purple, 5%);
-						}
-					}
-				}
+
 				&.tweet{
 					img{
 						display: none;
 					}
 					p{
 						font-family: $main-font;
-						font-size: 14px;
+						font-size: 16px;
 						margin: 0;
-						padding: 25px 30px;
-						border-bottom: 1px solid rgba(#fff,0.5);
+						padding: 15px 0;
+						color: #fff;
+						text-align: center;
+						a{
+							color: #fff;
+							text-decoration: underline;
+							&:hover{
+								text-decoration: none;
+							}
+						}
 					}
 					time{
 						display: none;
 					}
 				}
 			}
-			&.tweetsWrapper{
-				position: relative;
-				&:before{
-					content:'\f099';
-					font-family: 'FontAwesome';
-					position: absolute;
-					bottom: 0;
-					right: 0px;
-					font-size: 248px;
-					color: rgba(#000,0.07);
-					display: block;
-					height: 200px;
-					line-height: 200px;
-				}
-			}
 		}
 		.feedActionWrapper{
-			text-align: center;
-			background-color: transparent;
-			a.button{
-				padding: 10px 15px;
-				font-size: 14px;
-				width: 120px;
-				margin: 30px 0;
-				@media only screen and (max-width : 768px) {
-					margin: 15px 0;
-				}
-			}
+			display: none;
 		}
 		@media only screen and (max-width : 768px) {
 			min-height: auto;
@@ -122,13 +161,5 @@
 			padding-right: 0;
 			margin-bottom: 15px;
 		}
-	}
-	//Latest blog
-	.homeFeedblogs{
-
-	}
-
-	//Latest news
-	.homeFeedevents{
 	}
 }

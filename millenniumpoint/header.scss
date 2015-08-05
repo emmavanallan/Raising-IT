@@ -15,10 +15,9 @@ header{
 		position: relative;
 		//main logo
 		.mainLogo{
-			background-image: url('http://plunkett.ritdns.co.uk/Handlers/GetImage.ashx?IDMF=21b6f80c-ac51-47b2-8ab7-3fb64721e79a&w=300&h=223
-');
-			width: 170px;
-			height: 125px;
+			background-image: url('http://millenniumpoint.ritdns.com/Handlers/GetImage.ashx?IDMF=fed4888d-240d-4338-b9c1-7e2cb3b31c18&w=400&h=131');
+			width: 200px;
+			height: 70px;
 			background-size: contain;
 			background-repeat: no-repeat;
 			margin: 15px 0 0 0;
@@ -32,8 +31,10 @@ header{
 		// social media icons
 		.mainCallToAction {
 			margin: 0;
-			float: right;
-			margin: 15px 15px 0 0;
+			float: none;
+			position: absolute;
+			right: 0;
+			bottom: 0;
 			ul.socialIcons{
 				text-align: center;
 				li{
@@ -57,61 +58,25 @@ header{
 			}
 		}
 		form{
-			clear: none;
-			float: right;
-			position: static;
-			right: auto;
-		}
-		.searchContainer{
-			margin: 15px 15px 0 0;
-			#siteSearch{
-				background-color: #f0f0f0;
-				color: #333;
-				height: auto;
-				padding: 7px;
-				font-size: 14px;
-			}
-			button{
-				margin: 0 10px 0 0;
-				top: 3px;
-			}
+			display: none;
 		}
 	}
 }
 
 // Login menu
 .menuAdminContainer{
-	background-color: $purple;
-	float: right;
-	width: auto;
-	z-index: 3;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	height: auto;
-	ul#menuAdmin{
-		text-align: center;
-		padding: 0 10px 12px 10px;
-		li{
-		display: inline-block;
-		padding: 15px 0 0 0;
-			a {
-				color: #fff;
-				//border-left: 1px solid white;
-				padding: 0 7px;
-				margin: 0;
-				font-size: 12px;
-			}
-			&:first-child{
-				a{
-					border-left: 0;
-				}
-			}
-			&.menuAdminRegister, &.menuAdminBasket{
-				display: none;
-			}
-
+	position: absolute;
+	right: 0;
+	top: 0;
+	ul#menuAdmin li{
+		&.menuAdminBasket{
+			display: none;
 		}
-	}
+		a{
+			font-size: 14px;
+			color: $purple;
+		}
+	} 
 }
 
 //admin bar

@@ -1,10 +1,10 @@
 footer.pageFooterWrapper{
 	padding: 0;
-	background-color: $mushroom;
+	background-color: #222;
 	margin-top: 60px;
 	.newsletter-container{
-		padding: 60px 0;
-		background-color: #ededed;
+		padding: 30px 0;
+		background-color: #dadada;
 		width: 100%;
 		.NewsletterSign-up{
 			width: 100%;
@@ -14,8 +14,8 @@ footer.pageFooterWrapper{
 			float: none;
 			h1{
 				text-align: center;
-				font-weight: bold;
-				color: $mushroom;
+				font-weight: 400;
+				color: #444;
 				margin-bottom: 10px;
 			}
 			.featureForm{
@@ -66,9 +66,11 @@ footer.pageFooterWrapper{
 			clear: none;
 			border-top: 0;
 			text-align: left;
-			ul li a, p{
+			color: #fff;
+			font-size: 18px;
+			ul li a, p, li{
 				color: #fff;
-				font-size: 16px;
+				font-size: 18px;
 			}
 			ul{
 				margin-bottom: 0;

@@ -1,149 +1,72 @@
 // features
 .homeFeaturesWrapper{
 	.homeFeatures{
+		width: 100%;
+		max-width: none;
+		padding: 10px 0;
+		margin: 0;
 		.feature-wrapper{
-			width: 50%;
-			padding: 30px;
-			float: left;
-			@media only screen and (max-width : 1000px) {
-				padding: 15px;
-			}
-			@media only screen and (max-width : 768px) {
-				padding-left: 5px;
-				padding-right: 5px;
-			}
-			@media only screen and (max-width : 480px) {
-				width: 100%;
-				padding-left: 0;
-				padding-right: 0;
-				padding-top: 0;
-			}
 		}
 		.homeFeature{
 			width: 100%;
 			padding: 0;
-			position: relative;
-			overflow: hidden;
-			height: 300px;
-			background-repeat: no-repeat;
-			background-size: cover;
-			&.homeBox1{
-					border-top-left-radius: 100px;
-					@media only screen and (max-width : 480px) {
-						border-top-left-radius: 0;
-					}
-				.homeFeatureDetailsWrapper{
-					background-color: rgba($green, 0.85);
-				}
-			}
-			&.homeBox2{
-				.homeFeatureDetailsWrapper{
-					background-color: rgba($purple, 0.85);
-				}
-			}
-			&.homeBox3{
-				.homeFeatureDetailsWrapper{
-					background-color: rgba($yellow, 0.85);
-				}
-			}
-			&.homeBox4{
-				clear: none;
-				border-bottom-right-radius: 100px;
-				.homeFeatureDetailsWrapper{
-					background-color: rgba($blue, 0.85);
-					border-bottom-right-radius: 100px;
-				}
-				@media only screen and (max-width : 480px) {
-					border-bottom-right-radius: 0;
-					.homeFeatureDetailsWrapper{
-						border-bottom-right-radius: 0;
-					}
-				}
-			}
+			height: 400px;
+			float: none;
+			clear: none;
 			img{
 				display: none;
 			}
+			&> a{
+				width: 50%;
+				background-size: cover;
+				display: block;
+				background-repeat: no-repeat;
+				height: 400px;
+				float: left;
+			}
+			transition: background-color 0.4s ease 0.1s;
 			.homeFeatureDetailsWrapper{
-				width: 100%;
-				padding: 0;
+				width: 50%;
+				float: right;
+				padding: 30px;
 				text-align: left;
-				position: absolute;
-				transition: all 0.4s ease 0.1s;
-				bottom: 0;
+				position: relative;
+				&:before{
+					content: 'Upcoming event';
+					font-size: 48px;
+					height: 53px;
+					line-height: 53px;
+				}
 				h2{
-					transition: all 0.4s ease 0.1s;
-					margin: 0;
-					padding:15px;
+					margin: 200px 0 0 0;
+					padding: 0;
 					position: relative;
-					&:after{
-						content: '\f18e';
-						top: 15px;
-						display: block;
-						position: absolute;
-						width: 30px;
-						height: 30px;
-						line-height: 30px;
-						text-align: center;
-						right: 90px;
-						font-family: 'FontAwesome';
-						font-size: 24px;
-						font-size: 2.4rem;
-						color: #fff;
-					}
 					a{
-						color: #fff;
+						color: #444;
 						&:hover{
 							text-decoration: none;
 						}
 					}
 				}
-				p{
-					display: none;
-				}
 			}
 			&:hover{
-				background-color: transparent;
-				border: 0;
-				&.homeBox1 .homeFeatureDetailsWrapper{
-					background-color: rgba($green, 1);
+				background-color: $blue;
+				color: #fff;
+				h2 a{
+					color: #fff;
 				}
-				&.homeBox2 .homeFeatureDetailsWrapper{
-					background-color: rgba($purple, 1);
-				}
-				&.homeBox3 .homeFeatureDetailsWrapper{
-					background-color: rgba($yellow, 1);
-				}
-				&.homeBox4 .homeFeatureDetailsWrapper{
-					background-color: rgba($blue, 1);
-				}
-
-				.homeFeatureDetailsWrapper{
-					h2{
-						margin-top: 15px;
-					}
-
+				&> a{
+					opacity: 0.7;
 				}
 			}
 			@media only screen and (max-width : 1000px) {
-				.homeFeatureDetailsWrapper h2:after{
-					right: 50px;
-				}
+				
 			}
 			@media only screen and (max-width : 768px) {
-				margin: 0;
-				height: 200px;
-				.homeFeatureDetailsWrapper{
-					h2{
-						margin-top: 0;
-						font-size: 18px;
-						&:after{
-							display: none;
-						}
-					}
-				}
-				&:hover .homeFeatureDetailsWrapper h2{
-					margin-top: 0;				
-				}
+				
+			}
+			&.homeBox2{
+				
 			}
 		}
 	}

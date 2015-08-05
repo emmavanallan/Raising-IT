@@ -12,8 +12,17 @@ $(document).ready(function(){
 		$(this).css('background-image',  'url(' + imgUrl + ')');
 	});
 
+	$('section.carousel').append('<div class="strapline"><h1>Where science, technology and learning come to life</h1></div>');
+
+	$('section.carousel li a.carouselSlideTitle').click(function(e) {
+	    e.preventDefault();
+	});
+
+	//move the intro to after the features
+	$('.homeIntroWrapper').insertAfter($('.homeFeaturesWrapper'));
+
 	//make homepage features images work better
-	$('.homeFeature').each(function(){	
+	$('.homeFeature > a').each(function(){	
 		var imgUrl = $(this).find('img').attr('src');
 		$(this).css('background-image',  'url(' + imgUrl + ')');
 	});
@@ -28,19 +37,10 @@ $(document).ready(function(){
 	//move the admin menu to the right container
 	$('.menuAdminContainer').prependTo($('header.pageHeader .headerContent'));
 
-	// change admin menu text
-	$('ul#menuAdmin li.menuAdminLogin a').text("Member login");
-
 	//move the Newsletter up a level and wrap it in a container
 	$('.NewsletterSign-up').prependTo($('.pageFooterWrapper'));
 	$('.NewsletterSign-up').wrap('<div class="newsletter-container"></div>');
 	$('.groupSignUpBtn').wrap('<div class="formQuestion"></div>');
-
-	//contact page
-	// $('body.contact article.post').wrap('<div class="pageWrapper"></div>');
-
-	//Appeals
-	$('.appealActions').appendTo($('.appealWidgetsWrapper'));
 
 	//if we are logged in, hide the newsletter sign up form
 	if ($("header.pageHeader").find(".adminBar").length > 0){ 
@@ -49,6 +49,5 @@ $(document).ready(function(){
 
 	//move comments above form
 	$('.commentsListWrapper').prependTo($('.commentForm'));
-
 
 });
