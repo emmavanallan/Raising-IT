@@ -1,0 +1,134 @@
+// feeds
+.homeFeedsWrapper{
+	.feed-wrapper{
+		width: 33.33333%;
+		padding: 0 30px;	
+		float: left;
+		@media only screen and (max-width : 1000px) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		@media only screen and (max-width : 768px) {
+			float: none;
+			width: 100%;
+			padding: 0;
+		}
+	}
+	.homeFeed{
+		background-color: #ededed;
+		border-bottom-right-radius: 60px;
+		border-bottom-left-radius: 60px;
+		margin: 0;
+		width: 100%;
+		float: none;
+		clear: none;
+		min-height: 600px;
+		h3{
+			background-color: $mushroom;
+			border-radius: 0;
+		}
+		ul.feedList{
+			min-height: 100%;
+			padding: 0;
+			background-color: transparent;
+			li{
+				margin-top: 0;
+				img{
+					margin: 0 0 30px;
+					width: 100%;
+					height: auto;
+				}
+				h3{
+					padding: 0 30px;
+					background-color: transparent;
+					a{
+						color: $purple;
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+				}
+				p{
+					width: 100%;
+					padding: 0 30px;
+					font-family: $main-font, sans-serif;
+					span.readMore{
+						display: block;
+						background-color: $purple;
+						color: #fff;
+						padding: 10px 15px;
+						width: 120px;
+						text-align: center;
+						font-size: 14px;
+						margin: 15px auto 30px auto;
+						font-family: $main-font;
+						&:hover{
+							background-color: darken($purple, 5%);
+						}
+					}
+				}
+				&.tweet{
+					img{
+						display: none;
+					}
+					p{
+						font-family: $main-font;
+						font-size: 14px;
+						margin: 0;
+						padding: 25px 30px;
+						border-bottom: 1px solid rgba(#fff,0.5);
+					}
+					time{
+						display: none;
+					}
+				}
+			}
+			&.tweetsWrapper{
+				position: relative;
+				&:before{
+					content:'\f099';
+					font-family: 'FontAwesome';
+					position: absolute;
+					bottom: 0;
+					right: 0px;
+					font-size: 248px;
+					color: rgba(#000,0.07);
+					display: block;
+					height: 200px;
+					line-height: 200px;
+				}
+			}
+		}
+		.feedActionWrapper{
+			text-align: center;
+			background-color: transparent;
+			a.button{
+				padding: 10px 15px;
+				font-size: 14px;
+				width: 120px;
+				margin: 30px 0;
+				@media only screen and (max-width : 768px) {
+					margin: 15px 0;
+				}
+			}
+		}
+		@media only screen and (max-width : 768px) {
+			min-height: auto;
+			margin-bottom: 15px;
+		}
+		@media only screen and (max-width : 480px) {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+			margin-bottom: 15px;
+		}
+	}
+	//Latest blog
+	.homeFeedblogs{
+
+	}
+
+	//Latest news
+	.homeFeedevents{
+	}
+}

@@ -1,0 +1,46 @@
+// fonts
+$main-font: 'MotivaSans-Regular', sans-serif;
+$main-font-italic: 'MotivaSans-RegularItalic', sans-serif;
+$main-font-bold: 'MotivaSans-Bold', sans-serif;
+
+// colours
+$mushroom: #766068;
+$blue: #63a2bc;
+$yellow: #ebbc00;
+$purple: #820551;
+$green: #52924d;
+
+
+// imports
+@import 'global';
+@import 'fonts';
+@import 'header';
+@import 'footer';
+@import 'navigation';
+@import 'carousel';
+@import 'homepage';
+@import 'pages';
+
+// Media queries
+@media only screen and (max-width : 1000px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
+}

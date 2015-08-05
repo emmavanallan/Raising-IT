@@ -1,0 +1,120 @@
+header{
+	position: relative;
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+	&.headerWrapper{
+		max-width: 100%;
+		padding: 0;
+	}
+}
+.content{
+	&.headerContent{
+		background-color: #fff;
+		position: relative;
+		//main logo
+		.mainLogo{
+			background-image: url('http://plunkett.ritdns.co.uk/Handlers/GetImage.ashx?IDMF=21b6f80c-ac51-47b2-8ab7-3fb64721e79a&w=300&h=223
+');
+			width: 170px;
+			height: 125px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			margin: 15px 0 0 0;
+			@media screen and (max-width: 768px){
+				margin-top: 0;
+				width: 130px;
+    			height: 100px;
+			}
+		}
+		
+		// social media icons
+		.mainCallToAction {
+			margin: 0;
+			float: right;
+			margin: 15px 15px 0 0;
+			ul.socialIcons{
+				text-align: center;
+				li{
+					margin: 0 5px 0 0;
+					a{
+						margin: 0;
+						border: 0;
+						line-height: 30px;
+						&:before{
+							color: #fff;
+							padding: 0;
+						}
+						&.twitter{
+							background-color: #55acee;
+						}
+						&.facebook{
+							background-color: #3b5998;
+						}
+					}
+				}
+			}
+		}
+		form{
+			clear: none;
+			float: right;
+			position: static;
+			right: auto;
+		}
+		.searchContainer{
+			margin: 15px 15px 0 0;
+			#siteSearch{
+				background-color: #f0f0f0;
+				color: #333;
+				height: auto;
+				padding: 7px;
+				font-size: 14px;
+			}
+			button{
+				margin: 0 10px 0 0;
+				top: 3px;
+			}
+		}
+	}
+}
+
+// Login menu
+.menuAdminContainer{
+	background-color: $purple;
+	float: right;
+	width: auto;
+	z-index: 3;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	height: auto;
+	ul#menuAdmin{
+		text-align: center;
+		padding: 0 10px 12px 10px;
+		li{
+		display: inline-block;
+		padding: 15px 0 0 0;
+			a {
+				color: #fff;
+				//border-left: 1px solid white;
+				padding: 0 7px;
+				margin: 0;
+				font-size: 12px;
+			}
+			&:first-child{
+				a{
+					border-left: 0;
+				}
+			}
+			&.menuAdminRegister, &.menuAdminBasket{
+				display: none;
+			}
+
+		}
+	}
+}
+
+//admin bar
+.adminBar, .adminBarEdit{
+	margin: 0;
+}

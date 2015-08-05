@@ -1,0 +1,222 @@
+nav#menuMain{
+	background-color: #fff;
+	max-width: none;
+	width: auto;
+	position: absolute;
+	bottom: 0;
+	right:0;
+	ul{
+		text-align: right;
+		li{
+			padding: 0;
+			&:hover{
+				&> a{
+					background-color: #fff;
+				}
+			}
+			&#menu74b947ee-6bc6-47da-9357-a9cd295b5eb5 a{
+				margin: 0;
+				&:hover{
+					color: $mushroom;
+					border-radius: 0;
+					margin: 0;
+				}
+			}
+			a{
+				color:$mushroom;
+				//border-bottom: 2px solid #fff;
+				padding: 4px 10px;
+				font-family: $main-font-bold;
+				font-size: 18px;
+				border-radius: 0;
+				&:hover, &.active{
+					background-color: rgba($mushroom,0.2);
+					//border-bottom-color: $mushroom;	
+				}
+
+				@media screen and (max-width: 1000px){
+					font-size: 14px;
+				}
+			}
+			ul{
+				background-color: rgba(#fff, 0.9);
+				padding: 5px 0 0 0;
+				// padding-bottom: 15px;
+				// border-bottom-left-radius: 40px;
+				// border-bottom-right-radius: 40px;
+				margin-left: -5px;
+				box-shadow: none;
+				text-align: left;
+				border-radius: 0;
+				li{
+					background-color: transparent;
+					padding: 0;
+					&:hover{
+						&> a {
+							background-color: transparent;
+						}
+					}
+					a{
+						//border-bottom-color: transparent;
+						display: block;
+						width: 100%;
+						font-size: 16px;
+						padding: 5px 15px;
+						&:hover{
+							background-color: rgba($mushroom, 0.2);
+							//border-bottom-color: $mushroom;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	a.menuMainAlt{
+		background-color: #f0f0f0;
+		color: #666;
+		font-weight: 700;
+		text-transform: uppercase;
+		width: auto;
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 5px 10px;
+		border: 1px solid #e5e5e5;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	nav#menuMain{
+		bottom: auto;
+		top: 37px;
+		z-index: 10;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		box-shadow: 0 0 10px rgba(#000,0.3);
+		ul li{
+			padding: 0;
+			&.mobile-search{
+				form{
+					float: none;
+				}
+				.searchContainer{
+					padding: 0;
+					margin: 0;
+					#siteSearch{
+						background-color: $mushroom;
+						padding: 10px 30px 10px 15px;
+						color: #fff;
+						-webkit-appearance: none;
+    					border-radius: 0;
+						&::-webkit-input-placeholder,
+						&:-moz-placeholder,
+						&::-moz-placeholder,
+						&:-ms-input-placeholder {
+							color: #fff;
+						}
+					}
+					button{
+						top: 7px;
+						margin: 0;
+						&:before{
+							color: #fff;
+						}
+					}
+				}
+			}
+			.mainCallToAction{
+				margin: 0;
+				float: none;
+				ul{
+					margin: 10px 0;
+					text-align: center;
+					li{
+						padding: 0;
+						margin: 0;
+						text-align: center;
+						a{
+							margin: 0 5px;
+							display: inline-block;
+							padding: 0;
+							border-bottom: 0;
+							border-radius: 100px;
+    						width: 30px;
+							&:before{
+								color: #fff;
+							}
+							&.twitter{
+								background-color: #55acee;
+							}
+							&.facebook{
+								background-color: #3A5795;
+							}
+						}
+					}
+				}
+			}
+			a{
+				padding: 10px 15px;
+				border-bottom: 1px solid rgba($mushroom, 0.3);
+				font-size: 16px;
+				&:hover, &.active{
+					background-color: rgba($mushroom,0.2);
+					border-bottom-color: rgba($mushroom, 0.3);
+				}
+				&:after{
+					font-size: 1em;
+					padding: 0;
+					right: 20px;
+					top: 10px;
+				}
+			}
+			&> ul{
+				padding: 0;
+				margin: 0;
+				border-bottom-right-radius: 0;
+				border-bottom-left-radius: 0;
+				li{
+					padding: 0;
+					a{
+						background-color: rgba($mushroom, 0.05);
+						border-bottom: 0;
+						display: block;
+						&:hover{
+							background-color: rgba($mushroom, 0.2);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// breadcrumbs
+nav{
+	margin-top: 30px;
+	ol.breadcrumbList{
+		li.breadcrumbItem{
+			margin-right: 0;
+			background-color: #ededed;
+			padding: 5px 0 5px 15px;
+			position: relative;
+			color: $green;
+			&:last-child{
+				padding-right: 15px;
+			}
+			&:before{
+				font-family: 'FontAwesome';
+				content: '\f105';
+				color: $green;
+			}
+			&:first-child:before{
+				display: none;
+			}
+			a{
+				font-family: $main-font;
+			}
+		}
+	}
+}

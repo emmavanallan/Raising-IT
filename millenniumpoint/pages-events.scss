@@ -1,0 +1,94 @@
+.eventListingPage{
+	.listContent{
+		width: 100%;
+		margin-right: 0;
+	}
+	aside{
+		display: none;
+	}
+}
+
+aside{
+	.eventDetails{
+		.eventWhereWrapper, .eventWhenWrapper{
+			background-color: #fff;
+			margin-top: 0;
+			p{
+				margin: 0;
+				padding: 15px;
+			}
+		}
+		.eventWhenWrapper{
+			padding: 15px;
+			p{
+				strong{
+					font-weight: 700;
+				}
+			}
+		}
+		a.button, a.addToCalender{
+			&:hover{
+			}
+		}
+	}
+}
+
+.eventContent{
+	.eventBookingWrapper, .ticketsWrapper, .extrasWrapper, .eventSecondStepWrapper, .eventThirdStepWrapper{
+		background-color: #fff;
+		border: 1px solid #ededed;
+		border-radius: 0;
+		padding-right: 15px;
+		padding-left: 15px;
+		table{
+			margin-top: 15px;
+			border: 0;
+			caption{
+				h2{
+					color: #777;
+					margin: 0 0 15px 0;
+					text-transform: uppercase;
+					text-align: center;
+					font-size: 24px;
+				}
+			}
+			tr{
+				background-color: #fff;
+				color: #777;
+				span{
+					color: #777;
+				}
+			}
+			a.buttonIcon{
+				background-color: #ededed;
+				color: #777;
+				vertical-align: middle;
+			}
+		}
+		.formButtons{
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		button{
+
+		}
+	}
+	.ticketsWrapper{
+		border-bottom: 0;
+	}
+	.eventBookingWrapper{
+		border-top: 0;
+		padding:0 15px ;
+		text-align: center;
+		a{
+			float: none;
+			padding-left: 30px;
+			padding-right: 30px;
+			margin-top: 15px;
+			margin-bottom: 30px;
+		}
+	}
+	.postFooterWrapper{
+		display: none;
+	}
+}
