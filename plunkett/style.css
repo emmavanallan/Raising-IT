@@ -372,7 +372,8 @@ nav#menuMain {
               border-radius: 100px;
               width: 30px; }
               nav#menuMain ul li .mainCallToAction ul li a:before {
-                color: #fff; }
+                color: #fff;
+                font-family: 'Genericons', serif; }
               nav#menuMain ul li .mainCallToAction ul li a.twitter {
                 background-color: #55acee; }
               nav#menuMain ul li .mainCallToAction ul li a.facebook {
