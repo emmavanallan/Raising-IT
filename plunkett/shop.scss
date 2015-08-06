@@ -1,0 +1,36 @@
+//products
+
+.productPostPage{
+	.continueShoppingWrapper, aside.productPostWidgets, .footerDepartments{
+		display: none;
+	}
+	.productContentWrapper{
+		float: none;
+		width: 100%;
+		margin: 0;
+		.productBannerWrapper{
+			width: 33.3333%;
+			padding: 0 15px;
+		}
+		.productText{
+			width: 66.666%;
+			padding: 0 15px;
+		}
+	}
+}
+
+//payment
+.paymentPage{
+	caption{
+		text-align: center;
+	}
+	td{
+		padding: 10px;
+	}
+	.formQuestion, .promoCode{
+		margin: 15px;
+	}
+	.basketAdditional{
+		padding: 0 15px;
+	}
+}

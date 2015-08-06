@@ -876,10 +876,10 @@ aside.postAside {
     .listing .listContent .listedPost h2 a:hover {
       text-decoration: none; }
 
-.pageContent table, .postContent table {
+.pageContent table, .postContent table, .paymentPage table {
   border: 1px solid #ededed;
   background-color: #fff; }
-  .pageContent table thead, .postContent table thead {
+  .pageContent table thead, .postContent table thead, .paymentPage table thead {
     background-color: transparent;
     font-family: "MotivaSans-Regular", sans-serif;
     letter-spacing: 1px;
@@ -889,12 +889,12 @@ aside.postAside {
     border-bottom: 1px solid #ededed;
     text-align: left;
     color: #333; }
-    .pageContent table thead th, .postContent table thead th {
+    .pageContent table thead th, .postContent table thead th, .paymentPage table thead th {
       padding: 10px; }
-  .pageContent table tbody, .postContent table tbody {
+  .pageContent table tbody, .postContent table tbody, .paymentPage table tbody {
     color: #333;
     background-color: transparent; }
-    .pageContent table tbody td, .postContent table tbody td {
+    .pageContent table tbody td, .postContent table tbody td, .paymentPage table tbody td {
       padding: 10px; }
 
 footer .shareWrapper {
@@ -1242,6 +1242,28 @@ aside .eventDetails .eventWhenWrapper {
     border-top: 1px solid #ededed; }
     .faqListingPage article .accordianBody footer.postFooterWrapper {
       display: none; }
+
+.productPostPage .continueShoppingWrapper, .productPostPage aside.productPostWidgets, .productPostPage .footerDepartments {
+  display: none; }
+.productPostPage .productContentWrapper {
+  float: none;
+  width: 100%;
+  margin: 0; }
+  .productPostPage .productContentWrapper .productBannerWrapper {
+    width: 33.3333%;
+    padding: 0 15px; }
+  .productPostPage .productContentWrapper .productText {
+    width: 66.666%;
+    padding: 0 15px; }
+
+.paymentPage caption {
+  text-align: center; }
+.paymentPage td {
+  padding: 10px; }
+.paymentPage .formQuestion, .paymentPage .promoCode {
+  margin: 15px; }
+.paymentPage .basketAdditional {
+  padding: 0 15px; }
 
 /* Small Devices, Tablets */
 /* Extra Small Devices, Phones */
