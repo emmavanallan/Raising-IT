@@ -67,18 +67,19 @@ header{
 
 // Login menu
 .menuAdminContainer{
-	position: absolute;
-	right: 0;
-	top: 0;
-	ul#menuAdmin li{
-		&.menuAdminBasket{
-			display: none;
-		}
-		a{
-			font-size: 14px;
-			color: $purple;
-		}
-	} 
+	display: none;
+	// position: absolute;
+	// right: 0;
+	// top: 0;
+	// ul#menuAdmin li{
+	// 	&.menuAdminBasket{
+	// 		display: none;
+	// 	}
+	// 	a{
+	// 		font-size: 14px;
+	// 		color: $purple;
+	// 	}
+	// } 
 }
 
 //admin bar

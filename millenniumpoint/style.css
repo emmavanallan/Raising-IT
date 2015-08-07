@@ -93,14 +93,7 @@ header {
     display: none; }
 
 .menuAdminContainer {
-  position: absolute;
-  right: 0;
-  top: 0; }
-  .menuAdminContainer ul#menuAdmin li.menuAdminBasket {
-    display: none; }
-  .menuAdminContainer ul#menuAdmin li a {
-    font-size: 14px;
-    color: #582e91; }
+  display: none; }
 
 .adminBar, .adminBarEdit {
   margin: 0; }
