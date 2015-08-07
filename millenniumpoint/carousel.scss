@@ -6,19 +6,18 @@ section.carousel{
 	margin-top: 15px;
 	li.carouselSlide{
 		max-height: none;
-		height: auto;
+		min-height: 500px;
+		background-position: center center;
 		display: block;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-position: top center;
 		img{
-			display: block;
+			display: none;
 		}
 		a img{
 			display: none;
 		}
 		a.carouselSlideTitle{
-			height: 700px;
 			display: block;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -200,6 +199,9 @@ section.carousel{
 	ul.carouselSlides{
 		opacity: 0.4;
 		li.carouselSlide{
+			a.carouselSlideTitle{
+				height: 700px;
+			}
 		}
 	}
 	.carouselButtons li.activeSlide a.button{

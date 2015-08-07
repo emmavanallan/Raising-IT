@@ -1,9 +1,10 @@
 header{
 	position: relative;
 	width: 100%;
-	max-width: 1170px;
 	margin: 0 auto;
-	padding: 0 15px;
+	&.pageHeader{
+		padding: 0 60px;
+	}
 	&.headerWrapper{
 		max-width: 100%;
 		padding: 0;
@@ -13,6 +14,7 @@ header{
 	&.headerContent{
 		background-color: #fff;
 		position: relative;
+		max-width: 100%;
 		//main logo
 		.mainLogo{
 			background-image: url('http://millenniumpoint.ritdns.com/Handlers/GetImage.ashx?IDMF=fed4888d-240d-4338-b9c1-7e2cb3b31c18&w=400&h=131');

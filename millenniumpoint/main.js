@@ -1,13 +1,12 @@
 $(document).ready(function(){
 
 	//make the carousel work better
-	$('a.carouselSlideTitle').each(function(){	
+	$('.homepage a.carouselSlideTitle').each(function(){	
 		var imgUrl = $(this).find('img').attr('src');
 		$(this).css('background-image',  'url(' + imgUrl + ')');
 	});
 
-	//make the carousel work better
-	$('a.carouselSlide').each(function(){	
+	$('body:not(.homepage) li.carouselSlide').each(function(){	
 		var imgUrl = $(this).find('img').attr('src');
 		$(this).css('background-image',  'url(' + imgUrl + ')');
 	});
@@ -21,16 +20,23 @@ $(document).ready(function(){
 	//move the intro to after the features
 	$('.homeIntroWrapper').insertAfter($('.homeFeaturesWrapper'));
 
-	//make homepage features images work better
-	$('.homeFeature > a').each(function(){	
-		var imgUrl = $(this).find('img').attr('src');
-		$(this).css('background-image',  'url(' + imgUrl + ')');
-	});
-
 	//wrap homepage items
-	$('.homeFeature').wrap('<div class="feature-wrapper"></div>');
 	$('.homeFeed').wrap('<div class="feed-wrapper"></div>');
 	
+	//move events and news feeds
+	$('.UpcomingeventsFeed').insertAfter($('.carousel'));
+	$('.LatestnewsFeed').insertAfter($('.homeIntroWrapper'));
+	
+	//add more mark up to events
+	$('.UpcomingeventsFeed, .LatestnewsFeed').wrapInner($('<div class="listing-info"></div>'));
+	
+	var eventImage =  $('.UpcomingeventsFeed').find('.feedList li:first-child img').attr('src');
+	var newsImage =  $('.LatestnewsFeed').find('.feedList li:first-child img').attr('src');
+	
+	$('.UpcomingeventsFeed').css('background-image',  'url(' + eventImage + ')');
+	
+	$('.LatestnewsFeed').css('background-image',  'url(' + newsImage + ')');
+
 	//move the mobile menu button to the right container
 	$('.menuMainAlt, #menuMain').prependTo($('header.pageHeader .headerContent'));
 

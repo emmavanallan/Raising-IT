@@ -31,34 +31,31 @@ blockquote p {
 button, #totaliserActions .buttonDonate, #totaliserActions .donateBtn, .appealActions .donateBtn:link, .appealActions .donateBtn:visited, .appealActions .donateBtn:active, button#btnSignIn, .groupSignUpBtn, a.button.donate,
 .commentAddImage, .button, a.button:link, a.button:visited, a.button:active, #totaliserActions .buttonDonate, #totaliserActions .buttonFundraise, .listedFilters a.filter:link, .listedFilters a.filter:visited, .listedFilters a.filter:active, .searchListingPage .searchContainer button, .appliedFilters .filter, .associatedReadMore a, .associatedReadMore a:link, .associatedReadMore a:visited, .associatedReadMore a:active {
   border-radius: 3px;
-  background-color: #582e91;
+  background-color: #0c84c7;
   color: #fff;
   font-size: 16px;
   padding: 5px 15px;
   font-family: "sciflysans", sans-serif; }
   button:hover, #totaliserActions .buttonDonate:hover, #totaliserActions .donateBtn:hover, .appealActions .donateBtn:link:hover, .appealActions .donateBtn:visited:hover, .appealActions .donateBtn:active:hover, button#btnSignIn:hover, .groupSignUpBtn:hover, a.button.donate:hover,
   .commentAddImage:hover, .button:hover, a.button:link:hover, a.button:visited:hover, a.button:active:hover, #totaliserActions .buttonDonate:hover, #totaliserActions .buttonFundraise:hover, .listedFilters a.filter:link:hover, .listedFilters a.filter:visited:hover, .listedFilters a.filter:active:hover, .searchListingPage .searchContainer button:hover, .appliedFilters .filter:hover, .associatedReadMore a:hover, .associatedReadMore a:link:hover, .associatedReadMore a:visited:hover, .associatedReadMore a:active:hover {
-    background-color: #4c287e; }
+    background-color: #0b74af; }
 
 @font-face {
-  font-family: 'sciflysans';
-  src: url("/Platforms/MPT/webfonts/scifly-sans-webfont.eot");
-  src: url("/Platforms/MPT/webfonts/scifly-sans-webfont.eot?#iefix") format("embedded-opentype"), url("/Platforms/MPT/webfonts/scifly-sans-webfont.woff2") format("woff2"), url("/Platforms/MPT/webfonts/scifly-sans-webfont.woff") format("woff"), url("/Platforms/MPT/webfonts/scifly-sans-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: 'sciflysans'; }
 header {
   position: relative;
   width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px; }
+  margin: 0 auto; }
+  header.pageHeader {
+    padding: 0 60px; }
   header.headerWrapper {
     max-width: 100%;
     padding: 0; }
 
 .content.headerContent {
   background-color: #fff;
-  position: relative; }
+  position: relative;
+  max-width: 100%; }
   .content.headerContent .mainLogo {
     background-image: url("http://millenniumpoint.ritdns.com/Handlers/GetImage.ashx?IDMF=fed4888d-240d-4338-b9c1-7e2cb3b31c18&w=400&h=131");
     width: 200px;
@@ -217,6 +214,9 @@ footer.pageFooterWrapper {
     footer.pageFooterWrapper {
       margin-top: 30px; } }
 
+.homepage footer.pageFooterWrapper {
+  margin-top: 0; }
+
 nav#menuMain {
   background-color: #fff;
   max-width: none;
@@ -371,17 +371,16 @@ section.carousel {
   margin-top: 15px; }
   section.carousel li.carouselSlide {
     max-height: none;
-    height: auto;
+    min-height: 500px;
+    background-position: center center;
     display: block;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center; }
+    background-repeat: no-repeat; }
     section.carousel li.carouselSlide img {
-      display: block; }
+      display: none; }
     section.carousel li.carouselSlide a img {
       display: none; }
     section.carousel li.carouselSlide a.carouselSlideTitle {
-      height: 700px;
       display: block;
       background-size: cover;
       background-repeat: no-repeat;
@@ -480,6 +479,8 @@ section.carousel {
   background-color: #000; }
   .homepage section.carousel ul.carouselSlides {
     opacity: 0.4; }
+    .homepage section.carousel ul.carouselSlides li.carouselSlide a.carouselSlideTitle {
+      height: 700px; }
   .homepage section.carousel .carouselButtons li.activeSlide a.button {
     background-color: #fff; }
   .homepage section.carousel .carouselControls {
@@ -526,13 +527,14 @@ section.carousel {
         height: 100px; } }
 
 .homeFeedsWrapper {
-  margin-top: 60px;
+  padding-bottom: 0;
+  margin-top: 0;
   margin-bottom: 60px; }
   .homeFeedsWrapper .homeFeeds {
     padding: 0; }
   .homeFeedsWrapper .feed-wrapper {
-    width: 33.33333%;
-    padding: 0 15px;
+    width: 50%;
+    padding: 0 30px;
     float: left; }
     @media only screen and (max-width: 1000px) {
       .homeFeedsWrapper .feed-wrapper {
@@ -548,7 +550,7 @@ section.carousel {
     width: 100%;
     float: none;
     clear: none;
-    height: 250px;
+    height: 200px;
     overflow: hidden; }
     .homeFeedsWrapper .homeFeed h3 {
       border-radius: 0;
@@ -573,32 +575,11 @@ section.carousel {
         padding-left: 33px; }
         .homeFeedsWrapper .homeFeed.LatesttweetFeed h3:before {
           content: '\f099'; }
-    .homeFeedsWrapper .homeFeed.LatestnewsFeed {
-      position: relative;
-      background-color: #000; }
-      .homeFeedsWrapper .homeFeed.LatestnewsFeed h3 {
-        position: absolute;
-        top: 30px;
-        left: 0;
-        right: 0;
-        margin: 0 auto; }
-      .homeFeedsWrapper .homeFeed.LatestnewsFeed li img {
-        opacity: 0.5; }
-      .homeFeedsWrapper .homeFeed.LatestnewsFeed p {
-        display: none; }
-      .homeFeedsWrapper .homeFeed.LatestnewsFeed ul h3 {
-        bottom: 45px;
-        font-family: "Open Sans", Arial, sans-serif;
-        padding: 0 30px;
-        top: auto;
-        line-height: 28px; }
-        .homeFeedsWrapper .homeFeed.LatestnewsFeed ul h3 a {
-          color: #fff;
-          font-weight: 700;
-          font-size: 16px; }
     .homeFeedsWrapper .homeFeed.OurpartnersFeed {
-      background-color: #ee2157;
+      background-color: #582e91;
       padding: 30px; }
+      .homeFeedsWrapper .homeFeed.OurpartnersFeed:hover {
+        background-color: #4c287e; }
       .homeFeedsWrapper .homeFeed.OurpartnersFeed > h3, .homeFeedsWrapper .homeFeed.OurpartnersFeed p {
         display: none; }
       .homeFeedsWrapper .homeFeed.OurpartnersFeed h3 a {
@@ -620,7 +601,7 @@ section.carousel {
         left: 0;
         right: 0;
         position: absolute;
-        top: 90px;
+        top: 55px;
         cursor: pointer; }
     .homeFeedsWrapper .homeFeed ul.feedList {
       padding: 0;
@@ -659,6 +640,87 @@ section.carousel {
         padding-left: 0;
         padding-right: 0;
         margin-bottom: 15px; } }
+
+.UpcomingeventsFeed, .LatestnewsFeed {
+  width: 100%;
+  border-radius: 0;
+  clear: none;
+  float: none;
+  margin-left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-top: 60px solid #fff;
+  border-bottom: 60px solid #fff; }
+  .UpcomingeventsFeed .listing-info, .LatestnewsFeed .listing-info {
+    width: 66.66666%;
+    float: right;
+    padding: 45px;
+    border-left: 60px solid #fff;
+    background-color: #0c84c7; }
+    .UpcomingeventsFeed .listing-info:hover, .LatestnewsFeed .listing-info:hover {
+      background-color: #0b74af; }
+  .UpcomingeventsFeed h3.feedsTitle, .LatestnewsFeed h3.feedsTitle {
+    border-radius: 0;
+    background-color: transparent;
+    font-size: 24px;
+    padding: 0;
+    position: relative;
+    padding-left: 36px; }
+    .UpcomingeventsFeed h3.feedsTitle:before, .LatestnewsFeed h3.feedsTitle:before {
+      content: '\f073';
+      font-family: 'FontAwesome';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block; }
+  .UpcomingeventsFeed .feedList, .LatestnewsFeed .feedList {
+    background-color: transparent;
+    min-height: 0;
+    padding: 0; }
+    .UpcomingeventsFeed .feedList li, .LatestnewsFeed .feedList li {
+      margin-top: 45px; }
+      .UpcomingeventsFeed .feedList li:hover, .LatestnewsFeed .feedList li:hover {
+        cursor: pointer; }
+      .UpcomingeventsFeed .feedList li:last-child, .LatestnewsFeed .feedList li:last-child {
+        margin-bottom: 0; }
+      .UpcomingeventsFeed .feedList li h3 a, .LatestnewsFeed .feedList li h3 a {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 400; }
+      .UpcomingeventsFeed .feedList li p, .LatestnewsFeed .feedList li p {
+        width: 100%;
+        color: #fff;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 16px;
+        float: none;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+        .UpcomingeventsFeed .feedList li p.associatedStartDate, .LatestnewsFeed .feedList li p.associatedStartDate {
+          margin-top: 0;
+          margin-bottom: 0; }
+    .UpcomingeventsFeed .feedList img, .LatestnewsFeed .feedList img {
+      display: none; }
+    .UpcomingeventsFeed .feedList .postFooterWrapper, .LatestnewsFeed .feedList .postFooterWrapper {
+      display: block;
+      margin-top: 0; }
+      .UpcomingeventsFeed .feedList .postFooterWrapper .shareWrapper, .UpcomingeventsFeed .feedList .postFooterWrapper .locationDetails, .UpcomingeventsFeed .feedList .postFooterWrapper .publishDetailsWrapper, .UpcomingeventsFeed .feedList .postFooterWrapper .associatedEndDate, .UpcomingeventsFeed .feedList .postFooterWrapper .associatedStartDate strong, .UpcomingeventsFeed .feedList .postFooterWrapper .associatedStartDate time span:nth-child(2), .LatestnewsFeed .feedList .postFooterWrapper .shareWrapper, .LatestnewsFeed .feedList .postFooterWrapper .locationDetails, .LatestnewsFeed .feedList .postFooterWrapper .publishDetailsWrapper, .LatestnewsFeed .feedList .postFooterWrapper .associatedEndDate, .LatestnewsFeed .feedList .postFooterWrapper .associatedStartDate strong, .LatestnewsFeed .feedList .postFooterWrapper .associatedStartDate time span:nth-child(2) {
+        display: none; }
+      .UpcomingeventsFeed .feedList .postFooterWrapper > div, .LatestnewsFeed .feedList .postFooterWrapper > div {
+        margin-top: 0; }
+
+.LatestnewsFeed {
+  background-position: bottom right; }
+  .LatestnewsFeed .listing-info {
+    float: left;
+    background-color: #096497;
+    border-left: 0;
+    border-right: 60px solid white; }
+    .LatestnewsFeed .listing-info:hover {
+      background-color: #0b74af; }
+    .LatestnewsFeed .listing-info h3.feedsTitle {
+      padding-left: 0; }
+      .LatestnewsFeed .listing-info h3.feedsTitle:before {
+        display: none; }
 
 .homeFeaturesWrapper .homeFeatures {
   width: 100%;

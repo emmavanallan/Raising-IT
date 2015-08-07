@@ -1,13 +1,14 @@
 // feeds
 .homeFeedsWrapper{
-	margin-top: 60px;
+	padding-bottom: 0;
+	margin-top: 0;
 	margin-bottom: 60px;
 	.homeFeeds{
 		padding: 0;
 	}
 	.feed-wrapper{
-		width: 33.33333%;
-		padding: 0 15px;	
+		width: 50%;
+		padding: 0 30px;
 		float: left;
 		@media only screen and (max-width : 1000px) {
 			padding-left: 15px;
@@ -24,7 +25,7 @@
 		width: 100%;
 		float: none;
 		clear: none;
-		height: 250px;
+		height: 200px;
 		overflow: hidden;
 		h3{
 			border-radius: 0;
@@ -54,41 +55,12 @@
 				}
 			}
 		}
-		&.LatestnewsFeed{
-			position: relative;
-			background-color: #000;
-			h3{
-				position: absolute;
-				top: 30px;
-				left: 0;
-				right: 0;
-				margin: 0 auto;
-			}
-			li img{
-				opacity: 0.5;
-			}
-			p{
-				display: none;
-			}
-			ul{
-				h3{
-					bottom: 45px;
-					font-family: $body-font;
-					padding: 0 30px;
-					top: auto;
-					line-height: 28px;
-					a{
-						color: #fff;
-						font-weight: 700;
-						font-size: 16px;
-					}
-				}
-			}
-		}
-
 		&.OurpartnersFeed{
-			background-color: $pink;
+			background-color: $purple;
 			padding: 30px;
+			&:hover{
+				background-color: darken($purple,5%);
+			}
 			&>h3, p{
 				display: none;
 			}
@@ -114,7 +86,7 @@
 					left: 0;
 					right: 0;
 					position: absolute;
-					top: 90px;
+					top: 55px;
 					cursor: pointer;
 				}
 			}
@@ -170,6 +142,108 @@
 			padding-left: 0;
 			padding-right: 0;
 			margin-bottom: 15px;
+		}
+	}
+}
+
+.UpcomingeventsFeed, .LatestnewsFeed{
+	width: 100%;
+	border-radius: 0;
+	clear: none;
+	float: none;
+	margin-left: 0;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-top: 60px solid #fff;
+	border-bottom: 60px solid #fff;
+	.listing-info{
+		width: 66.66666%;
+		float: right;
+		padding: 45px;
+		border-left: 60px solid #fff;
+		background-color: $blue;
+		&:hover{
+			background-color: darken($blue,5%);
+		}
+	}
+	h3.feedsTitle{
+		border-radius: 0;
+		background-color: transparent;
+		font-size: 24px;
+		padding: 0;
+		position: relative;
+		padding-left: 36px;
+		&:before{
+			content:'\f073';
+			font-family: 'FontAwesome';
+			position: absolute;
+			top: 0;
+			left:0;
+			display: block;
+		}
+	}
+	.feedList{
+		background-color: transparent;
+		min-height: 0;
+		padding: 0;
+		li{
+			&:hover{
+				cursor: pointer;
+			}
+			margin-top: 45px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			h3 a{
+				color: #fff;
+				font-size: 24px;
+				font-weight: 400;
+			}
+			p{
+				width: 100%;
+				color: #fff;
+				font-family: $body-font;
+				font-size: 16px;
+				float: none;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				&.associatedStartDate{
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+			}
+		}
+		img{
+			display: none;
+		}
+		.postFooterWrapper{
+			display: block;
+			margin-top: 0;
+			.shareWrapper, .locationDetails, .publishDetailsWrapper, .associatedEndDate, .associatedStartDate strong, .associatedStartDate time span:nth-child(2){
+				display: none;
+			}
+			&> div {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+.LatestnewsFeed{
+	background-position: bottom right;
+	.listing-info{
+		float: left;
+		background-color: darken($blue,10%);
+		border-left: 0;
+		border-right: 60px solid white;
+		&:hover{
+			background-color: darken($blue,5%);
+		}
+		h3.feedsTitle{
+			padding-left: 0;
+			&:before{
+				display: none;
+			}
 		}
 	}
 }

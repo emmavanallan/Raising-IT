@@ -41,12 +41,12 @@ blockquote p{
 button, #totaliserActions .buttonDonate, #totaliserActions .donateBtn, .appealActions .donateBtn:link, .appealActions .donateBtn:visited, .appealActions .donateBtn:active, button#btnSignIn, .groupSignUpBtn, a.button.donate,
 .commentAddImage, .button, a.button:link, a.button:visited, a.button:active, #totaliserActions .buttonDonate, #totaliserActions .buttonFundraise, .listedFilters a.filter:link, .listedFilters a.filter:visited, .listedFilters a.filter:active, .searchListingPage .searchContainer button, .appliedFilters .filter, .associatedReadMore a, .associatedReadMore a:link, .associatedReadMore a:visited, .associatedReadMore a:active{
 	border-radius: 3px;
-	background-color: $purple;
+	background-color: $blue;
 	color: #fff;
 	font-size: 16px;
 	padding: 5px 15px;
 	font-family: $main-font;
 	&:hover{
-		background-color: darken($purple, 5%);
+		background-color: darken($blue, 5%);
 	}
 }
