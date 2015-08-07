@@ -9,6 +9,9 @@ nav#menuMain{
 		text-align: right;
 		li{
 			padding: 4px 10px;
+			&.hasSubmenu{
+				padding-left: 0;
+			}
 			&:hover{
 				&> a{
 					background-color: #fff;
@@ -39,15 +42,22 @@ nav#menuMain{
 				}
 			}
 			ul{
-				background-color: rgba(#fff, 0.9);
-				padding: 5px 0 0 0;
-				margin-left: -5px;
+				padding: 0;
+				margin-left: -100%;
 				box-shadow: none;
 				text-align: left;
 				border-radius: 0;
+				margin-right: 0;
 				li{
-					background-color: transparent;
+					background-color: #fff;
 					padding: 7px 15px;
+					text-align: center;
+					&:first-child{
+						padding-top: 15px;
+					}
+					&:last-child{
+						padding-bottom: 15px;
+					}
 					&:hover{
 						&> a {
 							background-color: transparent;
@@ -55,8 +65,8 @@ nav#menuMain{
 					}
 					a{
 						border-bottom-color: transparent;
-						display: block;
-						width: 100%;
+						display: inline-block;
+						width: auto;
 						font-size: 16px;
 						padding: 0;
 						&:hover{

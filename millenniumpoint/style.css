@@ -1,5 +1,6 @@
 html, body {
-  font-family: "sciflysans", sans-serif; }
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400; }
 
 h1, h2, h3, h4, h5 {
   font-family: "sciflysans", sans-serif;
@@ -7,7 +8,8 @@ h1, h2, h3, h4, h5 {
   h1.feedTitle, h2.feedTitle, h3.feedTitle, h4.feedTitle, h5.feedTitle {
     font-weight: 700; }
   h1.title, h2.title, h3.title, h4.title, h5.title {
-    color: #333; }
+    color: #333;
+    font-family: "sciflysans", sans-serif; }
 
 h1 {
   font-size: 28px; }
@@ -21,7 +23,7 @@ h3 {
   font-size: 18px; }
 
 p, ul li, ol li {
-  font-size: 16px; }
+  font-size: 18px; }
 
 blockquote p {
   font-size: 24px; }
@@ -67,8 +69,8 @@ header {
     @media screen and (max-width: 768px) {
       .content.headerContent .mainLogo {
         margin-top: 0;
-        width: 130px;
-        height: 100px; } }
+        width: 155px;
+        height: 50px; } }
   .content.headerContent .mainCallToAction {
     margin: 0;
     float: none;
@@ -156,7 +158,7 @@ footer.pageFooterWrapper {
     padding: 60px 15px;
     margin: 0 auto; }
     footer.pageFooterWrapper .pageFooter .footerBox {
-      width: 33.33333%;
+      width: 50%;
       padding: 0 15px;
       margin: 0;
       float: left;
@@ -165,7 +167,7 @@ footer.pageFooterWrapper {
       text-align: left;
       color: #fff;
       font-size: 18px; }
-      footer.pageFooterWrapper .pageFooter .footerBox ul li a, footer.pageFooterWrapper .pageFooter .footerBox p, footer.pageFooterWrapper .pageFooter .footerBox li {
+      footer.pageFooterWrapper .pageFooter .footerBox ul li a, footer.pageFooterWrapper .pageFooter .footerBox a, footer.pageFooterWrapper .pageFooter .footerBox a:link, footer.pageFooterWrapper .pageFooter .footerBox p, footer.pageFooterWrapper .pageFooter .footerBox li {
         color: #fff;
         font-size: 18px; }
       footer.pageFooterWrapper .pageFooter .footerBox ul {
@@ -188,6 +190,8 @@ footer.pageFooterWrapper {
           footer.pageFooterWrapper .pageFooter .footerBox ul.socialIcons li a:before {
             color: #fff;
             padding: 0; }
+      footer.pageFooterWrapper .pageFooter .footerBox .links-small, footer.pageFooterWrapper .pageFooter .footerBox .links-small a {
+        font-size: 14px; }
       @media only screen and (max-width: 768px) {
         footer.pageFooterWrapper .pageFooter .footerBox {
           width: 100%;
@@ -195,6 +199,17 @@ footer.pageFooterWrapper {
           text-align: center; }
           footer.pageFooterWrapper .pageFooter .footerBox.footerBox4 {
             margin-top: 15px; } }
+      footer.pageFooterWrapper .pageFooter .footerBox.Funderlogos {
+        width: 100%;
+        margin-top: 60px;
+        border-top: 1px solid #333;
+        padding-top: 60px;
+        text-align: center; }
+        footer.pageFooterWrapper .pageFooter .footerBox.Funderlogos img {
+          height: 40px;
+          width: auto;
+          display: inline-block;
+          margin: 0 5px; }
     @media only screen and (max-width: 480px) {
       footer.pageFooterWrapper .pageFooter {
         padding-top: 30px; } }
@@ -213,6 +228,8 @@ nav#menuMain {
     text-align: right; }
     nav#menuMain ul li {
       padding: 4px 10px; }
+      nav#menuMain ul li.hasSubmenu {
+        padding-left: 0; }
       nav#menuMain ul li:hover > a {
         background-color: #fff; }
       nav#menuMain ul li#menu74b947ee-6bc6-47da-9357-a9cd295b5eb5 a {
@@ -235,21 +252,26 @@ nav#menuMain {
           nav#menuMain ul li a {
             font-size: 14px; } }
       nav#menuMain ul li ul {
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 5px 0 0 0;
-        margin-left: -5px;
+        padding: 0;
+        margin-left: -100%;
         box-shadow: none;
         text-align: left;
-        border-radius: 0; }
+        border-radius: 0;
+        margin-right: 0; }
         nav#menuMain ul li ul li {
-          background-color: transparent;
-          padding: 7px 15px; }
+          background-color: #fff;
+          padding: 7px 15px;
+          text-align: center; }
+          nav#menuMain ul li ul li:first-child {
+            padding-top: 15px; }
+          nav#menuMain ul li ul li:last-child {
+            padding-bottom: 15px; }
           nav#menuMain ul li ul li:hover > a {
             background-color: transparent; }
           nav#menuMain ul li ul li a {
             border-bottom-color: transparent;
-            display: block;
-            width: 100%;
+            display: inline-block;
+            width: auto;
             font-size: 16px;
             padding: 0; }
             nav#menuMain ul li ul li a:hover {
@@ -349,7 +371,7 @@ section.carousel {
   margin-top: 15px; }
   section.carousel li.carouselSlide {
     max-height: none;
-    height: 700px;
+    height: auto;
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
@@ -373,7 +395,7 @@ section.carousel {
       section.carousel li.carouselSlide {
         height: auto; }
         section.carousel li.carouselSlide a.carouselSlideTitle {
-          height: 300px; } }
+          height: 400px; } }
   @media only screen and (max-width: 480px) {
     section.carousel li.carouselSlide a.carouselSlideTitle {
       height: 200px; } }
@@ -392,17 +414,16 @@ section.carousel {
       background-color: transparent;
       margin: 0; }
       section.carousel .carouselButtons li a.button.carouselButton {
-        background-color: rgba(12, 132, 199, 0.85); }
+        background-color: rgba(255, 255, 255, 0.85); }
         section.carousel .carouselButtons li a.button.carouselButton:hover {
-          background-color: #0c84c7; }
+          background-color: #fff; }
       section.carousel .carouselButtons li.activeSlide a.button.carouselButton, section.carousel .carouselButtons li:active a.button.carouselButton, section.carousel .carouselButtons li:focus a.button.carouselButton {
-        background-color: #0c84c7; }
+        background-color: #fff; }
         section.carousel .carouselButtons li.activeSlide a.button.carouselButton:hover, section.carousel .carouselButtons li:active a.button.carouselButton:hover, section.carousel .carouselButtons li:focus a.button.carouselButton:hover {
-          background-color: #0c84c7; }
+          background-color: #fff; }
     @media only screen and (max-width: 1000px) {
       section.carousel .carouselButtons {
-        bottom: auto;
-        top: 260px;
+        top: auto;
         margin-top: 0 !important; } }
     @media only screen and (max-width: 480px) {
       section.carousel .carouselButtons {
@@ -440,10 +461,18 @@ section.carousel {
         content: '\f104'; }
     @media only screen and (max-width: 1000px) {
       section.carousel .carouselControls {
-        top: 150px; } }
+        top: 275px; } }
     @media only screen and (max-width: 480px) {
       section.carousel .carouselControls {
-        top: 100px; } }
+        top: 120px; }
+        section.carousel .carouselControls li a {
+          height: 100px;
+          width: 40px; }
+          section.carousel .carouselControls li a:before {
+            height: 100px;
+            width: 40px;
+            line-height: 100px;
+            font-size: 64px; } }
 
 .homepage section.carousel {
   padding: 0;
@@ -452,9 +481,15 @@ section.carousel {
   .homepage section.carousel ul.carouselSlides {
     opacity: 0.4; }
   .homepage section.carousel .carouselButtons li.activeSlide a.button {
-    background-color: #0c84c7; }
+    background-color: #fff; }
   .homepage section.carousel .carouselControls {
-    top: 450px; }
+    top: 425px; }
+    @media only screen and (max-width: 1000px) {
+      .homepage section.carousel .carouselControls {
+        top: 275px; } }
+    @media only screen and (max-width: 480px) {
+      .homepage section.carousel .carouselControls {
+        top: 120px; } }
   .homepage section.carousel .strapline {
     position: absolute;
     top: 0;
@@ -463,16 +498,38 @@ section.carousel {
     bottom: 0;
     margin: auto;
     width: 50%;
-    height: 150px; }
+    height: 160px; }
     .homepage section.carousel .strapline h1 {
       font-size: 56px;
       color: #fff;
       text-align: center;
       margin: 0; }
+    @media screen and (max-width: 1200px) {
+      .homepage section.carousel .strapline {
+        height: 250px; } }
+    @media screen and (max-width: 1000px) {
+      .homepage section.carousel .strapline {
+        height: 80px; }
+        .homepage section.carousel .strapline h1 {
+          font-size: 36px; } }
+    @media screen and (max-width: 768px) {
+      .homepage section.carousel .strapline {
+        height: 140px; } }
+    @media screen and (max-width: 480px) {
+      .homepage section.carousel .strapline {
+        width: 70%;
+        height: 60px; }
+        .homepage section.carousel .strapline h1 {
+          font-size: 24px; } }
+    @media screen and (max-width: 365px) {
+      .homepage section.carousel .strapline {
+        height: 100px; } }
 
 .homeFeedsWrapper {
   margin-top: 60px;
   margin-bottom: 60px; }
+  .homeFeedsWrapper .homeFeeds {
+    padding: 0; }
   .homeFeedsWrapper .feed-wrapper {
     width: 33.33333%;
     padding: 0 15px;
@@ -490,7 +547,9 @@ section.carousel {
     margin: 0;
     width: 100%;
     float: none;
-    clear: none; }
+    clear: none;
+    height: 250px;
+    overflow: hidden; }
     .homeFeedsWrapper .homeFeed h3 {
       border-radius: 0;
       color: #fff;
@@ -499,7 +558,8 @@ section.carousel {
       margin: 0;
       padding: 0;
       text-align: center;
-      position: relative; }
+      position: relative;
+      z-index: 100; }
       .homeFeedsWrapper .homeFeed h3:before {
         font-family: 'FontAwesome';
         position: absolute;
@@ -527,16 +587,18 @@ section.carousel {
       .homeFeedsWrapper .homeFeed.LatestnewsFeed p {
         display: none; }
       .homeFeedsWrapper .homeFeed.LatestnewsFeed ul h3 {
-        top: 50%;
-        padding: 0; }
+        bottom: 45px;
+        font-family: "Open Sans", Arial, sans-serif;
+        padding: 0 30px;
+        top: auto;
+        line-height: 28px; }
         .homeFeedsWrapper .homeFeed.LatestnewsFeed ul h3 a {
           color: #fff;
-          font-weight: 400;
-          font-size: 24px; }
+          font-weight: 700;
+          font-size: 16px; }
     .homeFeedsWrapper .homeFeed.OurpartnersFeed {
       background-color: #ee2157;
-      padding: 30px;
-      height: 228px; }
+      padding: 30px; }
       .homeFeedsWrapper .homeFeed.OurpartnersFeed > h3, .homeFeedsWrapper .homeFeed.OurpartnersFeed p {
         display: none; }
       .homeFeedsWrapper .homeFeed.OurpartnersFeed h3 a {
@@ -558,9 +620,9 @@ section.carousel {
         left: 0;
         right: 0;
         position: absolute;
-        top: 70px; }
+        top: 90px;
+        cursor: pointer; }
     .homeFeedsWrapper .homeFeed ul.feedList {
-      min-height: 100%;
       padding: 0;
       background-color: transparent; }
       .homeFeedsWrapper .homeFeed ul.feedList li {
@@ -572,7 +634,7 @@ section.carousel {
         .homeFeedsWrapper .homeFeed ul.feedList li.tweet img {
           display: none; }
         .homeFeedsWrapper .homeFeed ul.feedList li.tweet p {
-          font-family: "sciflysans", sans-serif;
+          font-family: "Open Sans", Arial, sans-serif;
           font-size: 16px;
           margin: 0;
           padding: 15px 0;
@@ -610,6 +672,9 @@ section.carousel {
     float: none;
     clear: none;
     transition: background-color 0.4s ease 0.1s; }
+    @media only screen and (max-width: 768px) {
+      .homeFeaturesWrapper .homeFeatures .homeFeature {
+        background-color: #0c84c7; } }
     .homeFeaturesWrapper .homeFeatures .homeFeature img {
       display: none; }
     .homeFeaturesWrapper .homeFeatures .homeFeature > a {
@@ -619,6 +684,11 @@ section.carousel {
       background-repeat: no-repeat;
       height: 400px;
       float: left; }
+      @media only screen and (max-width: 768px) {
+        .homeFeaturesWrapper .homeFeatures .homeFeature > a {
+          width: 100%;
+          float: none;
+          opacity: 0.7; } }
     .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper {
       width: 50%;
       float: right;
@@ -630,14 +700,33 @@ section.carousel {
         font-size: 48px;
         height: 53px;
         line-height: 53px; }
+        @media only screen and (max-width: 768px) {
+          .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper:before {
+            color: #fff;
+            font-size: 36px; } }
       .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper h2 {
-        margin: 200px 0 0 0;
+        margin: 18% 0 0 0;
         padding: 0;
         position: relative; }
         .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper h2 a {
           color: #444; }
           .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper h2 a:hover {
             text-decoration: none; }
+      .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper p {
+        font-family: "Open Sans", Arial, sans-serif;
+        margin-bottom: 0; }
+      @media only screen and (max-width: 768px) {
+        .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper {
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 15px; }
+          .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper h2 a, .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper p {
+            color: #fff; } }
+      @media only screen and (max-width: 480px) {
+        .homeFeaturesWrapper .homeFeatures .homeFeature .homeFeatureDetailsWrapper h2 {
+          margin-top: 30px; } }
     .homeFeaturesWrapper .homeFeatures .homeFeature:hover {
       background-color: #0c84c7;
       color: #fff; }
@@ -669,11 +758,13 @@ section.carousel {
         letter-spacing: 2px;
         text-transform: uppercase; }
     @media only screen and (max-width: 768px) {
+      .homeIntroWrapper .homeIntro p {
+        font-size: 36px; } }
+    @media only screen and (max-width: 540px) {
       .homeIntroWrapper .homeIntro {
-        margin: 30px auto;
         width: 100%; }
-        .homeIntroWrapper .homeIntro p {
-          font-size: 28px; } }
+        .homeIntroWrapper .homeIntro p a.button {
+          margin-top: 15px; } }
 
 .headerText, .contentBlockWrapper {
   padding: 0 15px;
@@ -749,26 +840,28 @@ aside.postAside {
     .listing .listContent .listedPost h2 a:hover {
       text-decoration: none; }
 
-.pageContent table, .postContent table {
-  border: 1px solid #ededed;
-  background-color: #fff; }
-  .pageContent table thead, .postContent table thead {
-    background-color: transparent;
-    font-family: "sciflysans", sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #582e91;
-    border-top: 1px solid #ededed;
-    border-bottom: 1px solid #ededed;
-    text-align: left;
-    color: #333; }
-    .pageContent table thead th, .postContent table thead th {
-      padding: 10px; }
-  .pageContent table tbody, .postContent table tbody {
-    color: #333;
-    background-color: transparent; }
-    .pageContent table tbody td, .postContent table tbody td {
-      padding: 10px; }
+.pageContent, .postContent {
+  width: 100%; }
+  .pageContent table, .postContent table {
+    border: 1px solid #ededed;
+    background-color: #fff; }
+    .pageContent table thead, .postContent table thead {
+      background-color: transparent;
+      font-family: "sciflysans", sans-serif;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #582e91;
+      border-top: 1px solid #ededed;
+      border-bottom: 1px solid #ededed;
+      text-align: left;
+      color: #333; }
+      .pageContent table thead th, .postContent table thead th {
+        padding: 10px; }
+    .pageContent table tbody, .postContent table tbody {
+      color: #333;
+      background-color: transparent; }
+      .pageContent table tbody td, .postContent table tbody td {
+        padding: 10px; }
 
 footer .shareWrapper {
   margin: 60px 0;
@@ -780,7 +873,8 @@ footer .shareWrapper {
     margin-bottom: 0;
     text-transform: uppercase;
     font-style: normal;
-    font-family: "sciflysans", sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 700;
     font-size: 22px;
     color: #777; }
   footer .shareWrapper ul li {
@@ -844,6 +938,11 @@ footer .shareWrapper {
             display: none; }
 
 p.commentCount {
+  display: none; }
+
+.pageWrapper h1.title {
+  text-align: center; }
+.pageWrapper aside.postAside {
   display: none; }
 
 .blogPostPage .blogDetails {

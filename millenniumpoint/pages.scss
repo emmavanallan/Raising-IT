@@ -100,6 +100,7 @@ aside.postAside{
 }
 
 .pageContent,.postContent{
+	width: 100%;
 	table{
 		border: 1px solid #ededed;
 		background-color: #fff;
@@ -139,7 +140,8 @@ footer .shareWrapper{
 		margin-bottom: 0;
 		text-transform: uppercase;
 		font-style: normal;
-		font-family: $main-font-bold;
+		font-family: $body-font;
+		font-weight: 700;
 		font-size: 22px;
 		color: #777;
 	}
@@ -228,6 +230,16 @@ footer .shareWrapper{
 
 p.commentCount{
 	display: none;
+}
+
+// hide sidebar for pages
+.pageWrapper{
+	h1.title{
+		text-align: center;
+	}
+	aside.postAside{
+		display: none;
+	}
 }
 
 @import 'pages-blogs';

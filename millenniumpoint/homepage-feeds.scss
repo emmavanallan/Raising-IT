@@ -2,6 +2,9 @@
 .homeFeedsWrapper{
 	margin-top: 60px;
 	margin-bottom: 60px;
+	.homeFeeds{
+		padding: 0;
+	}
 	.feed-wrapper{
 		width: 33.33333%;
 		padding: 0 15px;	
@@ -21,6 +24,8 @@
 		width: 100%;
 		float: none;
 		clear: none;
+		height: 250px;
+		overflow: hidden;
 		h3{
 			border-radius: 0;
 			color: #fff;
@@ -30,7 +35,7 @@
 			padding: 0;
 			text-align: center;
 			position: relative;
-			
+			z-index: 100;
 			&:before{
 				font-family: 'FontAwesome';
 				position: absolute;
@@ -67,12 +72,15 @@
 			}
 			ul{
 				h3{
-					top: 50%;
-					padding: 0;
+					bottom: 45px;
+					font-family: $body-font;
+					padding: 0 30px;
+					top: auto;
+					line-height: 28px;
 					a{
 						color: #fff;
-						font-weight: 400;
-						font-size: 24px;
+						font-weight: 700;
+						font-size: 16px;
 					}
 				}
 			}
@@ -81,7 +89,6 @@
 		&.OurpartnersFeed{
 			background-color: $pink;
 			padding: 30px;
-			height: 228px;
 			&>h3, p{
 				display: none;
 			}
@@ -107,12 +114,12 @@
 					left: 0;
 					right: 0;
 					position: absolute;
-					top: 70px;
+					top: 90px;
+					cursor: pointer;
 				}
 			}
 		}
 		ul.feedList{
-			min-height: 100%;
 			padding: 0;
 			background-color: transparent;
 			li{
@@ -128,7 +135,7 @@
 						display: none;
 					}
 					p{
-						font-family: $main-font;
+						font-family: $body-font;
 						font-size: 16px;
 						margin: 0;
 						padding: 15px 0;
@@ -150,6 +157,9 @@
 		}
 		.feedActionWrapper{
 			display: none;
+		}
+		@media only screen and (max-width : 768px) {
+
 		}
 		@media only screen and (max-width : 768px) {
 			min-height: auto;

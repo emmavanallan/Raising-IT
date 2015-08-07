@@ -59,7 +59,7 @@ footer.pageFooterWrapper{
 		padding: 60px 15px;
 		margin: 0 auto;
 		.footerBox{
-			width: 33.33333%;
+			width: 50%;
 			padding: 0 15px;
 			margin: 0;
 			float: left;
@@ -68,7 +68,7 @@ footer.pageFooterWrapper{
 			text-align: left;
 			color: #fff;
 			font-size: 18px;
-			ul li a, p, li{
+			ul li a, a, a:link, p, li{
 				color: #fff;
 				font-size: 18px;
 			}
@@ -102,12 +102,28 @@ footer.pageFooterWrapper{
 					}
 				}
 			}
+			.links-small, .links-small a{
+				font-size: 14px;
+			}
 			@media only screen and (max-width : 768px) {
 				width: 100%;
 				padding: 0;
 				text-align: center;
 				&.footerBox4{
 					margin-top: 15px;
+				}
+			}
+			&.Funderlogos{
+				width: 100%;
+				margin-top: 60px;
+				border-top: 1px solid #333;
+				padding-top: 60px;
+				text-align: center;
+				img{
+					height: 40px;
+					width: auto;
+					display: inline-block;
+					margin: 0 5px;
 				}
 			}
 		}

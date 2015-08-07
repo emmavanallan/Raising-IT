@@ -28,10 +28,14 @@
 			}
 		}
 		@media only screen and (max-width : 768px) {
-			margin: 30px auto;
-			width: 100%;
 			p{
-				font-size: 28px;
+				font-size: 36px;
+			}
+		}
+		@media only screen and (max-width: 540px){
+			width: 100%;
+			p a.button{
+				margin-top: 15px;
 			}
 		}
 	}

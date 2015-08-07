@@ -12,7 +12,7 @@ $(document).ready(function(){
 		$(this).css('background-image',  'url(' + imgUrl + ')');
 	});
 
-	$('section.carousel').append('<div class="strapline"><h1>Where science, technology and learning come to life</h1></div>');
+	$('.homepage section.carousel').append('<div class="strapline"><h1>Where science, technology and learning come to life</h1></div>');
 
 	$('section.carousel li a.carouselSlideTitle').click(function(e) {
 	    e.preventDefault();

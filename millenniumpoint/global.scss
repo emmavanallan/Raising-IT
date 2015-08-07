@@ -1,15 +1,17 @@
 html,body{
-	font-family: $main-font;
+	font-family: $body-font;
+	font-weight: 400;
 }
 
 h1,h2,h3,h4,h5{
-	font-family: $main-font-bold;
+	font-family: $main-font;
 	font-style: normal;
 	&.feedTitle{
 		font-weight: 700;
 	}
 	&.title{
 		color: #333;
+		font-family: $main-font;
 	}
 }
 
@@ -29,7 +31,7 @@ h3{
 }
 
 p, ul li, ol li{
-	font-size: 16px;
+	font-size: 18px;
 }
 
 blockquote p{

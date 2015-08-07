@@ -6,7 +6,7 @@ section.carousel{
 	margin-top: 15px;
 	li.carouselSlide{
 		max-height: none;
-		height: 700px;
+		height: auto;
 		display: block;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -34,7 +34,7 @@ section.carousel{
 		li.carouselSlide{
 			height: auto;
 			a.carouselSlideTitle{
-				height: 300px;
+				height: 400px;
 			}
 		}
 	}
@@ -111,15 +111,15 @@ section.carousel{
 			background-color: transparent;
 			margin: 0;
 			a.button.carouselButton{
-				background-color: rgba($blue,0.85);
+				background-color: rgba(#fff,0.85);
 				&:hover{
-					background-color: $blue;
+					background-color: #fff;
 				}
 			}
 			&.activeSlide a.button.carouselButton, &:active a.button.carouselButton, &:focus a.button.carouselButton{
-				background-color: $blue;
+				background-color: #fff;
 				&:hover{
-					background-color: $blue;
+					background-color: #fff;
 				}
 			}
 		}
@@ -128,8 +128,7 @@ section.carousel{
 		margin-left: auto;
 		margin-right: auto;
 		@media only screen and (max-width : 1000px) {
-			bottom: auto;
-			top: 260px;
+			top: auto;
 			margin-top: 0 !important;
 		}
 		@media only screen and (max-width : 480px) {
@@ -176,10 +175,20 @@ section.carousel{
 			}
 		}
 		@media only screen and (max-width : 1000px) {
-			top: 150px;
+			top: 275px;
 		}
 		@media only screen and (max-width : 480px) {
-			top: 100px;
+			top: 120px;
+			li a{
+				height: 100px;
+				width: 40px;
+				&:before{
+					height: 100px;
+					width: 40px;
+					line-height: 100px;
+					font-size: 64px;
+				}
+			}
 		}
 	}
 }
@@ -190,13 +199,21 @@ section.carousel{
 	background-color: #000;
 	ul.carouselSlides{
 		opacity: 0.4;
+		li.carouselSlide{
+		}
 	}
 	.carouselButtons li.activeSlide a.button{
-		background-color: $blue;
+		background-color: #fff;
 	}
 
 	.carouselControls{
-		top: 450px;
+		top: 425px;
+		@media only screen and (max-width : 1000px) {
+			top: 275px;
+		}
+		@media only screen and (max-width : 480px) {
+			top: 120px;
+		}
 	}
 	.strapline{
 		position: absolute;
@@ -206,12 +223,34 @@ section.carousel{
 		bottom: 0;
 		margin: auto;
 		width: 50%;
-		height: 150px;
+		height: 160px;
 		h1{
 			font-size: 56px;
 			color: #fff;
 			text-align: center;
 			margin: 0;
+		}
+		@media screen and (max-width: 1200px){
+			height: 250px;
+		}
+		@media screen and (max-width: 1000px){
+			height: 80px;
+			h1{
+				font-size: 36px;
+			}
+		}
+		@media screen and (max-width: 768px){
+			height: 140px;
+		}
+		@media screen and (max-width: 480px){
+			width: 70%;
+			height: 60px;
+			h1{
+				font-size: 24px;
+			}
+		}
+		@media screen and (max-width: 365px){
+			height: 100px;
 		}
 	}
 }
