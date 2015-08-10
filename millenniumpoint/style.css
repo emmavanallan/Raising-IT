@@ -671,7 +671,9 @@ section.carousel {
     min-height: 0;
     padding: 0; }
     .UpcomingeventsFeed .feedList li, .LatestnewsFeed .feedList li {
-      margin-top: 45px; }
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3); }
       .UpcomingeventsFeed .feedList li:hover, .LatestnewsFeed .feedList li:hover {
         cursor: pointer; }
       .UpcomingeventsFeed .feedList li:last-child, .LatestnewsFeed .feedList li:last-child {
